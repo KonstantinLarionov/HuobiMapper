@@ -78,9 +78,9 @@ namespace HuobiMapper.Requests.Output
             byte[] keyBuffer = Encoding.UTF8.GetBytes(key);
             _hmacsha256 = new HMACSHA256(keyBuffer);
         }
-        public string Sign(string method, string host, string path, string parameters)
+        public string Sign(  string POST, RequestPayload requestPayload, string path, string parameters)
         {
-            if (string.IsNullOrEmpty(method) || string.IsNullOrEmpty(host)
+            if (string.IsNullOrEmpty(baseUrl) || string.IsNullOrEmpty(host)
                                              || string.IsNullOrEmpty(path) || string.IsNullOrEmpty(parameters))
             {
                 return string.Empty;
