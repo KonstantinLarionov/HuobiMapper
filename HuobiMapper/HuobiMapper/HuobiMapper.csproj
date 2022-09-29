@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+    <PropertyGroup>
+        <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+        <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+        <ProjectGuid>{5AD604B7-5560-4E60-95F0-F5FCDE3F02BF}</ProjectGuid>
+        <OutputType>Library</OutputType>
+        <AppDesignerFolder>Properties</AppDesignerFolder>
+        <RootNamespace>HuobiMapper</RootNamespace>
+        <AssemblyName>HuobiMapper</AssemblyName>
+        <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+        <FileAlignment>512</FileAlignment>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <DebugSymbols>true</DebugSymbols>
+        <DebugType>full</DebugType>
+        <Optimize>false</Optimize>
+        <OutputPath>bin\Debug\</OutputPath>
+        <DefineConstants>DEBUG;TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <DebugType>pdbonly</DebugType>
+        <Optimize>true</Optimize>
+        <OutputPath>bin\Release\</OutputPath>
+        <DefineConstants>TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+    </PropertyGroup>
+    <ItemGroup>
+        <Reference Include="JetBrains.Annotations, Version=4242.42.42.42, Culture=neutral, PublicKeyToken=1010a0d8d6380325, processorArchitecture=MSIL">
+          <HintPath>..\packages\JetBrains.Annotations.2022.1.0\lib\net20\JetBrains.Annotations.dll</HintPath>
+        </Reference>
+        <Reference Include="mscorlib" />
+        <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed">
+          <HintPath>..\packages\Newtonsoft.Json.13.0.2-beta2\lib\net45\Newtonsoft.Json.dll</HintPath>
+          <Private>True</Private>
+        </Reference>
+        <Reference Include="System" />
+        <Reference Include="System.Core" />
+        <Reference Include="System.Data" />
+        <Reference Include="System.Runtime.Serialization" />
+        <Reference Include="System.Runtime.Serialization.Primitives, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+          <HintPath>..\packages\System.Runtime.Serialization.Primitives.4.1.1\lib\net46\System.Runtime.Serialization.Primitives.dll</HintPath>
+          <Private>True</Private>
+        </Reference>
+        <Reference Include="System.Xml" />
+    </ItemGroup>
+    <ItemGroup>
+        <Compile Include="Extensions\DecimalExtensions.cs" />
+        <Compile Include="Extensions\DictionaryStringStringExtensions.cs" />
+        <Compile Include="Extensions\EnumHelper.cs" />
+        <Compile Include="Extensions\JsonConvertExtensions.cs" />
+        <Compile Include="Extensions\ListExtensions.cs" />
+        <Compile Include="Extensions\UnixTimeExtensions.cs" />
+        <Compile Include="Properties\AssemblyInfo.cs" />
+        <Compile Include="Requests\Output\IRequestContent.cs" />
+        <Compile Include="Requests\Output\KeyedRequest.cs" />
+        <Compile Include="Requests\Output\Request.cs" />
+        <Compile Include="Requests\Output\RequestMethod.cs" />
+        <Compile Include="Requests\Payload\KeyedRequestPayload.cs" />
+        <Compile Include="Requests\Payload\RequestPayload.cs" />
+        <Compile Include="Requests\RequestArranger.cs" />
+        <Compile Include="USDTFutures\PrivateStreams\CombineSubscriber.cs" />
+        <Compile Include="USDTFutures\PrivateStreams\ContractsPrivateStreamsComposition.cs" />
+        <Compile Include="USDTFutures\PrivateStreams\Data\AccountData.cs" />
+        <Compile Include="USDTFutures\PrivateStreams\Data\Enums\ActionTradeType.cs" />
+        <Compile Include="USDTFutures\PrivateStreams\Data\Enums\EventType.cs" />
+        <Compile Include="USDTFutures\PrivateStreams\Data\Enums\ExecutionStatusType.cs" />
+        <Compile Include="USDTFutures\PrivateStreams\Data\Enums\OrderSideType.cs" />
+        <Compile Include="USDTFutures\PrivateStreams\Data\Enums\OrderStatusType.cs" />
+        <Compile Include="USDTFutures\PrivateStreams\Data\Enums\OrderType.cs" />
+        <Compile Include="USDTFutures\PrivateStreams\Data\Enums\PositionSide.cs" />
+        <Compile Include="USDTFutures\PrivateStreams\Data\Enums\PositionStatus.cs" />
+        <Compile Include="USDTFutures\PrivateStreams\Data\Enums\SubscribeType.cs" />
+        <Compile Include="USDTFutures\PrivateStreams\Data\Enums\TimeInForceType.cs" />
+        <Compile Include="USDTFutures\PrivateStreams\Data\Enums\TradeType.cs" />
+        <Compile Include="USDTFutures\PrivateStreams\Data\PrivateRequests\AccountRequests.cs" />
+        <Compile Include="USDTFutures\PrivateStreams\Events\AOPEvent.cs" />
+        <Compile Include="USDTFutures\PrivateStreams\Events\BaseEvent.cs" />
+        <Compile Include="USDTFutures\PrivateStreams\PrivateResponses\PrivateResponses.cs" />
+        <Compile Include="USDTFutures\RestApi\Data\CurrencysData.cs" />
+        <Compile Include="USDTFutures\RestApi\Data\Dataklins\Tick.cs" />
+        <Compile Include="USDTFutures\RestApi\Data\Enums\Period.cs" />
+        <Compile Include="USDTFutures\RestApi\Data\Enums\ResponseStatus.cs" />
+        <Compile Include="USDTFutures\RestApi\Extensions\DecimalExtensions.cs" />
+        <Compile Include="USDTFutures\RestApi\Extensions\EnumHelper.cs" />
+        <Compile Include="USDTFutures\RestApi\Requests\CurrencyRequest.cs" />
+        <Compile Include="USDTFutures\RestApi\Requests\KlineRequest.cs" />
+        <Compile Include="USDTFutures\RestApi\Responses\CurrencyResponse.cs" />
+        <Compile Include="USDTFutures\RestApi\Responses\DataKlineResponse.cs" />
+        <Compile Include="USDTFutures\RestApi\RestApiComposition.cs" />
+    </ItemGroup>
+    <ItemGroup>
+      <None Include="packages.config" />
+    </ItemGroup>
+    <ItemGroup>
+      <Content Include="Key" />
+      <Content Include="README.TXT" />
+    </ItemGroup>
+    <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+    <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+         Other similar extension points exist, see Microsoft.Common.targets.
+    <Target Name="BeforeBuild">
+    </Target>
+    <Target Name="AfterBuild">
+    </Target>
+    -->
+
+</Project>

@@ -1,0 +1,36 @@
+C:\Users\kosty\Desktop\HuobiMapper\HuobiMapper\bin\Debug\HuobiMapper.dll
+C:\Users\kosty\Desktop\HuobiMapper\HuobiMapper\bin\Debug\HuobiMapper.pdb
+C:\Users\kosty\Desktop\HuobiMapper\HuobiMapper\bin\Debug\JetBrains.Annotations.dll
+C:\Users\kosty\Desktop\HuobiMapper\HuobiMapper\bin\Debug\Newtonsoft.Json.dll
+C:\Users\kosty\Desktop\HuobiMapper\HuobiMapper\bin\Debug\System.Runtime.Serialization.Primitives.dll
+C:\Users\kosty\Desktop\HuobiMapper\HuobiMapper\bin\Debug\JetBrains.Annotations.xml
+C:\Users\kosty\Desktop\HuobiMapper\HuobiMapper\bin\Debug\Newtonsoft.Json.xml
+C:\Users\kosty\Desktop\HuobiMapper\HuobiMapper\obj\Debug\HuobiMapper.csproj.AssemblyReference.cache
+C:\Users\kosty\Desktop\HuobiMapper\HuobiMapper\obj\Debug\HuobiMapper.csproj.CoreCompileInputs.cache
+C:\Users\kosty\Desktop\HuobiMapper\HuobiMapper\obj\Debug\HuobiMapper.csproj.CopyComplete
+C:\Users\kosty\Desktop\HuobiMapper\HuobiMapper\obj\Debug\HuobiMapper.dll
+C:\Users\kosty\Desktop\HuobiMapper\HuobiMapper\obj\Debug\HuobiMapper.pdb
+C:\Users\olegs\Desktop\HuobiMapper\HuobiMapper\obj\Debug\HuobiMapper.dll
+C:\Users\olegs\Desktop\HuobiMapper\HuobiMapper\obj\Debug\HuobiMapper.pdb
+C:\Users\olegs\Desktop\HuobiMapper\HuobiMapper\bin\Debug\HuobiMapper.dll
+C:\Users\olegs\Desktop\HuobiMapper\HuobiMapper\bin\Debug\HuobiMapper.pdb
+C:\Users\olegs\Desktop\HuobiMapper\HuobiMapper\bin\Debug\JetBrains.Annotations.dll
+C:\Users\olegs\Desktop\HuobiMapper\HuobiMapper\bin\Debug\Newtonsoft.Json.dll
+C:\Users\olegs\Desktop\HuobiMapper\HuobiMapper\bin\Debug\System.Runtime.Serialization.Primitives.dll
+C:\Users\olegs\Desktop\HuobiMapper\HuobiMapper\bin\Debug\JetBrains.Annotations.xml
+C:\Users\olegs\Desktop\HuobiMapper\HuobiMapper\bin\Debug\Newtonsoft.Json.xml
+C:\Users\olegs\Desktop\HuobiMapper\HuobiMapper\obj\Debug\HuobiMapper.csproj.AssemblyReference.cache
+C:\Users\olegs\Desktop\HuobiMapper\HuobiMapper\obj\Debug\HuobiMapper.csproj.CoreCompileInputs.cache
+C:\Users\olegs\Desktop\HuobiMapper\HuobiMapper\obj\Debug\HuobiMapper.csproj.CopyComplete
+C:\Users\olegs\OneDrive\Рабочий стол\HuobiMapper\HuobiMapper\bin\Debug\HuobiMapper.dll
+C:\Users\olegs\OneDrive\Рабочий стол\HuobiMapper\HuobiMapper\bin\Debug\HuobiMapper.pdb
+C:\Users\olegs\OneDrive\Рабочий стол\HuobiMapper\HuobiMapper\bin\Debug\JetBrains.Annotations.dll
+C:\Users\olegs\OneDrive\Рабочий стол\HuobiMapper\HuobiMapper\bin\Debug\Newtonsoft.Json.dll
+C:\Users\olegs\OneDrive\Рабочий стол\HuobiMapper\HuobiMapper\bin\Debug\System.Runtime.Serialization.Primitives.dll
+C:\Users\olegs\OneDrive\Рабочий стол\HuobiMapper\HuobiMapper\bin\Debug\JetBrains.Annotations.xml
+C:\Users\olegs\OneDrive\Рабочий стол\HuobiMapper\HuobiMapper\bin\Debug\Newtonsoft.Json.xml
+C:\Users\olegs\OneDrive\Рабочий стол\HuobiMapper\HuobiMapper\obj\Debug\HuobiMapper.csproj.AssemblyReference.cache
+C:\Users\olegs\OneDrive\Рабочий стол\HuobiMapper\HuobiMapper\obj\Debug\HuobiMapper.csproj.CoreCompileInputs.cache
+C:\Users\olegs\OneDrive\Рабочий стол\HuobiMapper\HuobiMapper\obj\Debug\HuobiMapper.csproj.CopyComplete
+C:\Users\olegs\OneDrive\Рабочий стол\HuobiMapper\HuobiMapper\obj\Debug\HuobiMapper.dll
+C:\Users\olegs\OneDrive\Рабочий стол\HuobiMapper\HuobiMapper\obj\Debug\HuobiMapper.pdb

@@ -1,0 +1,336 @@
+19.09.2022 12:28:44|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                          GET / HTTP/1.1
+                          User-Agent: websocket-sharp/1.0
+                          Host: api.hbdm.com
+                          Upgrade: websocket
+                          Connection: Upgrade
+                          Sec-WebSocket-Key: pss1+e4vtY5uFhkZFD7Vaw==
+                          Sec-WebSocket-Version: 13
+19.09.2022 12:28:45|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                          HTTP/1.1 404 Not Found
+                          Date: Mon, 19 Sep 2022 07:28:45 GMT
+                          Content-Type: text/html
+                          Transfer-Encoding: chunked
+                          Connection: keep-alive
+                          X-Request-ID: 91f648fc314b2e49fbc63b98c0a237f5
+                          CF-Cache-Status: DYNAMIC
+                          Server: cloudflare
+                          CF-RAY: 74d09b380ca42de2-DME
+19.09.2022 12:28:45|Error|WebSocket.doHandshake:0|Not a WebSocket connection response.
+19.09.2022 12:28:45|Trace|WebSocket.close:0|Begin closing the connection.
+19.09.2022 12:28:45|Debug|WebSocket.closeHandshake:0|Was clean?: False
+                            sent: False
+                            received: True
+19.09.2022 12:28:45|Trace|WebSocket.close:0|End closing the connection.
+19.09.2022 12:32:32|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                          GET / HTTP/1.1
+                          User-Agent: websocket-sharp/1.0
+                          Host: api.hbdm.com
+                          Upgrade: websocket
+                          Connection: Upgrade
+                          Sec-WebSocket-Key: ier+GCDdRyKXBv59Qav2Iw==
+                          Sec-WebSocket-Version: 13
+19.09.2022 12:32:32|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                          HTTP/1.1 404 Not Found
+                          Date: Mon, 19 Sep 2022 07:32:32 GMT
+                          Content-Type: text/html
+                          Transfer-Encoding: chunked
+                          Connection: keep-alive
+                          X-Request-ID: 9c66ade107b4c10c7a2ac404b1515d9d
+                          CF-Cache-Status: DYNAMIC
+                          Server: cloudflare
+                          CF-RAY: 74d0a0c4cffa9d75-DME
+19.09.2022 12:32:32|Error|WebSocket.doHandshake:0|Not a WebSocket connection response.
+19.09.2022 12:32:32|Trace|WebSocket.close:0|Begin closing the connection.
+19.09.2022 12:32:32|Debug|WebSocket.closeHandshake:0|Was clean?: False
+                            sent: False
+                            received: True
+19.09.2022 12:32:32|Trace|WebSocket.close:0|End closing the connection.
+20.09.2022 8:44:48|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                         GET / HTTP/1.1
+                         User-Agent: websocket-sharp/1.0
+                         Host: api.hbdm.com
+                         Upgrade: websocket
+                         Connection: Upgrade
+                         Sec-WebSocket-Key: qVlJg3qUnZi2yiUjhaI0Zw==
+                         Sec-WebSocket-Version: 13
+20.09.2022 8:44:49|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                         HTTP/1.1 404 Not Found
+                         Date: Tue, 20 Sep 2022 03:44:48 GMT
+                         Content-Type: text/html
+                         Transfer-Encoding: chunked
+                         Connection: keep-alive
+                         X-Request-ID: 44cdfaf186b0481768857a2bb4f58bc0
+                         CF-Cache-Status: DYNAMIC
+                         Server: cloudflare
+                         CF-RAY: 74d7908c79637a69-DME
+20.09.2022 8:44:49|Error|WebSocket.doHandshake:0|Not a WebSocket connection response.
+20.09.2022 8:44:49|Trace|WebSocket.close:0|Begin closing the connection.
+20.09.2022 8:44:49|Debug|WebSocket.closeHandshake:0|Was clean?: False
+                           sent: False
+                           received: True
+20.09.2022 8:44:49|Trace|WebSocket.close:0|End closing the connection.
+20.09.2022 9:26:14|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                         GET / HTTP/1.1
+                         User-Agent: websocket-sharp/1.0
+                         Host: api.hbdm.com
+                         Upgrade: websocket
+                         Connection: Upgrade
+                         Sec-WebSocket-Key: K4SLo26ZZrf/Ao8oIVJEcw==
+                         Sec-WebSocket-Version: 13
+20.09.2022 9:26:15|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                         HTTP/1.1 404 Not Found
+                         Date: Tue, 20 Sep 2022 04:26:14 GMT
+                         Content-Type: text/html
+                         Transfer-Encoding: chunked
+                         Connection: keep-alive
+                         X-Request-ID: 25edd6123eb96f992e7615bd2f266164
+                         CF-Cache-Status: DYNAMIC
+                         Server: cloudflare
+                         CF-RAY: 74d7cd3bcb5c7b1b-DME
+20.09.2022 9:26:15|Error|WebSocket.doHandshake:0|Not a WebSocket connection response.
+20.09.2022 9:26:15|Trace|WebSocket.close:0|Begin closing the connection.
+20.09.2022 9:26:15|Debug|WebSocket.closeHandshake:0|Was clean?: False
+                           sent: False
+                           received: True
+20.09.2022 9:26:15|Trace|WebSocket.close:0|End closing the connection.
+20.09.2022 9:30:56|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                         GET / HTTP/1.1
+                         User-Agent: websocket-sharp/1.0
+                         Host: api.hbdm.com
+                         Upgrade: websocket
+                         Connection: Upgrade
+                         Sec-WebSocket-Key: ML1RJ/m6jKiSiLg6ck9HUg==
+                         Sec-WebSocket-Version: 13
+20.09.2022 9:30:57|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                         HTTP/1.1 404 Not Found
+                         Date: Tue, 20 Sep 2022 04:30:56 GMT
+                         Content-Type: text/html
+                         Transfer-Encoding: chunked
+                         Connection: keep-alive
+                         X-Request-ID: 7252223b2fad5246b6d0579dd7997c54
+                         CF-Cache-Status: DYNAMIC
+                         Server: cloudflare
+                         CF-RAY: 74d7d42039a075a7-DME
+20.09.2022 9:30:57|Error|WebSocket.doHandshake:0|Not a WebSocket connection response.
+20.09.2022 9:30:57|Trace|WebSocket.close:0|Begin closing the connection.
+20.09.2022 9:30:57|Debug|WebSocket.closeHandshake:0|Was clean?: False
+                           sent: False
+                           received: True
+20.09.2022 9:30:57|Trace|WebSocket.close:0|End closing the connection.
+20.09.2022 9:55:43|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                         GET / HTTP/1.1
+                         User-Agent: websocket-sharp/1.0
+                         Host: api.hbdm.com
+                         Upgrade: websocket
+                         Connection: Upgrade
+                         Sec-WebSocket-Key: f3l6dd+A0jYT0vIRCgqEIQ==
+                         Sec-WebSocket-Version: 13
+20.09.2022 9:55:43|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                         HTTP/1.1 404 Not Found
+                         Date: Tue, 20 Sep 2022 04:55:43 GMT
+                         Content-Type: text/html
+                         Transfer-Encoding: chunked
+                         Connection: keep-alive
+                         X-Request-ID: 635d86d164aa3121575fc4256ea8e2cd
+                         CF-Cache-Status: DYNAMIC
+                         Server: cloudflare
+                         CF-RAY: 74d7f86abc629da4-DME
+20.09.2022 9:55:43|Error|WebSocket.doHandshake:0|Not a WebSocket connection response.
+20.09.2022 9:55:44|Trace|WebSocket.close:0|Begin closing the connection.
+20.09.2022 9:55:44|Debug|WebSocket.closeHandshake:0|Was clean?: False
+                           sent: False
+                           received: True
+20.09.2022 9:55:44|Trace|WebSocket.close:0|End closing the connection.
+20.09.2022 9:56:22|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                         GET / HTTP/1.1
+                         User-Agent: websocket-sharp/1.0
+                         Host: api.hbdm.com
+                         Upgrade: websocket
+                         Connection: Upgrade
+                         Sec-WebSocket-Key: 33NsLZq2ZAdW8Qts/2rKkw==
+                         Sec-WebSocket-Version: 13
+20.09.2022 9:56:23|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                         HTTP/1.1 404 Not Found
+                         Date: Tue, 20 Sep 2022 04:56:23 GMT
+                         Content-Type: text/html
+                         Transfer-Encoding: chunked
+                         Connection: keep-alive
+                         X-Request-ID: d1ebae8850924e3317fdac2767b5b97b
+                         CF-Cache-Status: DYNAMIC
+                         Server: cloudflare
+                         CF-RAY: 74d7f9609ec216ab-DME
+20.09.2022 9:56:23|Error|WebSocket.doHandshake:0|Not a WebSocket connection response.
+20.09.2022 9:56:23|Trace|WebSocket.close:0|Begin closing the connection.
+20.09.2022 9:56:23|Debug|WebSocket.closeHandshake:0|Was clean?: False
+                           sent: False
+                           received: True
+20.09.2022 9:56:23|Trace|WebSocket.close:0|End closing the connection.
+20.09.2022 9:57:07|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                         GET / HTTP/1.1
+                         User-Agent: websocket-sharp/1.0
+                         Host: api.hbdm.com
+                         Upgrade: websocket
+                         Connection: Upgrade
+                         Sec-WebSocket-Key: 88/ObSVdQNoOt3BXyDJgGw==
+                         Sec-WebSocket-Version: 13
+20.09.2022 9:57:08|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                         HTTP/1.1 404 Not Found
+                         Date: Tue, 20 Sep 2022 04:57:07 GMT
+                         Content-Type: text/html
+                         Transfer-Encoding: chunked
+                         Connection: keep-alive
+                         X-Request-ID: ea143d9b935129afe86a95ea3cf3630a
+                         CF-Cache-Status: DYNAMIC
+                         Server: cloudflare
+                         CF-RAY: 74d7fa7cada216c7-DME
+20.09.2022 9:57:08|Error|WebSocket.doHandshake:0|Not a WebSocket connection response.
+20.09.2022 9:57:08|Trace|WebSocket.close:0|Begin closing the connection.
+20.09.2022 9:57:08|Debug|WebSocket.closeHandshake:0|Was clean?: False
+                           sent: False
+                           received: True
+20.09.2022 9:57:08|Trace|WebSocket.close:0|End closing the connection.
+20.09.2022 9:58:26|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                         GET / HTTP/1.1
+                         User-Agent: websocket-sharp/1.0
+                         Host: api.hbdm.com
+                         Upgrade: websocket
+                         Connection: Upgrade
+                         Sec-WebSocket-Key: OpsnPItLJZZcz6ZRVOg1Lw==
+                         Sec-WebSocket-Version: 13
+20.09.2022 9:58:27|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                         HTTP/1.1 404 Not Found
+                         Date: Tue, 20 Sep 2022 04:58:26 GMT
+                         Content-Type: text/html
+                         Transfer-Encoding: chunked
+                         Connection: keep-alive
+                         X-Request-ID: bc3fe74923eb94df0678b324dfb7b9c0
+                         CF-Cache-Status: DYNAMIC
+                         Server: cloudflare
+                         CF-RAY: 74d7fc677acf9d75-DME
+20.09.2022 9:58:27|Error|WebSocket.doHandshake:0|Not a WebSocket connection response.
+20.09.2022 9:58:27|Trace|WebSocket.close:0|Begin closing the connection.
+20.09.2022 9:58:27|Debug|WebSocket.closeHandshake:0|Was clean?: False
+                           sent: False
+                           received: True
+20.09.2022 9:58:27|Trace|WebSocket.close:0|End closing the connection.
+20.09.2022 10:00:46|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                          GET / HTTP/1.1
+                          User-Agent: websocket-sharp/1.0
+                          Host: api.hbdm.com
+                          Upgrade: websocket
+                          Connection: Upgrade
+                          Sec-WebSocket-Key: GgTLsfUw/wWP6kHivWOHjg==
+                          Sec-WebSocket-Version: 13
+20.09.2022 10:00:47|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                          HTTP/1.1 404 Not Found
+                          Date: Tue, 20 Sep 2022 05:00:47 GMT
+                          Content-Type: text/html
+                          Transfer-Encoding: chunked
+                          Connection: keep-alive
+                          X-Request-ID: b1f85b098fcb9e307688605c3cbf0bc6
+                          CF-Cache-Status: DYNAMIC
+                          Server: cloudflare
+                          CF-RAY: 74d7ffd59c5c7b2f-DME
+20.09.2022 10:00:47|Error|WebSocket.doHandshake:0|Not a WebSocket connection response.
+20.09.2022 10:00:47|Trace|WebSocket.close:0|Begin closing the connection.
+20.09.2022 10:00:47|Debug|WebSocket.closeHandshake:0|Was clean?: False
+                            sent: False
+                            received: True
+20.09.2022 10:00:47|Trace|WebSocket.close:0|End closing the connection.
+20.09.2022 10:03:06|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                          GET / HTTP/1.1
+                          User-Agent: websocket-sharp/1.0
+                          Host: api.hbdm.com
+                          Upgrade: websocket
+                          Connection: Upgrade
+                          Sec-WebSocket-Key: Np0tRpn1RdUvhCnvUbg3IQ==
+                          Sec-WebSocket-Version: 13
+20.09.2022 10:03:07|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                          HTTP/1.1 404 Not Found
+                          Date: Tue, 20 Sep 2022 05:03:06 GMT
+                          Content-Type: text/html
+                          Transfer-Encoding: chunked
+                          Connection: keep-alive
+                          X-Request-ID: 86857adf4abf131728cf8f61fc87cfa7
+                          CF-Cache-Status: DYNAMIC
+                          Server: cloudflare
+                          CF-RAY: 74d8033bb86716bf-DME
+20.09.2022 10:03:07|Error|WebSocket.doHandshake:0|Not a WebSocket connection response.
+20.09.2022 10:03:07|Trace|WebSocket.close:0|Begin closing the connection.
+20.09.2022 10:03:07|Debug|WebSocket.closeHandshake:0|Was clean?: False
+                            sent: False
+                            received: True
+20.09.2022 10:03:07|Trace|WebSocket.close:0|End closing the connection.
+21.09.2022 13:32:25|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                          GET / HTTP/1.1
+                          User-Agent: websocket-sharp/1.0
+                          Host: api.hbdm.com
+                          Upgrade: websocket
+                          Connection: Upgrade
+                          Sec-WebSocket-Key: riJERd1u4pw8RXGI1eqBzA==
+                          Sec-WebSocket-Version: 13
+21.09.2022 13:32:26|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                          HTTP/1.1 404 Not Found
+                          Date: Wed, 21 Sep 2022 08:32:24 GMT
+                          Content-Type: text/html
+                          Transfer-Encoding: chunked
+                          Connection: keep-alive
+                          X-Request-ID: 41ca8658f860e6b785863371f13069b2
+                          CF-Cache-Status: DYNAMIC
+                          Server: cloudflare
+                          CF-RAY: 74e17336c81c1683-DME
+21.09.2022 13:32:26|Error|WebSocket.doHandshake:0|Not a WebSocket connection response.
+21.09.2022 13:32:26|Trace|WebSocket.close:0|Begin closing the connection.
+21.09.2022 13:32:26|Debug|WebSocket.closeHandshake:0|Was clean?: False
+                            sent: False
+                            received: True
+21.09.2022 13:32:26|Trace|WebSocket.close:0|End closing the connection.
+22.09.2022 9:38:28|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                         GET / HTTP/1.1
+                         User-Agent: websocket-sharp/1.0
+                         Host: api.hbdm.com
+                         Upgrade: websocket
+                         Connection: Upgrade
+                         Sec-WebSocket-Key: fLsGl2M8vpJ3HVcMUI+gHg==
+                         Sec-WebSocket-Version: 13
+22.09.2022 9:38:29|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                         HTTP/1.1 404 Not Found
+                         Date: Thu, 22 Sep 2022 04:38:28 GMT
+                         Content-Type: text/html
+                         Transfer-Encoding: chunked
+                         Connection: keep-alive
+                         X-Request-ID: d5da1ed5030bd8ba187282a16b1e5b52
+                         CF-Cache-Status: DYNAMIC
+                         Server: cloudflare
+                         CF-RAY: 74e859e9ed219d8d-DME
+22.09.2022 9:38:29|Error|WebSocket.doHandshake:0|Not a WebSocket connection response.
+22.09.2022 9:38:29|Trace|WebSocket.close:0|Begin closing the connection.
+22.09.2022 9:38:29|Debug|WebSocket.closeHandshake:0|Was clean?: False
+                           sent: False
+                           received: True
+22.09.2022 9:38:29|Trace|WebSocket.close:0|End closing the connection.
+22.09.2022 9:43:34|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                         GET / HTTP/1.1
+                         User-Agent: websocket-sharp/1.0
+                         Host: api.hbdm.com
+                         Upgrade: websocket
+                         Connection: Upgrade
+                         Sec-WebSocket-Key: A7Q8oEpIXVffIBfNBV4dcw==
+                         Sec-WebSocket-Version: 13
+22.09.2022 9:43:35|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                         HTTP/1.1 404 Not Found
+                         Date: Thu, 22 Sep 2022 04:43:34 GMT
+                         Content-Type: text/html
+                         Transfer-Encoding: chunked
+                         Connection: keep-alive
+                         X-Request-ID: cf41f8ebce9be10d5ca294624b93b723
+                         CF-Cache-Status: DYNAMIC
+                         Server: cloudflare
+                         CF-RAY: 74e8615fe84d9d55-DME
+22.09.2022 9:43:35|Error|WebSocket.doHandshake:0|Not a WebSocket connection response.
+22.09.2022 9:43:35|Trace|WebSocket.close:0|Begin closing the connection.
+22.09.2022 9:43:35|Debug|WebSocket.closeHandshake:0|Was clean?: False
+                           sent: False
+                           received: True
+22.09.2022 9:43:35|Trace|WebSocket.close:0|End closing the connection.

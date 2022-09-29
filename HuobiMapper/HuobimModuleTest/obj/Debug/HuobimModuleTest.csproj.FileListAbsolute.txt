@@ -1,0 +1,48 @@
+C:\Users\kosty\Desktop\HuobiMapper\HuobimModuleTest\obj\Debug\HuobimModuleTest.csproj.AssemblyReference.cache
+C:\Users\kosty\Desktop\HuobiMapper\HuobimModuleTest\obj\Debug\HuobimModuleTest.csproj.CoreCompileInputs.cache
+C:\Users\kosty\Desktop\HuobiMapper\HuobimModuleTest\bin\Debug\HuobiModuleTest.dll
+C:\Users\kosty\Desktop\HuobiMapper\HuobimModuleTest\bin\Debug\HuobiModuleTest.pdb
+C:\Users\kosty\Desktop\HuobiMapper\HuobimModuleTest\bin\Debug\HuobiMapper.dll
+C:\Users\kosty\Desktop\HuobiMapper\HuobimModuleTest\bin\Debug\nunit.framework.dll
+C:\Users\kosty\Desktop\HuobiMapper\HuobimModuleTest\bin\Debug\RestSharp.dll
+C:\Users\kosty\Desktop\HuobiMapper\HuobimModuleTest\bin\Debug\websocket-sharp-with-proxy-support.dll
+C:\Users\kosty\Desktop\HuobiMapper\HuobimModuleTest\bin\Debug\Newtonsoft.Json.dll
+C:\Users\kosty\Desktop\HuobiMapper\HuobimModuleTest\bin\Debug\HuobiMapper.pdb
+C:\Users\kosty\Desktop\HuobiMapper\HuobimModuleTest\bin\Debug\nunit.framework.xml
+C:\Users\kosty\Desktop\HuobiMapper\HuobimModuleTest\bin\Debug\RestSharp.xml
+C:\Users\kosty\Desktop\HuobiMapper\HuobimModuleTest\bin\Debug\Newtonsoft.Json.xml
+C:\Users\kosty\Desktop\HuobiMapper\HuobimModuleTest\obj\Debug\HuobimModuleTest.csproj.CopyComplete
+C:\Users\kosty\Desktop\HuobiMapper\HuobimModuleTest\obj\Debug\HuobiModuleTest.dll
+C:\Users\kosty\Desktop\HuobiMapper\HuobimModuleTest\obj\Debug\HuobiModuleTest.pdb
+C:\Users\olegs\Desktop\HuobiMapper\HuobimModuleTest\bin\Debug\HuobiModuleTest.dll
+C:\Users\olegs\Desktop\HuobiMapper\HuobimModuleTest\bin\Debug\HuobiModuleTest.pdb
+C:\Users\olegs\Desktop\HuobiMapper\HuobimModuleTest\bin\Debug\HuobiMapper.dll
+C:\Users\olegs\Desktop\HuobiMapper\HuobimModuleTest\bin\Debug\nunit.framework.dll
+C:\Users\olegs\Desktop\HuobiMapper\HuobimModuleTest\bin\Debug\RestSharp.dll
+C:\Users\olegs\Desktop\HuobiMapper\HuobimModuleTest\bin\Debug\websocket-sharp-with-proxy-support.dll
+C:\Users\olegs\Desktop\HuobiMapper\HuobimModuleTest\bin\Debug\Newtonsoft.Json.dll
+C:\Users\olegs\Desktop\HuobiMapper\HuobimModuleTest\bin\Debug\HuobiMapper.pdb
+C:\Users\olegs\Desktop\HuobiMapper\HuobimModuleTest\bin\Debug\nunit.framework.xml
+C:\Users\olegs\Desktop\HuobiMapper\HuobimModuleTest\bin\Debug\RestSharp.xml
+C:\Users\olegs\Desktop\HuobiMapper\HuobimModuleTest\bin\Debug\Newtonsoft.Json.xml
+C:\Users\olegs\Desktop\HuobiMapper\HuobimModuleTest\obj\Debug\HuobimModuleTest.csproj.AssemblyReference.cache
+C:\Users\olegs\Desktop\HuobiMapper\HuobimModuleTest\obj\Debug\HuobimModuleTest.csproj.CoreCompileInputs.cache
+C:\Users\olegs\Desktop\HuobiMapper\HuobimModuleTest\obj\Debug\HuobimModuleTest.csproj.CopyComplete
+C:\Users\olegs\Desktop\HuobiMapper\HuobimModuleTest\obj\Debug\HuobiModuleTest.dll
+C:\Users\olegs\Desktop\HuobiMapper\HuobimModuleTest\obj\Debug\HuobiModuleTest.pdb
+C:\Users\olegs\OneDrive\Рабочий стол\HuobiMapper\HuobimModuleTest\bin\Debug\HuobiModuleTest.dll
+C:\Users\olegs\OneDrive\Рабочий стол\HuobiMapper\HuobimModuleTest\bin\Debug\HuobiModuleTest.pdb
+C:\Users\olegs\OneDrive\Рабочий стол\HuobiMapper\HuobimModuleTest\bin\Debug\HuobiMapper.dll
+C:\Users\olegs\OneDrive\Рабочий стол\HuobiMapper\HuobimModuleTest\bin\Debug\nunit.framework.dll
+C:\Users\olegs\OneDrive\Рабочий стол\HuobiMapper\HuobimModuleTest\bin\Debug\RestSharp.dll
+C:\Users\olegs\OneDrive\Рабочий стол\HuobiMapper\HuobimModuleTest\bin\Debug\websocket-sharp-with-proxy-support.dll
+C:\Users\olegs\OneDrive\Рабочий стол\HuobiMapper\HuobimModuleTest\bin\Debug\Newtonsoft.Json.dll
+C:\Users\olegs\OneDrive\Рабочий стол\HuobiMapper\HuobimModuleTest\bin\Debug\HuobiMapper.pdb
+C:\Users\olegs\OneDrive\Рабочий стол\HuobiMapper\HuobimModuleTest\bin\Debug\nunit.framework.xml
+C:\Users\olegs\OneDrive\Рабочий стол\HuobiMapper\HuobimModuleTest\bin\Debug\RestSharp.xml
+C:\Users\olegs\OneDrive\Рабочий стол\HuobiMapper\HuobimModuleTest\bin\Debug\Newtonsoft.Json.xml
+C:\Users\olegs\OneDrive\Рабочий стол\HuobiMapper\HuobimModuleTest\obj\Debug\HuobimModuleTest.csproj.AssemblyReference.cache
+C:\Users\olegs\OneDrive\Рабочий стол\HuobiMapper\HuobimModuleTest\obj\Debug\HuobimModuleTest.csproj.CoreCompileInputs.cache
+C:\Users\olegs\OneDrive\Рабочий стол\HuobiMapper\HuobimModuleTest\obj\Debug\HuobimModuleTest.csproj.CopyComplete
+C:\Users\olegs\OneDrive\Рабочий стол\HuobiMapper\HuobimModuleTest\obj\Debug\HuobiModuleTest.dll
+C:\Users\olegs\OneDrive\Рабочий стол\HuobiMapper\HuobimModuleTest\obj\Debug\HuobiModuleTest.pdb
