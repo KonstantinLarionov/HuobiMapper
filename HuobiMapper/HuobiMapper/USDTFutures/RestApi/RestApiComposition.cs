@@ -1,6 +1,6 @@
 ﻿using HuobiMapper.Extensions;
-using HuobiMapper.USDTFutures.PrivateStreams.PrivateResponses;
-using HuobiMapper.USDTFutures.RestApi.Responses;
+using HuobiMapper.USDTFutures.RestApi.Responses.Account;
+using HuobiMapper.USDTFutures.RestApi.Responses.Market;
 
 namespace HuobiMapper.USDTFutures.RestApi
 {
@@ -12,8 +12,8 @@ namespace HuobiMapper.USDTFutures.RestApi
         public DataKlineResponse HandLerGetDataKlineResponse(string json) =>
             json.Deserialize<DataKlineResponse>();
 
-        public PrivateResponses HandLerGetPrivateResponse(string json) =>
-            json.Deserialize<PrivateResponses>();
+        public AccountResponses HandLerGetPrivateResponse(string json) =>
+            json.Deserialize<AccountResponses>();
     }
 
 }

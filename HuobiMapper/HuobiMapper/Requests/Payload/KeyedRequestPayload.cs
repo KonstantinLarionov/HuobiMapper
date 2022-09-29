@@ -13,7 +13,7 @@ namespace HuobiMapper.Requests.Payload
         public long Timestamp { get; set; }
         internal override object Body { get; }
 
-        internal override IDictionary<string, string> Properties
+        internal override Dictionary<string, string> Properties
         {
             get
             {

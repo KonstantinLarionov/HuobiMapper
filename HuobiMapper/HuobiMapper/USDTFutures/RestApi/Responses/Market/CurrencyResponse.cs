@@ -2,7 +2,7 @@
 using HuobiMapper.USDTFutures.RestApi.Data;
 using Newtonsoft.Json;
 
-namespace HuobiMapper.USDTFutures.RestApi.Responses
+namespace HuobiMapper.USDTFutures.RestApi.Responses.Market
 {
     public class CurrencyResponse
     {

@@ -34,3 +34,15 @@ C:\Users\olegs\OneDrive\Рабочий стол\HuobiMapper\HuobiMapper\obj\Debu
 C:\Users\olegs\OneDrive\Рабочий стол\HuobiMapper\HuobiMapper\obj\Debug\HuobiMapper.csproj.CopyComplete
 C:\Users\olegs\OneDrive\Рабочий стол\HuobiMapper\HuobiMapper\obj\Debug\HuobiMapper.dll
 C:\Users\olegs\OneDrive\Рабочий стол\HuobiMapper\HuobiMapper\obj\Debug\HuobiMapper.pdb
+D:\.rider\HuobiMapper\HuobiMapper\HuobiMapper\bin\Debug\HuobiMapper.dll
+D:\.rider\HuobiMapper\HuobiMapper\HuobiMapper\bin\Debug\HuobiMapper.pdb
+D:\.rider\HuobiMapper\HuobiMapper\HuobiMapper\bin\Debug\JetBrains.Annotations.dll
+D:\.rider\HuobiMapper\HuobiMapper\HuobiMapper\bin\Debug\Newtonsoft.Json.dll
+D:\.rider\HuobiMapper\HuobiMapper\HuobiMapper\bin\Debug\System.Runtime.Serialization.Primitives.dll
+D:\.rider\HuobiMapper\HuobiMapper\HuobiMapper\bin\Debug\JetBrains.Annotations.xml
+D:\.rider\HuobiMapper\HuobiMapper\HuobiMapper\bin\Debug\Newtonsoft.Json.xml
+D:\.rider\HuobiMapper\HuobiMapper\HuobiMapper\obj\Debug\HuobiMapper.csproj.AssemblyReference.cache
+D:\.rider\HuobiMapper\HuobiMapper\HuobiMapper\obj\Debug\HuobiMapper.csproj.CoreCompileInputs.cache
+D:\.rider\HuobiMapper\HuobiMapper\HuobiMapper\obj\Debug\HuobiMapper.csproj.CopyComplete
+D:\.rider\HuobiMapper\HuobiMapper\HuobiMapper\obj\Debug\HuobiMapper.dll
+D:\.rider\HuobiMapper\HuobiMapper\HuobiMapper\obj\Debug\HuobiMapper.pdb

@@ -4,7 +4,7 @@ using HuobiMapper.USDTFutures.RestApi.Data.Dataklins;
 using HuobiMapper.USDTFutures.RestApi.Data.Enums;
 using Newtonsoft.Json;
 
-namespace HuobiMapper.USDTFutures.RestApi.Responses
+namespace HuobiMapper.USDTFutures.RestApi.Responses.Market
 {
     public class DataKlineResponse
     {

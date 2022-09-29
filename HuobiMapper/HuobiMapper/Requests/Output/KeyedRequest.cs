@@ -9,162 +9,59 @@ using JetBrains.Annotations;
 namespace HuobiMapper.Requests.Output
 { 
     internal class KeyedRequest : Request
-    
-    {   HMACSHA256 _hmacsha256;
-        public DateTime now = DateTime.Now;
-        public string sign = String.Empty;
-        public string SignatureMethod = "HmacSHA256";
-        public string SignatureVersion = "2";
-        public string Orderid = "1234567890";
-        public string sign1 = String.Empty;
-        public string timestampEnc;
-        public string baseUrl = "https://api.hbdm.com";
+    {
         public KeyedRequest([NotNull] RequestPayload requestPayload, [NotNull] string apiKey,
-            [NotNull] string apiSecret, [NotNull] long timestamp)
+            [NotNull] string apiSecret, string host, string signmethod, string signversion, [NotNull] DateTime timestamp)
             : base(requestPayload, apiKey)
-
-
         {
+            var props = new Dictionary<string, string>();
+            var props2 = new Dictionary<string, string>();
+            props.Add("AccessKeyId", apiKey);
+            props.Add("SignatureMethod", signmethod);
+            props.Add("SignatureVersion", signversion);
+            props.Add("Timestamp", timestamp.ToString("s"));
 
+            foreach (var VARIABLE in props)
+            {
+                props2.Add(VARIABLE.Key, VARIABLE.Value);
+            }
             
-            /*
-            if (requestPayload.Method is RequestMethod.GET || requestPayload.Method is RequestMethod.DELETE ||
-                requestPayload.Method is RequestMethod.PUT)
-
-            {  
-                var signstr = requestPayload.EndPoint + base.GenerateParametersString(requestPayload.Properties) +
-                              timestamp;
-                sign = CreateSignature1(signstr, apiSecret);
-                Headers = new Dictionary<string, string>()
-                {
-                    { "AccessKeyId", apiKey },
-                    { "Timestamp", timestamp.ToString() },
-                    { "SignatureVersion", SignatureVersion },
-                    { "order-id", Orderid },
-                    { "SignatureMethod", SignatureMethod },
-                    { "x-huobi-request-signature", sign1 },
-                };
-
+            foreach (var VARIABLE in requestPayload.Properties)
+            {
+                props2.Add(VARIABLE.Key, VARIABLE.Value);
             }
-
             
-            else if (requestPayload.Method is RequestMethod.POST)
-            {
-               
-                sign = CreateSignature1("POST\n"+baseUrl+"\n"+
-                    requestPayload.EndPoint +"\n"+"AccessKeyId=" + apiKey + "&SignatureMethod=" + SignatureMethod + "&SignatureVersion" +
-                    SignatureVersion + "&Timestamp=" + timestamp, apiSecret);
-                var timeSt = Timestamp(timestamp);
-                sign1 = govnoebychee(requestPayload.EndPoint +"?"+ "AccessKeyId=" + apiKey /*+"&order-id="+ Orderid#1# +
-                                        "&SignatureMethod=" + SignatureMethod +
-                                        "&SignatureVersion" +
-                                        SignatureVersion + "&Timestamp=" + timeSt +"&Signature=", sign);
-                
-                Headers = new Dictionary<string, string>()
-                {
-                    { "AccessKeyId", apiKey },
-                    { "Timestamp", timestamp.ToString() },
-                    { "SignatureVersion", SignatureVersion },
-                    { "order-id", Orderid },
-                    { "SignatureMethod", SignatureMethod },
-                    { "x-huobi-request-signature", sign1 },
-                };
-
-            }
-           
-        }*/
-        public KeyedRequest (string key)
-        {
-            byte[] keyBuffer = Encoding.UTF8.GetBytes(key);
-            _hmacsha256 = new HMACSHA256(keyBuffer);
+            var sign = this.CreateSignature(
+                this.BuilderSign(requestPayload.Method, host, requestPayload.EndPoint, props2),
+                apiSecret);
+            props.Add("Signature", sign);
+            
+            this.AppendPropsKeyedRequest(props);
         }
-        public string Sign(  string POST, RequestPayload requestPayload, string path, string parameters)
+        public static string Base64Encode(string plainText) {
+            var plainTextBytes = System.Text.Encoding.UTF8.GetBytes(plainText);
+            return System.Convert.ToBase64String(plainTextBytes);
+        }
+        private string BuilderSign(RequestMethod method, string host, string clear_query,
+            Dictionary<string, string> properties)
         {
-            if (string.IsNullOrEmpty(baseUrl) || string.IsNullOrEmpty(host)
-                                             || string.IsNullOrEmpty(path) || string.IsNullOrEmpty(parameters))
-            {
-                return string.Empty;
-            }
-
-            StringBuilder sb = new StringBuilder();
-
-            sb.Append($"{method}\n");
-            sb.Append($"{host}\n");
-            sb.Append($"{path}\n");
-            sb.Append(parameters);
-
-            return Sign(sb.ToString());
+            var method_str = method.GetEnumMemberAttributeValue();
+            var param_str = GenerateParametersString(properties);
+            return $"{method_str}\n{host}\n{clear_query}\n{param_str}";
         }
 
-        private string Sign(string input)
-        {
-            if (string.IsNullOrEmpty(input))
-            {
-                return string.Empty;
-            }
-
-            byte[] inputBuffer = Encoding.UTF8.GetBytes(input);
-
-            byte[] hashedBuffer = _hmacsha256.ComputeHash(inputBuffer);
-
-            return Convert.ToBase64String(hashedBuffer);
-        }
-
-        #region IDisposable Support
-        private bool isDisposed = false;
-
-        protected virtual void Dispose(bool disposing)
-        {
-            if (!isDisposed)
-            {
-                if (disposing)
-                {
-                    _hmacsha256.Dispose();
-                }
-
-                isDisposed = true;
-            }
-        }
-
-        public void Dispose()
-        {
-            Dispose(true);
-        }
-        #endregion
-
-
-    }
-        /*
-        public string Timestamp (long timestamp)
-        {
-            var time = timestamp.ToDateTimeFromUnixTimeSeconds().ToString("yyyy'-'MM'-'dd'T'HH':'mm':'ss");
-            return timestampEnc = Uri.EscapeDataString(time);
-        }
-         
-        public string govnoebychee(string message, string sign)
-        {
-            return message + sign;
-        }
-        public static string CreateSignature1(string message, string secret)
+        public string CreateSignature(string message, string secret)
         {
             var signatureBytes = Hmacsha256(Encoding.UTF8.GetBytes(secret), Encoding.UTF8.GetBytes(message));
-            return   Convert.ToBase64String(signatureBytes);
+            return  Convert.ToBase64String(signatureBytes);
         }
 
-        private static byte[] Hmacsha256(byte[] keyByte, byte[] messageBytes)
+        private byte[] Hmacsha256(byte[] keyByte, byte[] messageBytes)
         {
             using (var hash = new HMACSHA256(keyByte))
             {
                 return hash.ComputeHash(messageBytes);
             }
-        }
-        */
-       
-        
-        public sealed override IReadOnlyDictionary<string, string> Headers { get; }
-        public sealed override string Query
-        {
-            get { return sign; }
         }
     }
 }

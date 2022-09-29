@@ -8,23 +8,33 @@ namespace HuobiMapper.Requests.Output
 {
     internal class Request : IRequestContent
     {
-        private readonly RequestPayload _requestPayload;
+        private RequestPayload _requestPayload;
+        private Dictionary<string, string> InternalProperties;
         private readonly string _apiKey;
         public Request([NotNull] RequestPayload requestPayload,[CanBeNull]  string apiKey)
         {
             _requestPayload = requestPayload ?? throw new ArgumentNullException(nameof(requestPayload));
+            InternalProperties = _requestPayload.Properties ?? new Dictionary<string, string>();
             _apiKey = apiKey;
+        }
+
+        public void AppendPropsKeyedRequest(Dictionary<string, string> prop)
+        {
+            foreach (var VARIABLE in prop)
+                this.InternalProperties.Add(Uri.EscapeDataString(VARIABLE.Key), Uri.EscapeDataString(VARIABLE.Value));
+
+            this.InternalProperties.OrderBy(x => x.Key, StringComparer.Ordinal);
         }
 
         public virtual string Query {
             get {
-                if (_requestPayload.Properties is null || _requestPayload.Properties.Count == 0)
+                if (InternalProperties is null || InternalProperties.Count == 0)
                 {
                     return _requestPayload.EndPoint;
                 }
                 else
                 {
-                    return $"{_requestPayload.EndPoint}?{GenerateParametersString(_requestPayload.Properties)}";
+                    return $"{_requestPayload.EndPoint}?{GenerateParametersString(InternalProperties)}";
                 }
 
             }

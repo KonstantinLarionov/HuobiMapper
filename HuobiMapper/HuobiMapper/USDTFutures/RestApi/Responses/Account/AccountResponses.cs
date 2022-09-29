@@ -1,19 +1,18 @@
 ﻿using System.Collections.Generic;
-using HuobiMapper.USDTFutures.PrivateStreams.Data;
+using HuobiMapper.USDTFutures.RestApi.Data.AccountInfo;
 using Newtonsoft.Json;
 
-namespace HuobiMapper.USDTFutures.PrivateStreams.PrivateResponses
+namespace HuobiMapper.USDTFutures.RestApi.Responses.Account
 {
-    public class PrivateResponses
+    public class AccountResponses
     {
         [JsonConstructor]
-        public PrivateResponses(string status,long ts, List<AccountData> data)
+        public AccountResponses(string status,long ts, List<AccountData> data)
         {
             Status = status;
             Ts = ts;
             AccountData = data;
         }
-        
         [JsonProperty("status")]
         public string Status { get; set; }
         

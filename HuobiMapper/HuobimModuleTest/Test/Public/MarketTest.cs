@@ -7,6 +7,7 @@ using HuobiMapper.Extensions;
 using HuobiMapper.USDTFutures.RestApi;
 using HuobiMapper.USDTFutures.RestApi.Data.Enums;
 using HuobiMapper.USDTFutures.RestApi.Requests;
+using HuobiMapper.USDTFutures.RestApi.Requests.Market;
 using NUnit.Framework;
 
 namespace ClassLibrary1.Test.Public

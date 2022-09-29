@@ -8,13 +8,20 @@ namespace ClassLibrary1.Domain
 {
     public class BaseTests
     {
-        private RequestArranger _arranger = 
-            new RequestArranger("ae81e784-6c5b8945-h6n2d4f5gh-6d005","3d9e3b4a-0d4f32c2-df34006e-9b650");
+        private const string SignMethod = "HmacSHA256";
+        private const string SignatureVersion = "2";
+        private const string ClearHost = "api.hbdm.com";
+
+        private RequestArranger _arranger =
+            new RequestArranger("ae81e784-6c5b8945-h6n2d4f5gh-6d005", 
+                "3d9e3b4a-0d4f32c2-df34006e-9b650", 
+                ClearHost,
+                SignMethod, 
+                SignatureVersion);
         private RestClient client = new RestClient("https://api.hbdm.com");
 
         protected string SendRequest(RequestPayload payload)
         {
-            // var h = new Di  ctionary<string, string> { { "Referer", "Cscalp" } };
             var request = _arranger.Arrange(payload);
             var req = new RestRequest(request.Query, MapRequestMethod(request.Method));
 

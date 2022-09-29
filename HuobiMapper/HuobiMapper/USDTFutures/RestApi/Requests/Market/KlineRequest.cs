@@ -6,7 +6,7 @@ using HuobiMapper.Requests.Output;
 using HuobiMapper.Requests.Payload;
 using HuobiMapper.USDTFutures.RestApi.Data.Enums;
 using JetBrains.Annotations;
-namespace HuobiMapper.USDTFutures.RestApi.Requests
+namespace HuobiMapper.USDTFutures.RestApi.Requests.Market
 {
     public class KlineRequest : RequestPayload
 
@@ -33,7 +33,7 @@ namespace HuobiMapper.USDTFutures.RestApi.Requests
             get { return To.ToUnixTimeSeconds(); }
         }
 
-        internal override IDictionary<string, string> Properties
+        internal override Dictionary<string, string> Properties
         {
             get
             {
