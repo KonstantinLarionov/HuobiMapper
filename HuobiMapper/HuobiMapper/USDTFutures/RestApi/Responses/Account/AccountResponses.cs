@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
-using HuobiMapper.USDTFutures.RestApi.Data.AccountInfo;
+using HuobiMapper.USDTFutures.RestApi.Data.Account.AccountInfo;
+using HuobiMapper.USDTFutures.RestApi.Data.Account.AccountInfo;
 using Newtonsoft.Json;
 
 namespace HuobiMapper.USDTFutures.RestApi.Responses.Account

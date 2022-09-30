@@ -61,7 +61,7 @@ namespace HuobiMapper.Requests.Output
             using (var hash = new HMACSHA256(keyByte))
             {
                 return hash.ComputeHash(messageBytes);
-            }
+            }   
         }
     }
 }

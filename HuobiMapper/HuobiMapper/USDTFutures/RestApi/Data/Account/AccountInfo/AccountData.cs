@@ -1,7 +1,7 @@
 ﻿using System.Dynamic;
 using Newtonsoft.Json;
 
-namespace HuobiMapper.USDTFutures.RestApi.Data.AccountInfo
+namespace HuobiMapper.USDTFutures.RestApi.Data.Account.AccountInfo
 {
     public class AccountData
     {

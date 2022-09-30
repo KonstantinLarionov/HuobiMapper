@@ -65,7 +65,8 @@
         <Compile Include="Requests\Payload\KeyedRequestPayload.cs" />
         <Compile Include="Requests\Payload\RequestPayload.cs" />
         <Compile Include="Requests\RequestArranger.cs" />
-        <Compile Include="USDTFutures\RestApi\Data\AccountInfo\AccountData.cs" />
+        <Compile Include="USDTFutures\RestApi\Data\Account\AccountInfo\AccountData.cs" />
+        <Compile Include="USDTFutures\RestApi\Data\Account\PlaceOrderData\PlaceOrderData.cs" />
         <Compile Include="USDTFutures\RestApi\Data\CurrencysData.cs" />
         <Compile Include="USDTFutures\RestApi\Data\Dataklins\Tick.cs" />
         <Compile Include="USDTFutures\RestApi\Data\Enums\Period.cs" />
