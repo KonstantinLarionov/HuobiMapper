@@ -2,11 +2,11 @@
 
 namespace HuobiMapper.USDTFutures.RestApi.Data.Account.PlaceOrderData
 {
-    public class PlaceOrderData
+    public class PlaceOrderRow
     {
         [JsonConstructor]
         
-           public PlaceOrderData(string сontractCode, int reduceOnly, long clientOrderId, decimal price, long volume,
+           public PlaceOrderRow(string сontractCode, int reduceOnly, long clientOrderId, decimal price, long volume,
                 string direction, string offset, int leverRate, string orderPriceType,decimal tpTriggerPrice, decimal tpOrderPrice,
                 string tpOrderPriceType, decimal slTriggerPrice, decimal slOrderPrice,
                 string slOrderPriceType)

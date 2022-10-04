@@ -2,10 +2,11 @@
 
 namespace HuobiMapper.USDTFutures.RestApi.Data.Account.PlaceOrderData
 {
-    public class PlOrData
+    public class PlaceOrder
+    
     {
         [JsonConstructor]
-        public PlOrData(long orderId, long clientOrderId, string orderIdStr)
+        public PlaceOrder(long orderId, long clientOrderId, string orderIdStr)
         {
             OrderId = orderId;
             ClientOrderId = clientOrderId;

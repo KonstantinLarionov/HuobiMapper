@@ -7,7 +7,7 @@ namespace HuobiMapper.USDTFutures.RestApi.Responses.Account
     public class PlaceOrderResponses
     {
         [JsonConstructor]
-        public PlaceOrderResponses(string status, List<PlOrData> data, long ts)
+        public PlaceOrderResponses(string status, List<PlaceOrder> data, long ts)
         {
             Status = status;
             Ts = ts;
@@ -20,6 +20,6 @@ namespace HuobiMapper.USDTFutures.RestApi.Responses.Account
         public long Ts { get; set; }
         
         [JsonProperty("data")]
-        public List<PlOrData> PlOrData { get; set; }
+        public List<PlaceOrder> PlOrData { get; set; }
     }
 }
