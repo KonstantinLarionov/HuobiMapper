@@ -1,7 +1,6 @@
-﻿using HuobiMapper.USDTFutures.RestApi.Data.Account.PlaceOrderData;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 
-namespace HuobiMapper.USDTFutures.RestApi.Data.Account.Place_a_Batch_of_Orders
+namespace HuobiMapper.USDTFutures.RestApi.Data.Account.PlaceaBatchofOrders
 {
     public class PlaceaBAtchofOrdersRow
     {

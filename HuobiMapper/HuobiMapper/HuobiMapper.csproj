@@ -67,7 +67,7 @@
         <Compile Include="Requests\RequestArranger.cs" />
         <Compile Include="USDTFutures\RestApi\Data\Account\AccountInfo\AccountData.cs" />
         <Compile Include="USDTFutures\RestApi\Data\Account\PlaceaBatchofOrders\PlaceaBatchofOrders.cs" />
-        <Compile Include="USDTFutures\RestApi\Data\Account\PlaceaBatchofOrders\PlaceaBAtchofOrdersRow.cs" />
+        <Compile Include="USDTFutures\RestApi\Data\Account\PlaceaBatchofOrders\PlaceaBatchofOrdersRow.cs" />
         <Compile Include="USDTFutures\RestApi\Data\Account\PlaceOrderData\PlaceOrderRow.cs" />
         <Compile Include="USDTFutures\RestApi\Data\Account\PlaceOrderData\PlaceOrder.cs" />
         <Compile Include="USDTFutures\RestApi\Data\CurrencysData.cs" />
@@ -77,6 +77,8 @@
         <Compile Include="USDTFutures\RestApi\Extensions\DecimalExtensions.cs" />
         <Compile Include="USDTFutures\RestApi\Extensions\EnumHelper.cs" />
         <Compile Include="USDTFutures\RestApi\Requests\Account\AccountRequests.cs" />
+        <Compile Include="USDTFutures\RestApi\Requests\Account\CancelamOrder.cs" />
+        <Compile Include="USDTFutures\RestApi\Requests\Account\PlaceaBatchofOrderRequest.cs" />
         <Compile Include="USDTFutures\RestApi\Requests\Account\PlaceOrderRequest.cs" />
         <Compile Include="USDTFutures\RestApi\Requests\Market\CurrencyRequest.cs" />
         <Compile Include="USDTFutures\RestApi\Requests\Market\KlineRequest.cs" />
