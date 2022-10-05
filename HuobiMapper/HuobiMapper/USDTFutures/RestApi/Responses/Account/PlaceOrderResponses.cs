@@ -15,10 +15,8 @@ namespace HuobiMapper.USDTFutures.RestApi.Responses.Account
         }
         [JsonProperty("status")]
         public string Status { get; set; }
-        
         [JsonProperty("ts")]
         public long Ts { get; set; }
-        
         [JsonProperty("data")]
         public List<PlaceOrder> PlOrData { get; set; }
     }

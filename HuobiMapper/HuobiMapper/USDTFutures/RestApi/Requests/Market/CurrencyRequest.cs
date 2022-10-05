@@ -16,17 +16,14 @@ namespace HuobiMapper.USDTFutures.RestApi.Requests.Market
         public string Pair { get; set; }
         public string Contracttype { get; set; }
         public string Businesstype { get; set; }
-        
         private long FromLong
         {
             get { return From.ToUnixTimeSeconds(); }
         }
-
         private long ToLong
         {
             get { return To.ToUnixTimeSeconds(); }
         }
-        
         internal override Dictionary<string, string> Properties
         {
             get
@@ -42,8 +39,7 @@ namespace HuobiMapper.USDTFutures.RestApi.Requests.Market
                 return def;
             }
         }
-        
-    [NotNull]internal override string EndPoint { get; } = "/linear-swap-api/v1/swap_contract_info";
+        [NotNull]internal override string EndPoint { get; } = "/linear-swap-api/v1/swap_contract_info";
     internal override RequestMethod Method { get; } = RequestMethod.GET;
     }
 }

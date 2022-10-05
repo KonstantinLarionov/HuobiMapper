@@ -23,14 +23,13 @@ namespace HuobiMapper.USDTFutures.RestApi.Requests.Account
         public long Volume { get; set; } = 1;
         public string OrderPriceType{ get; set; }
         public string Offset{ get; set; }
-        public decimal Price{ get; set; }
-        public decimal TpTriggerPrice{ get; set; }
-        public decimal TpOrderPrice{ get; set; }
+        public decimal? Price{ get; set; }
+        public decimal? TpTriggerPrice{ get; set; }
+        public decimal? TpOrderPrice{ get; set; }
         public string TpOrderPriceType{ get; set; }
-        public decimal SlTriggerPrice{ get; set; }
-        public decimal SlOrderPrice{ get; set; }
+        public decimal? SlTriggerPrice{ get; set; }
+        public decimal? SlOrderPrice{ get; set; }
         public string sl_order_price_type{ get; set; }
-
         internal override Dictionary<string, string> Properties
         {
             get
@@ -44,11 +43,11 @@ namespace HuobiMapper.USDTFutures.RestApi.Requests.Account
                 def.AddStringIfNotEmptyOrWhiteSpace("sl_order_price_type",sl_order_price_type);
                 def.AddSimpleStruct("lever_rate",LeverRate);
                 def.AddSimpleStruct("volume",Volume);
-                def.AddSimpleStruct("price",Price);
-                def.AddSimpleStruct("tp_trigger_price",TpTriggerPrice);
-                def.AddSimpleStruct("tp_order_price",TpOrderPrice);
-                def.AddSimpleStruct("sl_trigger_price",SlTriggerPrice);
-                def.AddSimpleStruct("sl_order_price",SlOrderPrice);
+                def.AddSimpleStructIfNotNull("price",Price);
+                def.AddSimpleStructIfNotNull("tp_trigger_price",TpTriggerPrice);
+                def.AddSimpleStructIfNotNull("tp_order_price",TpOrderPrice);
+                def.AddSimpleStructIfNotNull("sl_trigger_price",SlTriggerPrice);
+                def.AddSimpleStructIfNotNull("sl_order_price",SlOrderPrice);
                 return def;
             }
         }

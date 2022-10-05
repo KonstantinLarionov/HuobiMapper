@@ -13,10 +13,8 @@ namespace HuobiMapper.USDTFutures.RestApi.Data.Account.CancealanOrder
         }
         [JsonProperty("order_id")]
         public string Orderid { get; set; }
-        
         [JsonProperty("err_code")]
         public int Errcode { get; set; }
-        
         [JsonProperty("err_msg")]
         public string Errmsg { get; set; }
     }

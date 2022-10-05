@@ -6,7 +6,6 @@ namespace HuobiMapper.USDTFutures.RestApi.Data.Dataklins
     {
         [JsonConstructor]
         public Tick(decimal amount, decimal close, decimal count, decimal high, long id, decimal low, decimal open, decimal tradeturnover, decimal vol)
-
         {
             Amount = amount;
             Close = close;
@@ -17,7 +16,6 @@ namespace HuobiMapper.USDTFutures.RestApi.Data.Dataklins
             Open = open;
             Tradeturnover = tradeturnover;
             Vol = vol;
-
         }
         [JsonProperty("amount")]
         public decimal Amount { get; set; }

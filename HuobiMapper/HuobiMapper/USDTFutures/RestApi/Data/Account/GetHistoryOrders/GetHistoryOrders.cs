@@ -46,91 +46,62 @@ namespace HuobiMapper.USDTFutures.RestApi.Data.Account.GetHistoryOrders
 
         [JsonProperty("query_id")]
         public long QueryId { get; set; }
-
         [JsonProperty("order_id")]
         public long OrderId { get; set; }
-
         [JsonProperty("contract_code")]
         public string ContractCode { get; set; }
-
         [JsonProperty("symbol")]
         public string Symbol { get; set; }
-
         [JsonProperty("lever_rate")]
         public int LeverRate { get; set; }
-
         [JsonProperty("direction")]
         public string Direction { get; set; }
-
         [JsonProperty("offset")]
         public string Offset { get; set; }
-
         [JsonProperty("volume")]
         public decimal Volume { get; set; }
-
         [JsonProperty("price")]
         public decimal Price { get; set; }
-
         [JsonProperty("create_date")]
         public long CreateDate { get; set; }
-
         [JsonProperty("update_time")]
         public long UpdateTime { get; set; }
-
         [JsonProperty("order_source")]
         public string OrderSource { get; set; }
-
         [JsonProperty("order_price_type")]
         public string OrderPriceType { get; set; }
-
         [JsonProperty("order_type")]
         public int OrderType { get; set; }
-
         [JsonProperty("margin_frozen")]
         public decimal MarginFrozen { get; set; }
-
         [JsonProperty("profit")]
         public decimal Profit { get; set; }
-
         [JsonProperty("trade_volume")]
         public decimal TradeVolume { get; set; }
-
         [JsonProperty("trade_turnover")]
         public decimal TradeTurnover { get; set; }
-
         [JsonProperty("fee")]
         public decimal Fee { get; set; }
-
         [JsonProperty("trade_avg_price")]
         public decimal TradeAvgPrice { get; set; }
-
         [JsonProperty("status")]
         public int Status { get; set; }
-
         [JsonProperty("order_id_str")]
         public string OrderIdStr { get; set; }
-
         [JsonProperty("fee_asset")]
         public string FeeAsset { get; set; }
-
         [JsonProperty("liquidation_type")]
         public string LiquidationType { get; set; }
-
         [JsonProperty("margin_asset")]
         public string MarginAsset { get; set; }
-
         [JsonProperty("margin_mode")]
         public string MarginMode { get; set; }
-
         [JsonProperty("margin_account")]
         public string MarginAccount { get; set; }
-
         [JsonProperty("is_tpsl")]
         public int IsTpsl { get; set; }
-
         [JsonProperty("real_profit")]
         public decimal RealProfit { get; set; }
-
         [JsonProperty("reduce_only")]
         public int ReduceOnly { get; set; }
     }

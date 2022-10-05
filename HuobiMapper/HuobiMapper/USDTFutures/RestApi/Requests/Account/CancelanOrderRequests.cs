@@ -8,9 +8,7 @@ using JetBrains.Annotations;
 namespace HuobiMapper.USDTFutures.RestApi.Requests.Account
 {
     public class CancelanOrderRequests:KeyedRequestPayload
-
-    {   
-        
+    {
         public CancelanOrderRequests(string contractcode)
         {
             Contractcode = contractcode;

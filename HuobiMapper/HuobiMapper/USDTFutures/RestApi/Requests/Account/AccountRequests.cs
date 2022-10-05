@@ -12,7 +12,6 @@ namespace HuobiMapper.USDTFutures.RestApi.Requests.Account
     public class AccountRequest : KeyedRequestPayload
     {
         public string Contractcode { get; set; }
-
         internal override Dictionary<string, string> Properties
         {
             get

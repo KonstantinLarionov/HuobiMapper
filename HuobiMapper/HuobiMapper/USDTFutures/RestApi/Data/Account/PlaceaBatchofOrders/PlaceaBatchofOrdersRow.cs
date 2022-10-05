@@ -26,40 +26,28 @@ namespace HuobiMapper.USDTFutures.RestApi.Data.Account.PlaceaBatchofOrders
         }
         [JsonProperty("contract_code")]
         public string Contractcode { get; set; }
-        
         [JsonProperty("direction")]
         public string Direction { get; set; }
-         
         [JsonProperty("offset")]
         public string Offset { get; set; }
-         
         [JsonProperty("price")]
         public decimal Price { get; set; }
-         
         [JsonProperty("lever_rate")]
         public int Leverrate { get; set; }
-         
         [JsonProperty("volume")]
         public long Volume { get; set; }
-         
         [JsonProperty("order_price_type")]
         public string Orderpricetype { get; set; }
-         
         [JsonProperty("tp_trigger_price")]
         public decimal Tptriggerprice { get; set; }
-         
         [JsonProperty("tp_order_price")]
         public decimal Tporderprice { get; set; }
-         
         [JsonProperty("tp_order_price_type")]
         public string Tporderpricetype { get; set; }
-         
         [JsonProperty("sl_trigger_price")]
         public decimal Sltriggerprice { get; set; }
-         
         [JsonProperty("sl_order_price")]
         public decimal Slorderprice { get; set; }
-         
         [JsonProperty("sl_order_price_type")]
         public string Slorderpricetype { get; set; }
         

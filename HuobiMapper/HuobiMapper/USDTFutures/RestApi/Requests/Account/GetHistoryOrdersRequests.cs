@@ -23,7 +23,6 @@ namespace HuobiMapper.USDTFutures.RestApi.Requests.Account
         public long? Endtime { get; set; }
         public string Direct { get; set; }
         public long? Fromid { get; set; }
-
         internal override Dictionary<string, string> Properties
         {
             get

@@ -24,40 +24,28 @@ namespace HuobiMapper.USDTFutures.RestApi.Data
         }
         [JsonProperty("symbol")]
         public string Symbol { get; set; }
-        
         [JsonProperty("contract_code")]
         public string ContractCode { get; set; }
-        
         [JsonProperty("contract_size")]
         public decimal ContractSize { get; set; }
-               
         [JsonProperty("price_tick")]
         public decimal PriceTick { get; set; }
-        
         [JsonProperty("delivery_date")]
         public string DeliveryDate { get; set; }
-        
         [JsonProperty("delivery_time")]
         public string DeliveryTime { get; set; }
-        
         [JsonProperty("create_date")]
         public string CreateDate { get; set; }
-        
         [JsonProperty("contract_status")]
         public int ContractStatus { get; set; }
-        
         [JsonProperty("settlement_date")]
         public string SettlementDate { get; set; }
-        
         [JsonProperty("support_margin_mode")]
         public string SupportMarginMode { get; set; }
-        
         [JsonProperty("business_type")]
         public string BusinessType { get; set; }
-        
         [JsonProperty("pair")]
         public string Pair { get; set; }
-        
         [JsonProperty("contract_type")]
         public string ContractType { get; set; }
         

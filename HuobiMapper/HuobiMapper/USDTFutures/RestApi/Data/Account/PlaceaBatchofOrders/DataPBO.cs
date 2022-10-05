@@ -12,9 +12,7 @@ namespace HuobiMapper.USDTFutures.RestApi.Data.Account.PlaceaBatchofOrders
             ErrorSPBO = errorsPbo;
             SuccesSPBO = successPbo;
         }
-
         [JsonProperty("errors")] public List<ErrorsPBO> ErrorSPBO { get; set; }
-
         [JsonProperty("success")] public List<SuccessPBO> SuccesSPBO { get; set; }
     }
 }

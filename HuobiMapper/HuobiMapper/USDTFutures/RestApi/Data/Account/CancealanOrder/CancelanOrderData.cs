@@ -13,7 +13,6 @@ namespace HuobiMapper.USDTFutures.RestApi.Data.Account.CancealanOrder
         }
         [JsonProperty("successes")]
         public string Successes { get; set; }
-        
         [JsonProperty("errors")]
         public List<CancelanOrderErrors> Errors { get; set; }
        

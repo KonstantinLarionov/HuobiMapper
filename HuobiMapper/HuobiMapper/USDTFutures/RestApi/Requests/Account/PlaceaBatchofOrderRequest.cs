@@ -8,7 +8,6 @@ using JetBrains.Annotations;
 namespace HuobiMapper.USDTFutures.RestApi.Requests.Account
 {
     public class PlaceaBatchofOrderRequest:KeyedRequestPayload
-
     {
     public PlaceaBatchofOrderRequest(long volume, string contractcode,string direction,
         int leverrate, string orderpricetype)
@@ -19,7 +18,6 @@ namespace HuobiMapper.USDTFutures.RestApi.Requests.Account
         Leverrate = leverrate;
         Orderpricetype = orderpricetype;
     }
-    
     public string Contractcode { get; set; }
     public int ReduceOnly { get; set; }
     public long? ClientOrderId { get; set; }
@@ -57,7 +55,6 @@ namespace HuobiMapper.USDTFutures.RestApi.Requests.Account
             return def;
         }
     }
-    
     [NotNull] internal override string EndPoint { get; } = "/linear-swap-api/v1/swap_cross_batchorder";
     internal override RequestMethod Method { get; } = RequestMethod.POST;
     }

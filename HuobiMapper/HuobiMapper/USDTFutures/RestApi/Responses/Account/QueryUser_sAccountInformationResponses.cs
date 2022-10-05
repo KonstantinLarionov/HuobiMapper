@@ -12,13 +12,10 @@ namespace HuobiMapper.USDTFutures.RestApi.Responses.Account
             Data = data;
             Ts = ts;
         }
-
         [JsonProperty("status")]
         public string Status { get; set; }
-
         [JsonProperty("data")]
         public List<QueryUserSAccountInformation> Data { get; set; }
-
         [JsonProperty("ts")]
         public long Ts { get; set; }
     }

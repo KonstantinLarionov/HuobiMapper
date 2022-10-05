@@ -14,10 +14,8 @@ namespace HuobiMapper.USDTFutures.RestApi.Responses.Account
         }
         [JsonProperty("status")]
         public string Status { get; set; }
-        
         [JsonProperty("data")]
         public CancelanOrderdata Data { get; set; }
-        
         [JsonProperty("ts")]
         public long Ts { get; set; }
     }
