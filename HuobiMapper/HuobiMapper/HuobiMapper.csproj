@@ -65,6 +65,20 @@
         <Compile Include="Requests\Payload\KeyedRequestPayload.cs" />
         <Compile Include="Requests\Payload\RequestPayload.cs" />
         <Compile Include="Requests\RequestArranger.cs" />
+        <Compile Include="USDTFutures\MarketStreams\CombineSubscriber.cs" />
+        <Compile Include="USDTFutures\MarketStreams\ContractsMarketStreamsComposition.cs" />
+        <Compile Include="USDTFutures\MarketStreams\Data\Enums\EventDataType.cs" />
+        <Compile Include="USDTFutures\MarketStreams\Data\Enums\EventType.cs" />
+        <Compile Include="USDTFutures\MarketStreams\Data\Enums\MarketType.cs" />
+        <Compile Include="USDTFutures\MarketStreams\Data\Enums\SubscribeType.cs" />
+        <Compile Include="USDTFutures\MarketStreams\Data\Enums\SizeType.cs" />
+        <Compile Include="USDTFutures\MarketStreams\Data\Enums\SymbolType.cs" />
+        <Compile Include="USDTFutures\MarketStreams\Data\SubIncrementalhData.cs" />
+        <Compile Include="USDTFutures\MarketStreams\Data\Ticks.cs" />
+        <Compile Include="USDTFutures\MarketStreams\Events\BaseEvent.cs" />
+        <Compile Include="USDTFutures\MarketStreams\Events\OrderDepthEvent.cs" />
+        <Compile Include="USDTFutures\PrivateStreams\Event\AOPEvents.cs" />
+        <Compile Include="USDTFutures\PrivateStreams\Event\BaseEvents.cs" />
         <Compile Include="USDTFutures\RestApi\Data\Account\AccountInfo\AccountData.cs" />
         <Compile Include="USDTFutures\RestApi\Data\Account\CancealanOrder\CancelanOrderData.cs" />
         <Compile Include="USDTFutures\RestApi\Data\Account\CancealanOrder\CancelanOrderErrors.cs" />
@@ -110,6 +124,9 @@
     <ItemGroup>
       <Content Include="Key" />
       <Content Include="README.TXT" />
+    </ItemGroup>
+    <ItemGroup>
+      <Folder Include="USDTFutures\PrivateStreams\Data" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
     <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
