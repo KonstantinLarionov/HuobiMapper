@@ -5,7 +5,7 @@ namespace HuobiMapper.USDTFutures.MarketStreams.Data
 {
     public class Ticks
     {   [JsonConstructor]
-        public Ticks(List<List<decimal>> asks, List<List<decimal>> bids, string ch, string @event, long id, long mrid, long ts, long version)
+        public Ticks(List<OrderDepthRow> asks, List<OrderDepthRow> bids, string ch, string @event, long id, long mrid, long ts, long version)
         {
             Asks = asks;
             Bids = bids;
@@ -17,10 +17,10 @@ namespace HuobiMapper.USDTFutures.MarketStreams.Data
             Version = version;
         }
         [JsonProperty("asks")]
-        public List<List<decimal>> Asks { get; set; }
+        public List<OrderDepthRow> Asks { get; set; }
 
         [JsonProperty("bids")]
-        public List<List<decimal>> Bids { get; set; }
+        public List<OrderDepthRow> Bids { get; set; }
 
         [JsonProperty("ch")]
         public string Ch { get; set; }

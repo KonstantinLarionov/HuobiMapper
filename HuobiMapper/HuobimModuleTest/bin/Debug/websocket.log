@@ -334,3 +334,503 @@
                            sent: False
                            received: True
 22.09.2022 9:43:35|Trace|WebSocket.close:0|End closing the connection.
+07.10.2022 10:08:15|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                          GET / HTTP/1.1
+                          User-Agent: websocket-sharp/1.0
+                          Host: api.hbdm.com
+                          Upgrade: websocket
+                          Connection: Upgrade
+                          Sec-WebSocket-Key: IDmyaP2WgbWKGT0ReatAuw==
+                          Sec-WebSocket-Version: 13
+07.10.2022 10:08:16|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                          HTTP/1.1 404 Not Found
+                          Date: Fri, 07 Oct 2022 05:08:14 GMT
+                          Content-Type: text/html
+                          Transfer-Encoding: chunked
+                          Connection: keep-alive
+                          X-Request-ID: 3a1ba8407f9d791c09378abf73063311
+                          CF-Cache-Status: DYNAMIC
+                          Server: cloudflare
+                          CF-RAY: 75641e241def9d8a-DME
+07.10.2022 10:08:16|Error|WebSocket.doHandshake:0|Not a WebSocket connection response.
+07.10.2022 10:08:16|Trace|WebSocket.close:0|Begin closing the connection.
+07.10.2022 10:08:16|Debug|WebSocket.closeHandshake:0|Was clean?: False
+                            sent: False
+                            received: True
+07.10.2022 10:08:16|Trace|WebSocket.close:0|End closing the connection.
+07.10.2022 10:08:16|Error|WebSocket.Send:0|The WebSocket connection has already been closed.
+07.10.2022 10:35:53|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                          GET / HTTP/1.1
+                          User-Agent: websocket-sharp/1.0
+                          Host: api.hbdm.com
+                          Upgrade: websocket
+                          Connection: Upgrade
+                          Sec-WebSocket-Key: dC9P0n5e/CjmGDEiSK64hQ==
+                          Sec-WebSocket-Version: 13
+07.10.2022 10:35:54|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                          HTTP/1.1 404 Not Found
+                          Date: Fri, 07 Oct 2022 05:35:52 GMT
+                          Content-Type: text/html
+                          Transfer-Encoding: chunked
+                          Connection: keep-alive
+                          X-Request-ID: 6ad1ddf6cb3cf5fe588d1c1d97135c54
+                          CF-Cache-Status: DYNAMIC
+                          Server: cloudflare
+                          CF-RAY: 7564469d8fd80056-DME
+07.10.2022 10:35:54|Error|WebSocket.doHandshake:0|Not a WebSocket connection response.
+07.10.2022 10:35:54|Trace|WebSocket.close:0|Begin closing the connection.
+07.10.2022 10:35:54|Debug|WebSocket.closeHandshake:0|Was clean?: False
+                            sent: False
+                            received: True
+07.10.2022 10:35:54|Trace|WebSocket.close:0|End closing the connection.
+07.10.2022 10:36:27|Error|WebSocket.Send:0|The WebSocket connection has already been closed.
+07.10.2022 12:00:49|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                          GET / HTTP/1.1
+                          User-Agent: websocket-sharp/1.0
+                          Host: api.hbdm.com
+                          Upgrade: websocket
+                          Connection: Upgrade
+                          Sec-WebSocket-Key: UedbhVY0lGZbQ13Sg2M+wg==
+                          Sec-WebSocket-Version: 13
+07.10.2022 12:00:50|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                          HTTP/1.1 404 Not Found
+                          Date: Fri, 07 Oct 2022 07:00:49 GMT
+                          Content-Type: text/html
+                          Transfer-Encoding: chunked
+                          Connection: keep-alive
+                          X-Request-ID: 883346269b3b1e79a045c9cab861eb0a
+                          CF-Cache-Status: DYNAMIC
+                          Server: cloudflare
+                          CF-RAY: 7564c30f3fd475af-DME
+07.10.2022 12:00:50|Error|WebSocket.doHandshake:0|Not a WebSocket connection response.
+07.10.2022 12:00:50|Trace|WebSocket.close:0|Begin closing the connection.
+07.10.2022 12:00:50|Debug|WebSocket.closeHandshake:0|Was clean?: False
+                            sent: False
+                            received: True
+07.10.2022 12:00:50|Trace|WebSocket.close:0|End closing the connection.
+07.10.2022 12:00:54|Error|WebSocket.Send:0|The WebSocket connection has already been closed.
+07.10.2022 12:04:22|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                          GET / HTTP/1.1
+                          User-Agent: websocket-sharp/1.0
+                          Host: api.hbdm.com
+                          Upgrade: websocket
+                          Connection: Upgrade
+                          Sec-WebSocket-Key: k+hxH58LGyDcSIIsyeaIOA==
+                          Sec-WebSocket-Version: 13
+07.10.2022 12:04:23|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                          HTTP/1.1 404 Not Found
+                          Date: Fri, 07 Oct 2022 07:04:23 GMT
+                          Content-Type: text/html
+                          Transfer-Encoding: chunked
+                          Connection: keep-alive
+                          X-Request-ID: 231c057f8ca5d9ef612b4d1b1929531e
+                          CF-Cache-Status: DYNAMIC
+                          Server: cloudflare
+                          CF-RAY: 7564c847d85f7b83-DME
+07.10.2022 12:04:23|Error|WebSocket.doHandshake:0|Not a WebSocket connection response.
+07.10.2022 12:04:23|Trace|WebSocket.close:0|Begin closing the connection.
+07.10.2022 12:04:23|Debug|WebSocket.closeHandshake:0|Was clean?: False
+                            sent: False
+                            received: True
+07.10.2022 12:04:23|Trace|WebSocket.close:0|End closing the connection.
+07.10.2022 12:04:25|Error|WebSocket.Send:0|The WebSocket connection has already been closed.
+07.10.2022 12:11:28|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                          GET / HTTP/1.1
+                          User-Agent: websocket-sharp/1.0
+                          Host: api.hbdm.com
+                          Upgrade: websocket
+                          Connection: Upgrade
+                          Sec-WebSocket-Key: 8TDM1BlqdO1uygAKxlzuFQ==
+                          Sec-WebSocket-Version: 13
+07.10.2022 12:11:29|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                          HTTP/1.1 404 Not Found
+                          Date: Fri, 07 Oct 2022 07:11:29 GMT
+                          Content-Type: text/html
+                          Transfer-Encoding: chunked
+                          Connection: keep-alive
+                          X-Request-ID: d8d90dd7e8a1b266ac3044ebe9c06c3d
+                          CF-Cache-Status: DYNAMIC
+                          Server: cloudflare
+                          CF-RAY: 7564d2aa4bc60c54-DME
+07.10.2022 12:11:29|Error|WebSocket.doHandshake:0|Not a WebSocket connection response.
+07.10.2022 12:11:29|Trace|WebSocket.close:0|Begin closing the connection.
+07.10.2022 12:11:29|Debug|WebSocket.closeHandshake:0|Was clean?: False
+                            sent: False
+                            received: True
+07.10.2022 12:11:29|Trace|WebSocket.close:0|End closing the connection.
+07.10.2022 12:11:35|Error|WebSocket.Send:0|The WebSocket connection has already been closed.
+07.10.2022 12:15:56|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                          GET / HTTP/1.1
+                          User-Agent: websocket-sharp/1.0
+                          Host: api.btcgateway.pro
+                          Upgrade: websocket
+                          Connection: Upgrade
+                          Sec-WebSocket-Key: 8PnN9+FLWqjHejAAu9cIvQ==
+                          Sec-WebSocket-Version: 13
+07.10.2022 12:15:57|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                          HTTP/1.1 404 Not Found
+                          Date: Fri, 07 Oct 2022 07:15:57 GMT
+                          Content-Type: text/html
+                          Transfer-Encoding: chunked
+                          Connection: keep-alive
+                          X-Request-ID: 05c94714eda63ae473f2e02445fa4855
+                          CF-Cache-Status: DYNAMIC
+                          Server: cloudflare
+                          CF-RAY: 7564d9385c2b498d-DME
+07.10.2022 12:15:57|Error|WebSocket.doHandshake:0|Not a WebSocket connection response.
+07.10.2022 12:15:57|Trace|WebSocket.close:0|Begin closing the connection.
+07.10.2022 12:15:57|Debug|WebSocket.closeHandshake:0|Was clean?: False
+                            sent: False
+                            received: True
+07.10.2022 12:15:57|Trace|WebSocket.close:0|End closing the connection.
+07.10.2022 12:16:05|Error|WebSocket.Send:0|The WebSocket connection has already been closed.
+07.10.2022 12:20:57|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                          GET / HTTP/1.1
+                          User-Agent: websocket-sharp/1.0
+                          Host: api.btcgateway.pro
+                          Upgrade: websocket
+                          Connection: Upgrade
+                          Sec-WebSocket-Key: 5vtty0XWk7mmqxELbeFMuA==
+                          Sec-WebSocket-Version: 13
+07.10.2022 12:20:58|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                          HTTP/1.1 404 Not Found
+                          Date: Fri, 07 Oct 2022 07:20:58 GMT
+                          Content-Type: text/html
+                          Transfer-Encoding: chunked
+                          Connection: keep-alive
+                          X-Request-ID: 07a8079a3358c2ad33346a60ccd0bd14
+                          CF-Cache-Status: DYNAMIC
+                          Server: cloudflare
+                          CF-RAY: 7564e0910e673a5f-DME
+07.10.2022 12:20:58|Error|WebSocket.doHandshake:0|Not a WebSocket connection response.
+07.10.2022 12:20:58|Trace|WebSocket.close:0|Begin closing the connection.
+07.10.2022 12:20:58|Debug|WebSocket.closeHandshake:0|Was clean?: False
+                            sent: False
+                            received: True
+07.10.2022 12:20:58|Trace|WebSocket.close:0|End closing the connection.
+07.10.2022 12:20:59|Error|WebSocket.Send:0|The WebSocket connection has already been closed.
+07.10.2022 12:22:59|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                          GET / HTTP/1.1
+                          User-Agent: websocket-sharp/1.0
+                          Host: api.btcgateway.pro
+                          Upgrade: websocket
+                          Connection: Upgrade
+                          Sec-WebSocket-Key: jJn78QhU1kzt21un6PwNDA==
+                          Sec-WebSocket-Version: 13
+07.10.2022 12:22:59|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                          HTTP/1.1 404 Not Found
+                          Date: Fri, 07 Oct 2022 07:22:59 GMT
+                          Content-Type: text/html
+                          Transfer-Encoding: chunked
+                          Connection: keep-alive
+                          X-Request-ID: 2d1473b37c9746a26a97303c7a927047
+                          CF-Cache-Status: DYNAMIC
+                          Server: cloudflare
+                          CF-RAY: 7564e3875ade9d5e-DME
+07.10.2022 12:22:59|Error|WebSocket.doHandshake:0|Not a WebSocket connection response.
+07.10.2022 12:22:59|Trace|WebSocket.close:0|Begin closing the connection.
+07.10.2022 12:22:59|Debug|WebSocket.closeHandshake:0|Was clean?: False
+                            sent: False
+                            received: True
+07.10.2022 12:22:59|Trace|WebSocket.close:0|End closing the connection.
+07.10.2022 12:22:59|Error|WebSocket.Send:0|The WebSocket connection has already been closed.
+07.10.2022 12:29:24|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                          GET / HTTP/1.1
+                          User-Agent: websocket-sharp/1.0
+                          Host: api.hbdm.com
+                          Upgrade: websocket
+                          Connection: Upgrade
+                          Sec-WebSocket-Key: 8fS0W+x/x628ka52pczyfA==
+                          Sec-WebSocket-Version: 13
+07.10.2022 12:29:25|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                          HTTP/1.1 404 Not Found
+                          Date: Fri, 07 Oct 2022 07:29:25 GMT
+                          Content-Type: text/html
+                          Transfer-Encoding: chunked
+                          Connection: keep-alive
+                          X-Request-ID: 1cf047d556b609a9ba5c4434842f5839
+                          CF-Cache-Status: DYNAMIC
+                          Server: cloudflare
+                          CF-RAY: 7564ecf28fed9da4-DME
+07.10.2022 12:29:25|Error|WebSocket.doHandshake:0|Not a WebSocket connection response.
+07.10.2022 12:29:25|Trace|WebSocket.close:0|Begin closing the connection.
+07.10.2022 12:29:25|Debug|WebSocket.closeHandshake:0|Was clean?: False
+                            sent: False
+                            received: True
+07.10.2022 12:29:25|Trace|WebSocket.close:0|End closing the connection.
+07.10.2022 12:29:25|Error|WebSocket.Send:0|The WebSocket connection has already been closed.
+07.10.2022 12:35:16|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                          GET / HTTP/1.1
+                          User-Agent: websocket-sharp/1.0
+                          Host: api.hbdm.com
+                          Upgrade: websocket
+                          Connection: Upgrade
+                          Sec-WebSocket-Key: sNCS+UsHGyTPN0elleR4cQ==
+                          Sec-WebSocket-Version: 13
+07.10.2022 12:35:17|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                          HTTP/1.1 404 Not Found
+                          Date: Fri, 07 Oct 2022 07:35:17 GMT
+                          Content-Type: text/html
+                          Transfer-Encoding: chunked
+                          Connection: keep-alive
+                          X-Request-ID: b8efb1aac09b43480bf36b4de0559d28
+                          CF-Cache-Status: DYNAMIC
+                          Server: cloudflare
+                          CF-RAY: 7564f58a5ae21494-DME
+07.10.2022 12:35:17|Error|WebSocket.doHandshake:0|Not a WebSocket connection response.
+07.10.2022 12:35:17|Trace|WebSocket.close:0|Begin closing the connection.
+07.10.2022 12:35:17|Debug|WebSocket.closeHandshake:0|Was clean?: False
+                            sent: False
+                            received: True
+07.10.2022 12:35:17|Trace|WebSocket.close:0|End closing the connection.
+07.10.2022 12:35:37|Error|WebSocket.Send:0|The WebSocket connection has already been closed.
+07.10.2022 12:36:26|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                          GET / HTTP/1.1
+                          User-Agent: websocket-sharp/1.0
+                          Host: api.hbdm.com
+                          Upgrade: websocket
+                          Connection: Upgrade
+                          Sec-WebSocket-Key: 6BQtkoT/tRqfkXtD8Ugh9A==
+                          Sec-WebSocket-Version: 13
+07.10.2022 12:36:27|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                          HTTP/1.1 404 Not Found
+                          Date: Fri, 07 Oct 2022 07:36:27 GMT
+                          Content-Type: text/html
+                          Transfer-Encoding: chunked
+                          Connection: keep-alive
+                          X-Request-ID: 5225bb776a505a125fdebbf9279b3a15
+                          CF-Cache-Status: DYNAMIC
+                          Server: cloudflare
+                          CF-RAY: 7564f73ddecd16b3-DME
+07.10.2022 12:36:27|Error|WebSocket.doHandshake:0|Not a WebSocket connection response.
+07.10.2022 12:36:27|Trace|WebSocket.close:0|Begin closing the connection.
+07.10.2022 12:36:27|Debug|WebSocket.closeHandshake:0|Was clean?: False
+                            sent: False
+                            received: True
+07.10.2022 12:36:27|Trace|WebSocket.close:0|End closing the connection.
+07.10.2022 12:36:27|Error|WebSocket.Send:0|The WebSocket connection has already been closed.
+07.10.2022 12:38:21|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                          GET / HTTP/1.1
+                          User-Agent: websocket-sharp/1.0
+                          Host: api.hbdm.com
+                          Upgrade: websocket
+                          Connection: Upgrade
+                          Sec-WebSocket-Key: nTM9LDadP1pC71KwMlO5Fw==
+                          Sec-WebSocket-Version: 13
+07.10.2022 12:38:21|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                          HTTP/1.1 404 Not Found
+                          Date: Fri, 07 Oct 2022 07:38:21 GMT
+                          Content-Type: text/html
+                          Transfer-Encoding: chunked
+                          Connection: keep-alive
+                          X-Request-ID: c7be50372600d11b56e48d623edc3c21
+                          CF-Cache-Status: DYNAMIC
+                          Server: cloudflare
+                          CF-RAY: 7564fa0a3ed89d84-DME
+07.10.2022 12:38:21|Error|WebSocket.doHandshake:0|Not a WebSocket connection response.
+07.10.2022 12:38:22|Trace|WebSocket.close:0|Begin closing the connection.
+07.10.2022 12:38:22|Debug|WebSocket.closeHandshake:0|Was clean?: False
+                            sent: False
+                            received: True
+07.10.2022 12:38:22|Trace|WebSocket.close:0|End closing the connection.
+07.10.2022 12:38:24|Error|WebSocket.Send:0|The WebSocket connection has already been closed.
+07.10.2022 13:04:04|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                          GET / HTTP/1.1
+                          User-Agent: websocket-sharp/1.0
+                          Host: api.hbdm.com
+                          Upgrade: websocket
+                          Connection: Upgrade
+                          Sec-WebSocket-Key: HTzkIm+3UuFV1J20i04MKg==
+                          Sec-WebSocket-Version: 13
+07.10.2022 13:04:05|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                          HTTP/1.1 404 Not Found
+                          Date: Fri, 07 Oct 2022 08:04:05 GMT
+                          Content-Type: text/html
+                          Transfer-Encoding: chunked
+                          Connection: keep-alive
+                          X-Request-ID: 044bd57eb6605a0014bfa5b9eefdf369
+                          CF-Cache-Status: DYNAMIC
+                          Server: cloudflare
+                          CF-RAY: 75651fb9ccc37593-DME
+07.10.2022 13:04:05|Error|WebSocket.doHandshake:0|Not a WebSocket connection response.
+07.10.2022 13:04:05|Trace|WebSocket.close:0|Begin closing the connection.
+07.10.2022 13:04:05|Debug|WebSocket.closeHandshake:0|Was clean?: False
+                            sent: False
+                            received: True
+07.10.2022 13:04:05|Trace|WebSocket.close:0|End closing the connection.
+07.10.2022 13:04:07|Error|WebSocket.Send:0|The WebSocket connection has already been closed.
+07.10.2022 13:47:40|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                          GET / HTTP/1.1
+                          User-Agent: websocket-sharp/1.0
+                          Host: api.hbdm.com
+                          Upgrade: websocket
+                          Connection: Upgrade
+                          Sec-WebSocket-Key: XEWdIAQD2MloLn9UNxAnZQ==
+                          Sec-WebSocket-Version: 13
+07.10.2022 13:47:41|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                          HTTP/1.1 404 Not Found
+                          Date: Fri, 07 Oct 2022 08:47:41 GMT
+                          Content-Type: text/html
+                          Transfer-Encoding: chunked
+                          Connection: keep-alive
+                          X-Request-ID: 60326ab340d170df90e2286bc2fe49ee
+                          CF-Cache-Status: DYNAMIC
+                          Server: cloudflare
+                          CF-RAY: 75655f970afe3aa1-DME
+07.10.2022 13:47:41|Error|WebSocket.doHandshake:0|Not a WebSocket connection response.
+07.10.2022 13:47:41|Trace|WebSocket.close:0|Begin closing the connection.
+07.10.2022 13:47:41|Debug|WebSocket.closeHandshake:0|Was clean?: False
+                            sent: False
+                            received: True
+07.10.2022 13:47:41|Trace|WebSocket.close:0|End closing the connection.
+07.10.2022 13:47:41|Error|WebSocket.Send:0|The WebSocket connection has already been closed.
+07.10.2022 13:48:08|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                          GET / HTTP/1.1
+                          User-Agent: websocket-sharp/1.0
+                          Host: api.hbdm.com
+                          Upgrade: websocket
+                          Connection: Upgrade
+                          Sec-WebSocket-Key: bSthGBSqxA2ViSttoZUewg==
+                          Sec-WebSocket-Version: 13
+07.10.2022 13:48:09|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                          HTTP/1.1 404 Not Found
+                          Date: Fri, 07 Oct 2022 08:48:09 GMT
+                          Content-Type: text/html
+                          Transfer-Encoding: chunked
+                          Connection: keep-alive
+                          X-Request-ID: 7191f470ea5afc9bb668a6dc72d41a80
+                          CF-Cache-Status: DYNAMIC
+                          Server: cloudflare
+                          CF-RAY: 75656046fca8161c-DME
+07.10.2022 13:48:09|Error|WebSocket.doHandshake:0|Not a WebSocket connection response.
+07.10.2022 13:48:09|Trace|WebSocket.close:0|Begin closing the connection.
+07.10.2022 13:48:09|Debug|WebSocket.closeHandshake:0|Was clean?: False
+                            sent: False
+                            received: True
+07.10.2022 13:48:09|Trace|WebSocket.close:0|End closing the connection.
+07.10.2022 13:48:09|Error|WebSocket.Send:0|The WebSocket connection has already been closed.
+07.10.2022 13:51:56|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                          GET / HTTP/1.1
+                          User-Agent: websocket-sharp/1.0
+                          Host: api.hbdm.com
+                          Upgrade: websocket
+                          Connection: Upgrade
+                          Sec-WebSocket-Key: YqfeFnLe5R/Re+TyJccXHQ==
+                          Sec-WebSocket-Version: 13
+07.10.2022 13:51:57|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                          HTTP/1.1 404 Not Found
+                          Date: Fri, 07 Oct 2022 08:51:57 GMT
+                          Content-Type: text/html
+                          Transfer-Encoding: chunked
+                          Connection: keep-alive
+                          X-Request-ID: bd1a2887aa663f0c7c288f0e5ed96805
+                          CF-Cache-Status: DYNAMIC
+                          Server: cloudflare
+                          CF-RAY: 756565d8ff969d86-DME
+07.10.2022 13:51:57|Error|WebSocket.doHandshake:0|Not a WebSocket connection response.
+07.10.2022 13:51:57|Trace|WebSocket.close:0|Begin closing the connection.
+07.10.2022 13:51:57|Debug|WebSocket.closeHandshake:0|Was clean?: False
+                            sent: False
+                            received: True
+07.10.2022 13:51:57|Trace|WebSocket.close:0|End closing the connection.
+07.10.2022 13:53:58|Error|WebSocket.Send:0|The WebSocket connection has already been closed.
+07.10.2022 16:23:48|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                          GET / HTTP/1.1
+                          User-Agent: websocket-sharp/1.0
+                          Host: api.hbdm.com
+                          Upgrade: websocket
+                          Connection: Upgrade
+                          Sec-WebSocket-Key: 33qCIixfIc1A/lTa/JvloA==
+                          Sec-WebSocket-Version: 13
+07.10.2022 16:23:49|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                          HTTP/1.1 404 Not Found
+                          Date: Fri, 07 Oct 2022 11:23:49 GMT
+                          Content-Type: text/html
+                          Transfer-Encoding: chunked
+                          Connection: keep-alive
+                          X-Request-ID: 825094bae80871e4cd353a074c16d7c3
+                          CF-Cache-Status: DYNAMIC
+                          Server: cloudflare
+                          CF-RAY: 7566444cea763aa1-DME
+07.10.2022 16:23:49|Error|WebSocket.doHandshake:0|Not a WebSocket connection response.
+07.10.2022 16:23:49|Trace|WebSocket.close:0|Begin closing the connection.
+07.10.2022 16:23:49|Debug|WebSocket.closeHandshake:0|Was clean?: False
+                            sent: False
+                            received: True
+07.10.2022 16:23:49|Trace|WebSocket.close:0|End closing the connection.
+07.10.2022 16:23:49|Error|WebSocket.Send:0|The WebSocket connection has already been closed.
+07.10.2022 16:31:35|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                          GET / HTTP/1.1
+                          User-Agent: websocket-sharp/1.0
+                          Host: api.hbdm.com
+                          Upgrade: websocket
+                          Connection: Upgrade
+                          Sec-WebSocket-Key: SvX8ITKcWO0OlH1GP3KKmw==
+                          Sec-WebSocket-Version: 13
+07.10.2022 16:31:35|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                          HTTP/1.1 404 Not Found
+                          Date: Fri, 07 Oct 2022 11:31:36 GMT
+                          Content-Type: text/html
+                          Transfer-Encoding: chunked
+                          Connection: keep-alive
+                          X-Request-ID: 8db67b6f6e093c802cdfab4b9a2e7143
+                          CF-Cache-Status: DYNAMIC
+                          Server: cloudflare
+                          CF-RAY: 75664fb0eb8e4d90-DME
+07.10.2022 16:31:35|Error|WebSocket.doHandshake:0|Not a WebSocket connection response.
+07.10.2022 16:31:35|Trace|WebSocket.close:0|Begin closing the connection.
+07.10.2022 16:31:35|Debug|WebSocket.closeHandshake:0|Was clean?: False
+                            sent: False
+                            received: True
+07.10.2022 16:31:35|Trace|WebSocket.close:0|End closing the connection.
+07.10.2022 16:31:35|Error|WebSocket.Send:0|The WebSocket connection has already been closed.
+07.10.2022 17:00:04|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                          GET / HTTP/1.1
+                          User-Agent: websocket-sharp/1.0
+                          Host: api.hbdm.com
+                          Upgrade: websocket
+                          Connection: Upgrade
+                          Sec-WebSocket-Key: DI5bhpxtmiVeLZcazzb74g==
+                          Sec-WebSocket-Version: 13
+07.10.2022 17:00:05|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                          HTTP/1.1 404 Not Found
+                          Date: Fri, 07 Oct 2022 12:00:05 GMT
+                          Content-Type: text/html
+                          Transfer-Encoding: chunked
+                          Connection: keep-alive
+                          X-Request-ID: 7df105dcd14d31ede1282b4bfb09cef1
+                          CF-Cache-Status: DYNAMIC
+                          Server: cloudflare
+                          CF-RAY: 7566796f88c29d99-DME
+07.10.2022 17:00:05|Error|WebSocket.doHandshake:0|Not a WebSocket connection response.
+07.10.2022 17:00:05|Trace|WebSocket.close:0|Begin closing the connection.
+07.10.2022 17:00:05|Debug|WebSocket.closeHandshake:0|Was clean?: False
+                            sent: False
+                            received: True
+07.10.2022 17:00:05|Trace|WebSocket.close:0|End closing the connection.
+07.10.2022 17:00:05|Error|WebSocket.Send:0|The WebSocket connection has already been closed.
+07.10.2022 17:04:23|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                          GET / HTTP/1.1
+                          User-Agent: websocket-sharp/1.0
+                          Host: api.hbdm.com
+                          Upgrade: websocket
+                          Connection: Upgrade
+                          Sec-WebSocket-Key: 5BDqVGUhIkKLp1LERdwUvQ==
+                          Sec-WebSocket-Version: 13
+07.10.2022 17:04:24|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                          HTTP/1.1 404 Not Found
+                          Date: Fri, 07 Oct 2022 12:04:24 GMT
+                          Content-Type: text/html
+                          Transfer-Encoding: chunked
+                          Connection: keep-alive
+                          X-Request-ID: 1be89cab0d4261d2dd6f865f86e60b72
+                          CF-Cache-Status: DYNAMIC
+                          Server: cloudflare
+                          CF-RAY: 75667fbe19800004-DME
+07.10.2022 17:04:24|Error|WebSocket.doHandshake:0|Not a WebSocket connection response.
+07.10.2022 17:04:24|Trace|WebSocket.close:0|Begin closing the connection.
+07.10.2022 17:04:24|Debug|WebSocket.closeHandshake:0|Was clean?: False
+                            sent: False
+                            received: True
+07.10.2022 17:04:24|Trace|WebSocket.close:0|End closing the connection.
+07.10.2022 17:04:27|Error|WebSocket.Send:0|The WebSocket connection has already been closed.

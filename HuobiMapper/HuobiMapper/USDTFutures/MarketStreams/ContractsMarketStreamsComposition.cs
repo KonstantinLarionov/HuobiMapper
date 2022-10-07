@@ -1,4 +1,5 @@
 ﻿using HuobiMapper.Extensions;
+using HuobiMapper.USDTFutures.MarketStreams.Data;
 using HuobiMapper.USDTFutures.MarketStreams.Events;
 
 namespace HuobiMapper.USDTFutures.MarketStreams
@@ -7,7 +8,9 @@ namespace HuobiMapper.USDTFutures.MarketStreams
     {
         public BaseEvent HandlerGetBaseEvent(string json) => 
             json.Deserialize<BaseEvent>();
-        public OrderDepthEvent HandlerGetOrderBookEvent(string json) => 
+        public OrderDepthEvent HandlerGetOrderDepthEvent(string json) => 
             json.Deserialize<OrderDepthEvent>();
+        public OrderTradeEvent HandlerGetOrderTradeEvent(string json) => 
+            json.Deserialize<OrderTradeEvent>();
     }
 }

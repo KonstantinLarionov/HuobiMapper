@@ -46,3 +46,15 @@ D:\.rider\HuobiMapper\HuobiMapper\HuobiMapper\obj\Debug\HuobiMapper.csproj.CoreC
 D:\.rider\HuobiMapper\HuobiMapper\HuobiMapper\obj\Debug\HuobiMapper.csproj.CopyComplete
 D:\.rider\HuobiMapper\HuobiMapper\HuobiMapper\obj\Debug\HuobiMapper.dll
 D:\.rider\HuobiMapper\HuobiMapper\HuobiMapper\obj\Debug\HuobiMapper.pdb
+D:\WorkProjects\HuobiMapper\HuobiMapper\HuobiMapper\bin\Debug\HuobiMapper.dll
+D:\WorkProjects\HuobiMapper\HuobiMapper\HuobiMapper\bin\Debug\HuobiMapper.pdb
+D:\WorkProjects\HuobiMapper\HuobiMapper\HuobiMapper\bin\Debug\JetBrains.Annotations.dll
+D:\WorkProjects\HuobiMapper\HuobiMapper\HuobiMapper\bin\Debug\Newtonsoft.Json.dll
+D:\WorkProjects\HuobiMapper\HuobiMapper\HuobiMapper\bin\Debug\System.Runtime.Serialization.Primitives.dll
+D:\WorkProjects\HuobiMapper\HuobiMapper\HuobiMapper\bin\Debug\JetBrains.Annotations.xml
+D:\WorkProjects\HuobiMapper\HuobiMapper\HuobiMapper\bin\Debug\Newtonsoft.Json.xml
+D:\WorkProjects\HuobiMapper\HuobiMapper\HuobiMapper\obj\Debug\HuobiMapper.csproj.AssemblyReference.cache
+D:\WorkProjects\HuobiMapper\HuobiMapper\HuobiMapper\obj\Debug\HuobiMapper.csproj.CoreCompileInputs.cache
+D:\WorkProjects\HuobiMapper\HuobiMapper\HuobiMapper\obj\Debug\HuobiMapper.csproj.CopyComplete
+D:\WorkProjects\HuobiMapper\HuobiMapper\HuobiMapper\obj\Debug\HuobiMapper.dll
+D:\WorkProjects\HuobiMapper\HuobiMapper\HuobiMapper\obj\Debug\HuobiMapper.pdb

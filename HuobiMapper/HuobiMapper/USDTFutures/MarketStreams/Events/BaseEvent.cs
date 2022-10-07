@@ -9,7 +9,6 @@ namespace HuobiMapper.USDTFutures.MarketStreams.Events
     {
         [JsonProperty("ch")]
         public string Ch { get; set; }
-
         [JsonProperty("trades")]
         [CanBeNull] public object Trade { get; set; }
         [JsonProperty("depth")]

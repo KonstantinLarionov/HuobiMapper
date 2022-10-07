@@ -1,6 +1,6 @@
 ﻿using WebSocketSharp;
 using System.Threading;
-using NUnit.Framework;
+
 
 namespace ClassLibrary1.Domain
 {
@@ -14,7 +14,7 @@ namespace ClassLibrary1.Domain
         protected bool IsAOPFinish = false;
 
 
-        protected bool IsBookFinishTest() => IsIncremetalfinish && IsSnapshotFinish;
+        protected bool IsDepthFinishTest() => IsIncremetalfinish && IsSnapshotFinish;
         protected bool IsTradeFinishtest() => IsIncremetalfinish && IsSnapshotFinish;
 
         protected void AwaitFinishTest()

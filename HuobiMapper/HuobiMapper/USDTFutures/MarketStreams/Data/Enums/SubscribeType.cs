@@ -8,5 +8,7 @@ namespace HuobiMapper.USDTFutures.MarketStreams.Data.Enums
         None,
         [EnumMember(Value = "depth")]
         Depth,
+        [EnumMember(Value = "trade")]
+        Trade,
     }
 }
