@@ -13,8 +13,8 @@ namespace ClassLibrary1.Domain
         private const string ClearHost = "api.hbdm.com";
 
         private RequestArranger _arranger =
-            new RequestArranger("ae81e784-6c5b8945-h6n2d4f5gh-6d005", 
-                "3d9e3b4a-0d4f32c2-df34006e-9b650", 
+            new RequestArranger("66fa8a46-1426ecd9-vqgdf4gsga-70aa2", 
+                "d8acadf9-b9e9ac56-2b852e0c-09e41", 
                 ClearHost,
                 SignMethod, 
                 SignatureVersion);

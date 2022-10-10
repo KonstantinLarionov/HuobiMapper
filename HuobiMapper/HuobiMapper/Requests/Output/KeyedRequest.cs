@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Security.Cryptography;
 using System.Text;
+using Huobi.SDK.Core.RequestBuilder;
 using HuobiMapper.Extensions;
 using HuobiMapper.Requests.Payload;
 using JetBrains.Annotations;
@@ -14,29 +15,45 @@ namespace HuobiMapper.Requests.Output
             [NotNull] string apiSecret, string host, string signmethod, string signversion, [NotNull] DateTime timestamp)
             : base(requestPayload, apiKey)
         {
-            var props = new Dictionary<string, string>();
-            var props2 = new Dictionary<string, string>();
-            props.Add("AccessKeyId", apiKey);
-            props.Add("SignatureMethod", signmethod);
-            props.Add("SignatureVersion", signversion);
-            props.Add("Timestamp", timestamp.ToString("s"));
 
-            foreach (var VARIABLE in props)
-            {
-                props2.Add(VARIABLE.Key, VARIABLE.Value);
-            }
+            var builder = new PrivateUrlBuilder(apiKey, apiSecret, host);
             
-            foreach (var VARIABLE in requestPayload.Properties)
-            {
-                props2.Add(VARIABLE.Key, VARIABLE.Value);
-            }
+            string method = requestPayload.Method.GetEnumMemberAttributeValue();
+            string endpoint = requestPayload.EndPoint;
             
-            var sign = this.CreateSignature(
-                this.BuilderSign(requestPayload.Method, host, requestPayload.EndPoint, props2),
-                apiSecret);
-            props.Add("Signature", sign);
-            
-            this.AppendPropsKeyedRequest(props);
+            string result = builder.Build(method, endpoint);
+            this.Query = result;
+            // var props = new Dictionary<string, string>();
+            // var props2 = new Dictionary<string, string>();
+            // props.Add("AccessKeyId", apiKey);
+            // props.Add("SignatureMethod", signmethod);
+            // props.Add("SignatureVersion", signversion);
+            // props.Add("Timestamp", DateTime.UtcNow.ToString("s"));
+            // // props.Add("Timestamp", timestamp.ToString("s"));
+            //
+            // foreach (var VARIABLE in props)
+            // {
+            //     props2.Add(VARIABLE.Key, VARIABLE.Value);
+            // }
+            //
+            // foreach (var VARIABLE in requestPayload.Properties)
+            // {
+            //     props2.Add(VARIABLE.Key, VARIABLE.Value);
+            // }
+            //
+            // var sign_sdk = new Signer(apiSecret);
+            // string method = requestPayload.Method.GetEnumMemberAttributeValue();
+            // string endpoint = requestPayload.EndPoint;
+            // string param = GenerateParametersString(props2);
+            //
+            // var sign_fromsdk = sign_sdk.Sign(method, host, endpoint,param);
+            // var string_builders = this.BuilderSign(requestPayload.Method, host, requestPayload.EndPoint, props2);
+            // var sign = this.CreateSignature(
+            //     string_builders,
+            //     apiSecret);
+            //
+            // props.Add("Signature", sign);
+            // this.AppendPropsKeyedRequest(props);
         }
         public static string Base64Encode(string plainText) {
             var plainTextBytes = System.Text.Encoding.UTF8.GetBytes(plainText);

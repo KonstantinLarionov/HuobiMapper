@@ -32,6 +32,12 @@
         <WarningLevel>4</WarningLevel>
     </PropertyGroup>
     <ItemGroup>
+        <Reference Include="Huobi.SDK.Core">
+          <HintPath>..\..\SDK\Huobi.SDK.Core.dll</HintPath>
+        </Reference>
+        <Reference Include="Huobi.SDK.Model">
+          <HintPath>..\..\SDK\Huobi.SDK.Model.dll</HintPath>
+        </Reference>
         <Reference Include="JetBrains.Annotations, Version=4242.42.42.42, Culture=neutral, PublicKeyToken=1010a0d8d6380325, processorArchitecture=MSIL">
           <HintPath>..\packages\JetBrains.Annotations.2022.1.0\lib\net20\JetBrains.Annotations.dll</HintPath>
         </Reference>
@@ -48,6 +54,7 @@
           <HintPath>..\packages\System.Runtime.Serialization.Primitives.4.1.1\lib\net46\System.Runtime.Serialization.Primitives.dll</HintPath>
           <Private>True</Private>
         </Reference>
+        <Reference Include="System.Web" />
         <Reference Include="System.Xml" />
     </ItemGroup>
     <ItemGroup>
@@ -62,6 +69,7 @@
         <Compile Include="Requests\Output\KeyedRequest.cs" />
         <Compile Include="Requests\Output\Request.cs" />
         <Compile Include="Requests\Output\RequestMethod.cs" />
+        <Compile Include="Requests\Output\Signer.cs" />
         <Compile Include="Requests\Payload\KeyedRequestPayload.cs" />
         <Compile Include="Requests\Payload\RequestPayload.cs" />
         <Compile Include="Requests\RequestArranger.cs" />

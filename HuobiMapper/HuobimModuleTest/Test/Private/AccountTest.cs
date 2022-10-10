@@ -26,7 +26,7 @@ namespace ClassLibrary1.Test.Private
             #region [Arrange]
 
             var payload = new AccountRequest();
-            payload.Contractcode = ContractCode;
+            //payload.Contractcode = ContractCode;
             #endregion
 
             #region [Action]
