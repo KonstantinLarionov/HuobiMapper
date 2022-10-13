@@ -32,6 +32,8 @@ namespace HuobiMapper.USDTFutures.RestApi
         
         public QueryUserSAccountInformationResponses HandLerGetQueryUserSAccountInformationResponses(string json) =>
             json.Deserialize<QueryUserSAccountInformationResponses>();
+        public TimestampResponse HandLerGetTimestampResponses(string json) =>
+            json.Deserialize<TimestampResponse>();
         
     }
 

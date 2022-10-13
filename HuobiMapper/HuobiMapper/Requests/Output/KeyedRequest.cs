@@ -12,7 +12,7 @@ namespace HuobiMapper.Requests.Output
     internal class KeyedRequest : Request
     {
         public KeyedRequest([NotNull] RequestPayload requestPayload, [NotNull] string apiKey,
-            [NotNull] string apiSecret, string host, string signmethod, string signversion, [NotNull] DateTime timestamp)
+            [NotNull] string apiSecret, string host, string signmethod, string signversion, [NotNull] long timestamp)
             : base(requestPayload, apiKey)
         {
 
@@ -20,8 +20,11 @@ namespace HuobiMapper.Requests.Output
             
             string method = requestPayload.Method.GetEnumMemberAttributeValue();
             string endpoint = requestPayload.EndPoint;
-            
-            string result = builder.Build(method, endpoint);
+
+            var timelong = timestamp;
+            var mytimelong = DateTime.UtcNow.ToUnixTimeMilliseconds();
+            var datetime = timestamp.ToDateTimeFromUnixTimeMilliseconds();
+            string result = builder.Build(method, endpoint, datetime);
             this.Query = result;
             // var props = new Dictionary<string, string>();
             // var props2 = new Dictionary<string, string>();

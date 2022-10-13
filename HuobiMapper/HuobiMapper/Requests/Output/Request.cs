@@ -26,21 +26,28 @@ namespace HuobiMapper.Requests.Output
             this.InternalProperties.OrderBy(x => x.Key, StringComparer.Ordinal);
         }
 
+        private string buffer = string.Empty;
         public virtual string Query
         {
-            get;
-            set;
-            // get {
-            //     if (InternalProperties is null || InternalProperties.Count == 0)
-            //     {
-            //         return _requestPayload.EndPoint;
-            //     }
-            //     else
-            //     {
-            //         return $"{_requestPayload.EndPoint}?{GenerateParametersString(InternalProperties)}";
-            //     }
-            //
-            // }
+            get {
+                if (!string.IsNullOrEmpty(buffer))
+                {
+                    return buffer;
+                }
+
+                // if (InternalProperties is null || InternalProperties.Count == 0)
+                // {
+                    return _requestPayload.EndPoint;
+                // }
+                // else
+                // {
+                //     return $"{_requestPayload.EndPoint}?{GenerateParametersString(InternalProperties)}";
+                // }
+            }
+            set
+            {
+                buffer = value;
+            }
         }
         public RequestMethod Method => _requestPayload.Method;
 

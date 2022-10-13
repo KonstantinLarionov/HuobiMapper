@@ -12,8 +12,8 @@ namespace ClassLibrary1.Test.Public
     {
         private ContractsMarketStreamsComposition _composition = new ContractsMarketStreamsComposition();
 
-        public MarketStreamsTests() =>
-            _websocket.SslConfiguration.EnabledSslProtocols = SslProtocols.Tls12;
+        // public MarketStreamsTests() =>
+        //     _websocket.SslConfiguration.EnabledSslProtocols = SslProtocols.Tls12;
 
         [Test]
         public async Task SubIncrementalTest()
@@ -64,7 +64,7 @@ namespace ClassLibrary1.Test.Public
                 var data = args;
             };
             _websocket.Connect();
-            _websocket.Send(payload);
+            //_websocket.Send(payload);
 
             AwaitFinishTest();
         }

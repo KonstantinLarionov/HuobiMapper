@@ -28,11 +28,11 @@ namespace HuobiMapper.Requests
     }
     public sealed class RequestArranger
     {   [NotNull]
-        private readonly Func<DateTime> _timestampFactory;
-        public RequestArranger(Func<DateTime> timestampFactory = null) =>
-          _timestampFactory = timestampFactory ?? (() => DateTime.UtcNow);
+        private readonly Func<long> _timestampFactory;
+        public RequestArranger(Func<long> timestampFactory = null) =>
+          _timestampFactory = timestampFactory ?? (() => DateTime.UtcNow.ToUnixTimeMilliseconds());
 
-        private DateTime Timestamp => _timestampFactory.Invoke();
+        private long Timestamp => _timestampFactory.Invoke();
         public int TimestampShiftInMilliseconds { get; set; }
 
         /// <summary>
@@ -41,7 +41,7 @@ namespace HuobiMapper.Requests
         /// <param name="apiKey">Публичный ключ аккаунта</param>
         /// <param name="apiSecret">Приватный ключ аккаунта</param>
         /// <param name="subaccountName">[Optional]Ник суб-аккаунта для работы с конкретным суб-аккаунтом от основного аккаунта биржи (можно указать не через конструктор и продолжать запросы с тем же экземпляром класса)</param>
-        public RequestArranger(string apiKey,  string apiSecret, string host, string signMethod, string signatureVersion,  Func<DateTime> timestampFactory = null)
+        public RequestArranger(string apiKey,  string apiSecret, string host, string signMethod, string signatureVersion,  Func<long> timestampFactory = null)
             :this(timestampFactory)
         {
             if (string.IsNullOrWhiteSpace(apiKey))

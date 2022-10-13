@@ -6,7 +6,7 @@ namespace ClassLibrary1.Domain
 {
     public class BaseStreamTest
     {
-        protected WebSocket _websocket = new WebSocket("wss://api.hbdm.com");
+        protected WebSocket _websocket = new WebSocket("wss://api.hbdm.com/linear-swap-ws");
         protected bool IsTestFinish = false;
         protected bool IsSnapshotFinish = false;
         protected bool IsIncremetalfinish = false;

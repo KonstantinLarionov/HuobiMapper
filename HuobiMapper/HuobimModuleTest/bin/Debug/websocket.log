@@ -834,3 +834,96 @@
                             received: True
 07.10.2022 17:04:24|Trace|WebSocket.close:0|End closing the connection.
 07.10.2022 17:04:27|Error|WebSocket.Send:0|The WebSocket connection has already been closed.
+10.10.2022 9:04:41|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                         GET / HTTP/1.1
+                         User-Agent: websocket-sharp/1.0
+                         Host: api.hbdm.com
+                         Upgrade: websocket
+                         Connection: Upgrade
+                         Sec-WebSocket-Key: wd2DxgYQ5U5XfZqnK8cVdw==
+                         Sec-WebSocket-Version: 13
+10.10.2022 9:04:41|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                         HTTP/1.1 404 Not Found
+                         Date: Mon, 10 Oct 2022 04:04:42 GMT
+                         Content-Type: text/html
+                         Transfer-Encoding: chunked
+                         Connection: keep-alive
+                         X-Request-ID: 37c0e812b810239b1ccfb05e03e1d6dc
+                         CF-Cache-Status: DYNAMIC
+                         Server: cloudflare
+                         CF-RAY: 757c793318249d63-DME
+10.10.2022 9:04:41|Error|WebSocket.doHandshake:0|Not a WebSocket connection response.
+10.10.2022 9:05:34|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                         GET / HTTP/1.1
+                         User-Agent: websocket-sharp/1.0
+                         Host: api.hbdm.com
+                         Upgrade: websocket
+                         Connection: Upgrade
+                         Sec-WebSocket-Key: hxJsd2CpTXJrkkmyPWeEbA==
+                         Sec-WebSocket-Version: 13
+10.10.2022 9:05:35|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                         HTTP/1.1 404 Not Found
+                         Date: Mon, 10 Oct 2022 04:05:36 GMT
+                         Content-Type: text/html
+                         Transfer-Encoding: chunked
+                         Connection: keep-alive
+                         X-Request-ID: 868204c6f871ce194649b24a49889d04
+                         CF-Cache-Status: DYNAMIC
+                         Server: cloudflare
+                         CF-RAY: 757c7a828d289d4c-DME
+10.10.2022 9:05:35|Error|WebSocket.doHandshake:0|Not a WebSocket connection response.
+10.10.2022 9:06:23|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                         GET / HTTP/1.1
+                         User-Agent: websocket-sharp/1.0
+                         Host: api.btcgateway.pro
+                         Upgrade: websocket
+                         Connection: Upgrade
+                         Sec-WebSocket-Key: vs6ZmvNqG78+b+WV3fagMQ==
+                         Sec-WebSocket-Version: 13
+10.10.2022 9:06:24|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                         HTTP/1.1 404 Not Found
+                         Date: Mon, 10 Oct 2022 04:06:25 GMT
+                         Content-Type: text/html
+                         Transfer-Encoding: chunked
+                         Connection: keep-alive
+                         X-Request-ID: f7bfbd55bb4513f79ca28830c511ab65
+                         CF-Cache-Status: DYNAMIC
+                         Server: cloudflare
+                         CF-RAY: 757c7bb1dc0016af-DME
+10.10.2022 9:06:24|Error|WebSocket.doHandshake:0|Not a WebSocket connection response.
+10.10.2022 9:07:01|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                         GET /linear-swap-ws HTTP/1.1
+                         User-Agent: websocket-sharp/1.0
+                         Host: api.btcgateway.pro
+                         Upgrade: websocket
+                         Connection: Upgrade
+                         Sec-WebSocket-Key: 3wx2Ui+sIoV5FzGAisisbA==
+                         Sec-WebSocket-Version: 13
+10.10.2022 9:07:02|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                         HTTP/1.1 101 Switching Protocols
+                         Date: Mon, 10 Oct 2022 04:07:03 GMT
+                         Connection: upgrade
+                         Upgrade: websocket
+                         Sec-WebSocket-Accept: xlFWC+EN5MQQGKZXOedK/9pwh/g=
+                         X-Request-ID: 3e31d7480e2dd4b9d772d1a17b0a293a
+                         CF-Cache-Status: DYNAMIC
+                         Server: cloudflare
+                         CF-RAY: 757c7ca20ef73a8f-DME
+10.10.2022 9:07:52|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                         GET /linear-swap-ws HTTP/1.1
+                         User-Agent: websocket-sharp/1.0
+                         Host: api.hbdm.com
+                         Upgrade: websocket
+                         Connection: Upgrade
+                         Sec-WebSocket-Key: WLu7G8m/0YZYT2t+BiFvig==
+                         Sec-WebSocket-Version: 13
+10.10.2022 9:07:53|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                         HTTP/1.1 101 Switching Protocols
+                         Date: Mon, 10 Oct 2022 04:07:54 GMT
+                         Connection: upgrade
+                         Upgrade: websocket
+                         Sec-WebSocket-Accept: Z7MgIklVw1Puv0vuFBjuCC8xcR0=
+                         X-Request-ID: b54f970ed1af12518481f1397edebdb9
+                         CF-Cache-Status: DYNAMIC
+                         Server: cloudflare
+                         CF-RAY: 757c7de04fb99d57-DME
