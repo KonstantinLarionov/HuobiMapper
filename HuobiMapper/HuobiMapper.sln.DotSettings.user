@@ -6,18 +6,19 @@
 &lt;/AssemblyExplorer&gt;</s:String>
 	<s:String x:Key="/Default/Environment/Hierarchy/Build/BuildTool/CustomBuildToolPath/@EntryValue">D:\JetBrains Rider 2022.2.3\tools\MSBuild\Current\Bin\MSBuild.exe</s:String>
 	<s:Int64 x:Key="/Default/Environment/Hierarchy/Build/BuildTool/MsbuildVersion/@EntryValue">1114112</s:Int64>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=6f5bcf98_002D9d88_002D478b_002Dbdae_002D79aa3d7e24b0/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="BalanceTest" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=6f5bcf98_002D9d88_002D478b_002Dbdae_002D79aa3d7e24b0/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="BalanceTest" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;NUnit3x::5FC4882F-62FA-40D8-8161-70ED5B767600::.NETFramework,Version=v4.6::ClassLibrary1.Test.Private.AccountTest.BalanceTest&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;NUnit3x::5FC4882F-62FA-40D8-8161-70ED5B767600::.NETFramework,Version=v4.6::ClassLibrary1.Test.Public.MarketStreamsTests.SubIncrementalTest&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;NUnit3x::5FC4882F-62FA-40D8-8161-70ED5B767600::.NETFramework,Version=v4.6::ClassLibrary1.Test.Public.MarketStreamsTests&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=ef5ca30e_002D3c50_002D48f9_002D8d12_002D251aa8d46d40/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="BalanceTest #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=ef5ca30e_002D3c50_002D48f9_002D8d12_002D251aa8d46d40/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="BalanceTest #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;NUnit3x::5FC4882F-62FA-40D8-8161-70ED5B767600::.NETFramework,Version=v4.6::ClassLibrary1.Test.Private.AccountTest.BalanceTest&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;NUnit3x::5FC4882F-62FA-40D8-8161-70ED5B767600::.NETFramework,Version=v4.6::ClassLibrary1.Test.Public.MarketStreamsTests.SubIncrementalTest&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;NUnit3x::5FC4882F-62FA-40D8-8161-70ED5B767600::.NETFramework,Version=v4.6::ClassLibrary1.Test.Public.MarketStreamsTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::5FC4882F-62FA-40D8-8161-70ED5B767600::.NETFramework,Version=v4.6::ClassLibrary1.Test.Private.AccountTest.SignTest&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	

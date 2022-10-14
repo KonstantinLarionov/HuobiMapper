@@ -49,6 +49,7 @@
         <Reference Include="System" />
         <Reference Include="System.Core" />
         <Reference Include="System.Data" />
+        <Reference Include="System.Drawing" />
         <Reference Include="System.Runtime.Serialization" />
         <Reference Include="System.Runtime.Serialization.Primitives, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
           <HintPath>..\packages\System.Runtime.Serialization.Primitives.4.1.1\lib\net46\System.Runtime.Serialization.Primitives.dll</HintPath>
@@ -56,6 +57,10 @@
         </Reference>
         <Reference Include="System.Web" />
         <Reference Include="System.Xml" />
+        <Reference Include="WebDriver, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\packages\Selenium.WebDriver.4.5.1\lib\net46\WebDriver.dll</HintPath>
+          <Private>True</Private>
+        </Reference>
     </ItemGroup>
     <ItemGroup>
         <Compile Include="Extensions\DecimalExtensions.cs" />
@@ -73,6 +78,7 @@
         <Compile Include="Requests\Payload\KeyedRequestPayload.cs" />
         <Compile Include="Requests\Payload\RequestPayload.cs" />
         <Compile Include="Requests\RequestArranger.cs" />
+        <Compile Include="Services\SignerService.cs" />
         <Compile Include="USDTFutures\MarketStreams\CombineSubscriber.cs" />
         <Compile Include="USDTFutures\MarketStreams\ContractsMarketStreamsComposition.cs" />
         <Compile Include="USDTFutures\MarketStreams\Convertor\OrderBookRowConvertor.cs" />
@@ -133,11 +139,13 @@
         <Compile Include="USDTFutures\RestApi\RestApiComposition.cs" />
     </ItemGroup>
     <ItemGroup>
+      <None Include="App.config" />
       <None Include="packages.config" />
     </ItemGroup>
     <ItemGroup>
       <Content Include="Key" />
       <Content Include="README.TXT" />
+      <Content Include="Services\signer.js" />
     </ItemGroup>
     <ItemGroup>
       <Folder Include="USDTFutures\PrivateStreams\Data" />

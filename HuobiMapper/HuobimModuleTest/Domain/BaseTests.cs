@@ -11,9 +11,11 @@ namespace ClassLibrary1.Domain
 {
     public class BaseTests
     {
-        private const string SignMethod = "HmacSHA256";
-        private const string SignatureVersion = "2";
-        private const string ClearHost = "api.btcgateway.com";
+        public const string SignMethod = "HmacSHA256";
+        public const string SignatureVersion = "2";
+        public const string ClearHost = "api.hbdm.com";
+        public const string APIKEY = "66fa8a46-1426ecd9-vqgdf4gsga-70aa2";
+        public const string APISECRET = "d8acadf9-b9e9ac56-2b852e0c-09e41";
         private static RestApiComposition AccountCompositionStatic = new RestApiComposition();
 
         private RequestArranger _arranger =
@@ -44,8 +46,8 @@ namespace ClassLibrary1.Domain
                     
                     return timestamp.Timestamp;
                 });
-        private RestClient client = new RestClient("https://api.btcgateway.com");
-        private static RestClient clientStatic = new RestClient("https://api.btcgateway.com");
+        private RestClient client = new RestClient("https://api.hbdm.com");
+        private static RestClient clientStatic = new RestClient("https://api.hbdm.com");
 
         public string SendRequest(RequestPayload payload)
         {

@@ -3,6 +3,7 @@ using System.Diagnostics;
 using System.Runtime.Remoting;
 using ClassLibrary1.Domain;
 using HuobiMapper.Extensions;
+using HuobiMapper.Services;
 using NUnit.Framework;
 using HuobiMapper.USDTFutures.RestApi;
 using HuobiMapper.USDTFutures.RestApi.Requests.Account;
@@ -18,6 +19,13 @@ namespace ClassLibrary1.Test.Private
         private DateTime To = DateTime.UtcNow;
 
         private RestApiComposition AccountComposition = new RestApiComposition();
+
+        [Test]
+        public void SignTest()
+        {
+            SignerService service = new SignerService();
+            service.GetSignature(APIKEY, APISECRET, SignMethod, SignatureVersion, ClearHost, "/linear-swap-api/v1/swap_account_info", "POST","");
+        }
 
         [Test]
         public void BalanceTest()

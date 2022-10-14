@@ -90,3 +90,5 @@ D:\.rider\AVBINVESTMappers\HuobiMapper\HuobiMapper\HuobiMapper\obj\Debug\HuobiMa
 D:\.rider\AVBINVESTMappers\HuobiMapper\HuobiMapper\HuobiMapper\obj\Debug\HuobiMapper.csproj.CopyComplete
 D:\.rider\AVBINVESTMappers\HuobiMapper\HuobiMapper\HuobiMapper\obj\Debug\HuobiMapper.dll
 D:\.rider\AVBINVESTMappers\HuobiMapper\HuobiMapper\HuobiMapper\obj\Debug\HuobiMapper.pdb
+D:\.rider\AVBINVESTMappers\HuobiMapper\HuobiMapper\HuobiMapper\bin\Debug\HuobiMapper.dll.config
+D:\.rider\AVBINVESTMappers\HuobiMapper\HuobiMapper\HuobiMapper\bin\Debug\WebDriver.dll
