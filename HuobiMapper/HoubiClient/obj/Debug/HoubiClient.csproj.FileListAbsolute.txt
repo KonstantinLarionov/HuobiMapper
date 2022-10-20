@@ -1,0 +1,12 @@
+C:\Projects\AFC\HuobiMapper\HuobiMapper\HoubiClient\bin\Debug\HuobiClient.dll
+C:\Projects\AFC\HuobiMapper\HuobiMapper\HoubiClient\bin\Debug\HuobiClient.pdb
+C:\Projects\AFC\HuobiMapper\HuobiMapper\HoubiClient\bin\Debug\Newtonsoft.Json.dll
+C:\Projects\AFC\HuobiMapper\HuobiMapper\HoubiClient\bin\Debug\RestSharp.dll
+C:\Projects\AFC\HuobiMapper\HuobiMapper\HoubiClient\bin\Debug\System.ValueTuple.dll
+C:\Projects\AFC\HuobiMapper\HuobiMapper\HoubiClient\bin\Debug\Newtonsoft.Json.xml
+C:\Projects\AFC\HuobiMapper\HuobiMapper\HoubiClient\bin\Debug\System.ValueTuple.xml
+C:\Projects\AFC\HuobiMapper\HuobiMapper\HoubiClient\obj\Debug\HoubiClient.csproj.AssemblyReference.cache
+C:\Projects\AFC\HuobiMapper\HuobiMapper\HoubiClient\obj\Debug\HoubiClient.csproj.CoreCompileInputs.cache
+C:\Projects\AFC\HuobiMapper\HuobiMapper\HoubiClient\obj\Debug\HoubiClient.csproj.CopyComplete
+C:\Projects\AFC\HuobiMapper\HuobiMapper\HoubiClient\obj\Debug\HuobiClient.dll
+C:\Projects\AFC\HuobiMapper\HuobiMapper\HoubiClient\obj\Debug\HuobiClient.pdb

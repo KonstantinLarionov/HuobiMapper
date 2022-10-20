@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Security.Cryptography;
 using System.Text;
-using Huobi.SDK.Core.RequestBuilder;
 using HuobiMapper.Extensions;
 using HuobiMapper.Requests.Payload;
 using JetBrains.Annotations;
@@ -16,16 +15,6 @@ namespace HuobiMapper.Requests.Output
             : base(requestPayload, apiKey)
         {
 
-            var builder = new PrivateUrlBuilder(apiKey, apiSecret, host);
-            
-            string method = requestPayload.Method.GetEnumMemberAttributeValue();
-            string endpoint = requestPayload.EndPoint;
-
-            var timelong = timestamp;
-            var mytimelong = DateTime.UtcNow.ToUnixTimeMilliseconds();
-            var datetime = timestamp.ToDateTimeFromUnixTimeMilliseconds();
-            string result = builder.Build(method, endpoint, datetime);
-            this.Query = result;
             // var props = new Dictionary<string, string>();
             // var props2 = new Dictionary<string, string>();
             // props.Add("AccessKeyId", apiKey);
