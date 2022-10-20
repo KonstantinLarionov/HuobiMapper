@@ -61,6 +61,10 @@
         <Compile Include="Test\Public\MarketTest.cs" />
     </ItemGroup>
     <ItemGroup>
+      <ProjectReference Include="..\HoubiClient\HoubiClient.csproj">
+        <Project>{c39dfdcc-a41b-4910-8121-3155c4de898e}</Project>
+        <Name>HoubiClient</Name>
+      </ProjectReference>
       <ProjectReference Include="..\HuobiMapper\HuobiMapper.csproj">
         <Project>{5ad604b7-5560-4e60-95f0-f5fcde3f02bf}</Project>
         <Name>HuobiMapper</Name>

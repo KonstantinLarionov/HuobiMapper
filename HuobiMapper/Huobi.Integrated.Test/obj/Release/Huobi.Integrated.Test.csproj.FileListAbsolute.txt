@@ -1,0 +1,17 @@
+D:\.rider\AVBINVESTMappers\HuobiMapper\HuobiMapper\Huobi.Integrated.Test\bin\Release\Huobi.Integrated.Test.exe.config
+D:\.rider\AVBINVESTMappers\HuobiMapper\HuobiMapper\Huobi.Integrated.Test\bin\Release\Huobi.Integrated.Test.exe
+D:\.rider\AVBINVESTMappers\HuobiMapper\HuobiMapper\Huobi.Integrated.Test\bin\Release\Huobi.Integrated.Test.pdb
+D:\.rider\AVBINVESTMappers\HuobiMapper\HuobiMapper\Huobi.Integrated.Test\bin\Release\HuobiMapper.dll
+D:\.rider\AVBINVESTMappers\HuobiMapper\HuobiMapper\Huobi.Integrated.Test\bin\Release\Newtonsoft.Json.dll
+D:\.rider\AVBINVESTMappers\HuobiMapper\HuobiMapper\Huobi.Integrated.Test\bin\Release\Huobi.SDK.Core.dll
+D:\.rider\AVBINVESTMappers\HuobiMapper\HuobiMapper\Huobi.Integrated.Test\bin\Release\HuobiMapper.pdb
+D:\.rider\AVBINVESTMappers\HuobiMapper\HuobiMapper\Huobi.Integrated.Test\bin\Release\HuobiMapper.dll.config
+D:\.rider\AVBINVESTMappers\HuobiMapper\HuobiMapper\Huobi.Integrated.Test\bin\Release\Newtonsoft.Json.xml
+D:\.rider\AVBINVESTMappers\HuobiMapper\HuobiMapper\Huobi.Integrated.Test\bin\Release\Huobi.SDK.Core.pdb
+D:\.rider\AVBINVESTMappers\HuobiMapper\HuobiMapper\Huobi.Integrated.Test\obj\Release\Huobi.Integrated.Test.csproj.AssemblyReference.cache
+D:\.rider\AVBINVESTMappers\HuobiMapper\HuobiMapper\Huobi.Integrated.Test\obj\Release\Huobi.Integrated.Test.csproj.SuggestedBindingRedirects.cache
+D:\.rider\AVBINVESTMappers\HuobiMapper\HuobiMapper\Huobi.Integrated.Test\obj\Release\Huobi.Integrated.Test.exe.config
+D:\.rider\AVBINVESTMappers\HuobiMapper\HuobiMapper\Huobi.Integrated.Test\obj\Release\Huobi.Integrated.Test.csproj.CoreCompileInputs.cache
+D:\.rider\AVBINVESTMappers\HuobiMapper\HuobiMapper\Huobi.Integrated.Test\obj\Release\Huobi.Integrated.Test.csproj.CopyComplete
+D:\.rider\AVBINVESTMappers\HuobiMapper\HuobiMapper\Huobi.Integrated.Test\obj\Release\Huobi.Integrated.Test.exe
+D:\.rider\AVBINVESTMappers\HuobiMapper\HuobiMapper\Huobi.Integrated.Test\obj\Release\Huobi.Integrated.Test.pdb

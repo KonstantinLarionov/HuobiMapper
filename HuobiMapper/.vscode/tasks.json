@@ -1,0 +1,16 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "mybuild",
+            "command":"D:\\VS\\MSBuild\\Current\\Bin\\MSBuild.exe",
+            "type":"shell",
+            "args":[
+                "Huobi.Integrated.Test/Huobi.Integrated.Test.csproj",
+                "/t:Build",
+                "/p:Configuration=Debug",
+                "/p:Platform=\"AnyCPU\""
+            ]
+        }
+    ]
+}

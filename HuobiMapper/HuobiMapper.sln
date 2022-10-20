@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HuobiMapper", "HuobiMapper\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HuobimModuleTest", "HuobimModuleTest\HuobimModuleTest.csproj", "{5FC4882F-62FA-40D8-8161-70ED5B767600}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HoubiClient", "HoubiClient\HoubiClient.csproj", "{C39DFDCC-A41B-4910-8121-3155C4DE898E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{5FC4882F-62FA-40D8-8161-70ED5B767600}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5FC4882F-62FA-40D8-8161-70ED5B767600}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5FC4882F-62FA-40D8-8161-70ED5B767600}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C39DFDCC-A41B-4910-8121-3155C4DE898E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C39DFDCC-A41B-4910-8121-3155C4DE898E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C39DFDCC-A41B-4910-8121-3155C4DE898E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C39DFDCC-A41B-4910-8121-3155C4DE898E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

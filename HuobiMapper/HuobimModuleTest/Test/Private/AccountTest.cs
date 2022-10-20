@@ -7,6 +7,7 @@ using HuobiMapper.Services;
 using NUnit.Framework;
 using HuobiMapper.USDTFutures.RestApi;
 using HuobiMapper.USDTFutures.RestApi.Requests.Account;
+using RestSharp;
 
 
 namespace ClassLibrary1.Test.Private
@@ -23,8 +24,16 @@ namespace ClassLibrary1.Test.Private
         [Test]
         public void SignTest()
         {
-            SignerService service = new SignerService();
-            service.GetSignature(APIKEY, APISECRET, SignMethod, SignatureVersion, ClearHost, "/linear-swap-api/v1/swap_account_info", "POST","");
+            // SignerService service = new SignerService();
+            // service.DataEvent += val =>
+            // {
+            //     var req = new RestRequest("/linear-swap-api/v1/swap_account_info?" + val, Method.POST);
+            //     RestClient client = new RestClient("https://api.hbdm.com");
+            //     var result = client.Execute(req)?.Content;
+            // };
+            // service.GetSignature(APIKEY, APISECRET, SignMethod, SignatureVersion, ClearHost, "/linear-swap-api/v1/swap_account_info", "POST","");
+            //
+           
         }
 
         [Test]

@@ -1,0 +1,16 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "MyLauncher",
+        "type":"clr",
+        "request": "launch",
+        "preLaunchTask": "mybuild",
+        "program": "D:/.rider/AVBINVESTMappers/HuobiMapper/HuobiMapper/Huobi.Integrated.Test/bin/Debug/Huobi.Integrated.Test.exe",
+        "args":[],
+        "console": "internalConsole",
+        "stopAtEntry": false,
+        "internalConsoleOptions": "openOnSessionStart"
+      }
+    ]
+}
