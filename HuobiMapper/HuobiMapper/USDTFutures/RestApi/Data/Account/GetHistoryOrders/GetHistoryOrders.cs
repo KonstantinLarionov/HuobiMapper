@@ -33,6 +33,7 @@ namespace HuobiMapper.USDTFutures.RestApi.Data.Account.GetHistoryOrders
             Fee = fee;
             TradeAvgPrice = tradeAvgPrice;
             Status = status;
+            StatusEnum = (OrderStatusEnum)Status;
             OrderIdStr = orderIdStr;
             FeeAsset = feeAsset;
             LiquidationType = liquidationType;
@@ -86,6 +87,9 @@ namespace HuobiMapper.USDTFutures.RestApi.Data.Account.GetHistoryOrders
         public decimal TradeAvgPrice { get; set; }
         [JsonProperty("status")]
         public int Status { get; set; }
+
+        public OrderStatusEnum StatusEnum { get; set; }
+
         [JsonProperty("order_id_str")]
         public string OrderIdStr { get; set; }
         [JsonProperty("fee_asset")]

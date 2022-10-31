@@ -3,11 +3,10 @@ using System.Diagnostics;
 using System.Runtime.Remoting;
 using ClassLibrary1.Domain;
 using HuobiMapper.Extensions;
-using HuobiMapper.Services;
 using NUnit.Framework;
 using HuobiMapper.USDTFutures.RestApi;
+using HuobiMapper.USDTFutures.RestApi.Data.Account.GetHistoryOrders;
 using HuobiMapper.USDTFutures.RestApi.Requests.Account;
-using RestSharp;
 
 
 namespace ClassLibrary1.Test.Private
@@ -20,21 +19,6 @@ namespace ClassLibrary1.Test.Private
         private DateTime To = DateTime.UtcNow;
 
         private RestApiComposition AccountComposition = new RestApiComposition();
-
-        [Test]
-        public void SignTest()
-        {
-            // SignerService service = new SignerService();
-            // service.DataEvent += val =>
-            // {
-            //     var req = new RestRequest("/linear-swap-api/v1/swap_account_info?" + val, Method.POST);
-            //     RestClient client = new RestClient("https://api.hbdm.com");
-            //     var result = client.Execute(req)?.Content;
-            // };
-            // service.GetSignature(APIKEY, APISECRET, SignMethod, SignatureVersion, ClearHost, "/linear-swap-api/v1/swap_account_info", "POST","");
-            //
-           
-        }
 
         [Test]
         public void BalanceTest()
@@ -80,6 +64,53 @@ namespace ClassLibrary1.Test.Private
             Debug.Print($"NEEDED VALUE: {resultResponse.Serialize()}");
 
             #endregion
+        }
+
+        [Test]
+        public void OrderHistory()
+        {
+            var payload = new GetHistoryOrdersRequests(ContractCode, TradeType.All, OrderStatusEnum.None, OrderType.AllOrders);
+            var resultRequest = SendRequest(payload);
+            var resultResponse = AccountComposition.HandLerGetGetHistoryOrdersResponses(resultRequest);
+            Assert.True(resultResponse.Code == 200);
+        }
+        [Test]
+        public void OpenOrderHistory()
+        {
+            var payload = new CurrentUnfilledOrderAcquisitionRequests(ContractCode);
+            var resultRequest = SendRequest(payload);
+            var resultResponse = AccountComposition.HandLerGetCurrentUnfilledOrderAcquisitionResponses(resultRequest);
+            Assert.True(resultResponse.Data != null);
+        }
+        [Test]
+        public void TradeHistory()
+        {
+            var payload = new GetHistoryOrdersRequests(ContractCode, TradeType.All, OrderStatusEnum.None, OrderType.OrderInFinishStatus);
+            var resultRequest = SendRequest(payload);
+            var resultResponse = AccountComposition.HandLerGetGetHistoryOrdersResponses(resultRequest);
+            Assert.True(resultResponse.Code == 200);
+        }
+        [Test]
+        public void PlaceOrder()
+        {
+            var payload = new PlaceOrderRequest(ContractCode, 1, "buy", 200, "limit"){Price = 18000};
+            var resultRequest = SendRequest(payload);
+            var resultResponse = AccountComposition.HandLerGetPlaceOrderResponses(resultRequest);
+
+            Assert.True(resultResponse.PlOrData != null);
+        }
+        [Test]
+        public void CloseOrder()
+        {
+            var payloadPlace = new PlaceOrderRequest(ContractCode, 1, "buy", 200, "limit"){Price = 18000};
+            var resultRequestPlace = SendRequest(payloadPlace);
+            var resultResponsePlace = AccountComposition.HandLerGetPlaceOrderResponses(resultRequestPlace);
+            
+            var payload = new CancelanOrderRequests(ContractCode){ Orderid = resultResponsePlace.PlOrData.OrderIdStr};
+            var resultRequest = SendRequest(payload);
+            
+            var resultResponse = AccountComposition.HandLerGetPlaceOrderResponses(resultRequest);
+            Assert.True(resultResponse.PlOrData != null);
         }
     }
 }

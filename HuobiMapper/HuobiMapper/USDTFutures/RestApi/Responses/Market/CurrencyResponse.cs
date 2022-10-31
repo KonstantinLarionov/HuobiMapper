@@ -1,5 +1,7 @@
 ﻿using System.Collections.Generic;
 using HuobiMapper.USDTFutures.RestApi.Data;
+using HuobiMapper.USDTFutures.RestApi.Data.Enums;
+using HuobiMapper.USDTFutures.RestApi.Extensions;
 using Newtonsoft.Json;
 
 namespace HuobiMapper.USDTFutures.RestApi.Responses.Market
@@ -12,6 +14,7 @@ namespace HuobiMapper.USDTFutures.RestApi.Responses.Market
             Ts = ts;
             Status = status;
             Data = data;
+            StatusType = Status.ToEnum<StatusRequest>();
         }
 
         [JsonProperty("ts")]
@@ -19,6 +22,8 @@ namespace HuobiMapper.USDTFutures.RestApi.Responses.Market
 
         [JsonProperty("status")]
         public string Status { get; set; }
+
+        public StatusRequest StatusType { get; set; }
 
         [JsonProperty("data")]
         public List<CurrencysData> Data { get; set; }

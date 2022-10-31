@@ -7,8 +7,8 @@ namespace HuobiMapper.USDTFutures.MarketStreams.Data
     [JsonConverter(typeof(OrderDepthRowConvertor))]
     public class OrderDepthRow
     {  
-        public decimal Sell { get; set; }
-        public decimal Buy { get; set; }
+        public decimal Volume { get; set; }
+        public decimal Price { get; set; }
         
     }
 }

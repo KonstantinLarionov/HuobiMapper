@@ -25,8 +25,8 @@ namespace HuobiMapper.USDTFutures.MarketStreams.Convertor
 
             return new OrderDepthRow
             { 
-                Sell = (decimal)array[0],
-                Buy = (decimal)array[1]
+                Price = (decimal)array[0],
+                Volume = (decimal)array[1]
             };
         }
 

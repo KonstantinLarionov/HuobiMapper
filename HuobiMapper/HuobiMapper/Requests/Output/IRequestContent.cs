@@ -8,6 +8,8 @@ namespace HuobiMapper.Requests.Output
 
         string Query { get; }
 
+        string RawProperty { get; }
+
         /// <summary>
         /// Authorized requests only; null otherwise
         /// </summary>

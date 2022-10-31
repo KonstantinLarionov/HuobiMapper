@@ -1,4 +1,6 @@
 ﻿using System.Collections.Generic;
+using HuobiMapper.USDTFutures.MarketStreams.Data.Enums;
+using HuobiMapper.USDTFutures.RestApi.Extensions;
 using Newtonsoft.Json;
 
 namespace HuobiMapper.USDTFutures.MarketStreams.Data
@@ -15,6 +17,7 @@ namespace HuobiMapper.USDTFutures.MarketStreams.Data
             Mrid = mrid;
             Ts = ts;
             Version = version;
+            EventDataType = Event.ToEnum<EventDataType>();
         }
         [JsonProperty("asks")]
         public List<OrderDepthRow> Asks { get; set; }
@@ -27,6 +30,7 @@ namespace HuobiMapper.USDTFutures.MarketStreams.Data
 
         [JsonProperty("event")]
         public string Event { get; set; }
+        public EventDataType EventDataType { get; set; }
 
         [JsonProperty("id")]
         public long Id { get; set; }

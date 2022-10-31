@@ -55,7 +55,7 @@ namespace ClassLibrary1.Test.Public
         {
             #region [Arrange]
 
-            var payload = new KlineRequest(Contractcode, Period);
+            var payload = new KlineRequest(Contractcode, Period, From, To);
             #endregion
 
             #region [Action]
@@ -80,7 +80,6 @@ namespace ClassLibrary1.Test.Public
             Assert.True(resultResponse.Ch != null);
             Assert.True(resultResponse.Status != null);
             Assert.True(resultResponse.Ts != 0);
-            Assert.True(resultResponse.StatusEnum != 0);
             
             
             Debug.Print($"NEEDED VALUE: {resultResponse.Tick[0].Serialize()}");

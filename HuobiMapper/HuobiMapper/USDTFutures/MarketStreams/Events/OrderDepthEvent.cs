@@ -7,18 +7,27 @@ using Newtonsoft.Json;
 namespace HuobiMapper.USDTFutures.MarketStreams.Events
 {
     public class OrderDepthEvent
-    {   [JsonConstructor]
-        public OrderDepthEvent(SubIncrementalhData ch, string datatype, long id)
+    {
+        [JsonConstructor]
+        public OrderDepthEvent(string ch, Ticks tick, string id, string datatype)
         {
             Ch = ch;
+            Tick = tick;
             Id = id;
             Datatype = datatype;
-            TypeEnum=Datatype.ToEnum<EventDataType>();
+            TypeEnum = Datatype.ToEnum<EventDataType>();
         }
+
+
         [JsonProperty("ch")]
-        public SubIncrementalhData Ch { get; set; }
+        public string Ch { get; set; }
+
+        [JsonProperty("tick")]
+        public Ticks Tick { get; set; }
+        
         [JsonProperty("id")]
-        public long Id { get; set; }
+        public string Id { get; set; }
+        
         [JsonProperty("data_type")]
         public string Datatype { get; set; }
         public EventDataType TypeEnum { get; }

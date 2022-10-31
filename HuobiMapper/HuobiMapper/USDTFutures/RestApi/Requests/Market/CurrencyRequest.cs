@@ -24,7 +24,7 @@ namespace HuobiMapper.USDTFutures.RestApi.Requests.Market
         {
             get { return To.ToUnixTimeSeconds(); }
         }
-        internal override Dictionary<string, string> Properties
+        public override Dictionary<string, string> Properties
         {
             get
             {

@@ -19,8 +19,8 @@ namespace HuobiMapper.USDTFutures.RestApi.Requests.Account
         }
         public string ContractCode { get; set; }
         public string Direction{ get; set; }
-        public int LeverRate { get; set; } = 5;
-        public long Volume { get; set; } = 1;
+        public int LeverRate { get; set; }
+        public long Volume { get; set; }
         public string OrderPriceType{ get; set; }
         public string Offset{ get; set; }
         public decimal? Price{ get; set; }
@@ -30,7 +30,14 @@ namespace HuobiMapper.USDTFutures.RestApi.Requests.Account
         public decimal? SlTriggerPrice{ get; set; }
         public decimal? SlOrderPrice{ get; set; }
         public string sl_order_price_type{ get; set; }
-        internal override Dictionary<string, string> Properties
+        public override object Body {
+            get
+            {
+                return Properties.FromDictToAnonymousObj();
+            }
+        }
+
+        public override Dictionary<string, string> Properties
         {
             get
             {
@@ -53,5 +60,7 @@ namespace HuobiMapper.USDTFutures.RestApi.Requests.Account
         }
         [NotNull] internal override string EndPoint { get; } = "/linear-swap-api/v1/swap_order";
         internal override RequestMethod Method { get; } = RequestMethod.POST;
+        
+      
     }
 }

@@ -17,16 +17,16 @@ namespace HuobiMapper.USDTFutures.MarketStreams.Events
         public EventType EventType {
             get
             {
-                if (Trade != null)
+                if (Ch!= null && Ch.Contains("trade"))
                     return EventType.Trade;
-                if (Depth != null)
+                if (Ch!= null && Ch.Contains("depth"))
                     return EventType.Depth;
                 return EventType.None;
             }
         }
 
         [JsonProperty("tick")]
-        public Tick Tick { get; set; }
+        public object Tick { get; set; }
         [JsonProperty("ts")]
         public long Ts { get; set; }
     }

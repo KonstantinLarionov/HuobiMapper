@@ -10,7 +10,7 @@ namespace HuobiMapper.USDTFutures.MarketStreams
             json.Deserialize<BaseEvent>();
         public OrderDepthEvent HandlerGetOrderDepthEvent(string json) => 
             json.Deserialize<OrderDepthEvent>();
-        public OrderTradeEvent HandlerGetOrderTradeEvent(string json) => 
-            json.Deserialize<OrderTradeEvent>();
+        public TradeEvent HandlerGetOrderTradeEvent(string json) => 
+            json.Deserialize<TradeEvent>();
     }
 }

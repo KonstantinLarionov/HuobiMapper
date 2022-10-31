@@ -17,7 +17,7 @@ namespace HuobiMapper.USDTFutures.RestApi.Requests.Account
         public string Clientorderid { get; set; }
         public string Contractcode { get; set; }
         
-        internal override Dictionary<string, string> Properties
+        public override Dictionary<string, string> Properties
         {
             get
             {

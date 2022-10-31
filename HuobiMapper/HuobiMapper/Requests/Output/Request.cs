@@ -17,36 +17,14 @@ namespace HuobiMapper.Requests.Output
             InternalProperties = _requestPayload.Properties ?? new Dictionary<string, string>();
             _apiKey = apiKey;
         }
+        
+        public virtual string Query => _requestPayload.EndPoint;
 
-        public void AppendPropsKeyedRequest(Dictionary<string, string> prop)
+        public virtual string RawProperty
         {
-            foreach (var VARIABLE in prop)
-                this.InternalProperties.Add(System.Net.WebUtility.UrlEncode(VARIABLE.Key).Replace("%25", "%"), System.Net.WebUtility.UrlEncode(VARIABLE.Value).Replace("%25", "%"));
-
-            this.InternalProperties.OrderBy(x => x.Key, StringComparer.Ordinal);
-        }
-
-        private string buffer = string.Empty;
-        public virtual string Query
-        {
-            get {
-                if (!string.IsNullOrEmpty(buffer))
-                {
-                    return buffer;
-                }
-
-                // if (InternalProperties is null || InternalProperties.Count == 0)
-                // {
-                    return _requestPayload.EndPoint;
-                // }
-                // else
-                // {
-                //     return $"{_requestPayload.EndPoint}?{GenerateParametersString(InternalProperties)}";
-                // }
-            }
-            set
-            {
-                buffer = value;
+            get { 
+                if(InternalProperties.Count != 0) return GenerateParametersString(InternalProperties);
+                return string.Empty;
             }
         }
         public RequestMethod Method => _requestPayload.Method;

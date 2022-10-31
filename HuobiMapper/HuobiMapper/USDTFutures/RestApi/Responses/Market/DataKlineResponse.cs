@@ -15,7 +15,7 @@ namespace HuobiMapper.USDTFutures.RestApi.Responses.Market
             Ch = ch;
             Ts = ts;
             Status = status;
-            StatusEnum = Status.ToEnum<ResponseStatus>();
+            StatusType = Status.ToEnum<StatusRequest>();
         }
         [JsonProperty("data")]
         public List<Tick> Tick { get; set; }
@@ -25,7 +25,7 @@ namespace HuobiMapper.USDTFutures.RestApi.Responses.Market
         public long Ts { get; set; }
         [JsonProperty("status")]
         public string Status { get; set; }
-        public ResponseStatus StatusEnum { get; set; }
+        public StatusRequest StatusType { get; set; }
 
     }
 

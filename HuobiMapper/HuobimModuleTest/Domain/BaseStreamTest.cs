@@ -7,6 +7,8 @@ namespace ClassLibrary1.Domain
     public class BaseStreamTest
     {
         protected WebSocket _websocket = new WebSocket("wss://api.hbdm.com/linear-swap-ws");
+        protected WebSocket _websocketPrivate = new WebSocket("wss://api.hbdm.vn/linear-swap-notification");
+        
         protected bool IsTestFinish = false;
         protected bool IsSnapshotFinish = false;
         protected bool IsIncremetalfinish = false;

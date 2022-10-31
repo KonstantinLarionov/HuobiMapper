@@ -11,9 +11,9 @@ namespace HuobiMapper.Requests.Payload
         public int? ActualityWindow { get; set; }
 
         public long Timestamp { get; set; }
-        internal override object Body { get; }
+        public override object Body { get; }
 
-        internal override Dictionary<string, string> Properties
+        public override Dictionary<string, string> Properties
         {
             get
             {

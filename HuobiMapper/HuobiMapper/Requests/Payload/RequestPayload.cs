@@ -13,10 +13,10 @@ namespace HuobiMapper.Requests.Payload
         internal abstract string EndPoint { get; }
         internal abstract RequestMethod Method { get; }
         internal int? RecvWindow { get; set; }
-        [CanBeNull] internal virtual Dictionary<string, string> Properties { get; set; }
+        [CanBeNull] public virtual Dictionary<string, string> Properties { get; set; }
         [CanBeNull]
         public virtual IDictionary<string, string> Headers { get; set; }
         [CanBeNull]
-        internal virtual object Body { get; }
+        public virtual object Body { get; }
     }
 }

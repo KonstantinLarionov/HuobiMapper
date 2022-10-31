@@ -33,7 +33,7 @@ namespace HuobiMapper.USDTFutures.RestApi.Requests.Account
     public decimal? SlTriggerPrice { get; set; }
     public decimal? SlOrderPrice { get; set; }
     public string SlOrderPriceType { get; set; }
-    internal override Dictionary<string, string> Properties
+    public override Dictionary<string, string> Properties
     {
         get
         {
