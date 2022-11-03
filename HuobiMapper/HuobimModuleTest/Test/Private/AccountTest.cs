@@ -5,6 +5,7 @@ using ClassLibrary1.Domain;
 using HuobiMapper.Extensions;
 using NUnit.Framework;
 using HuobiMapper.USDTFutures.RestApi;
+using HuobiMapper.USDTFutures.RestApi.Data.Account.CurrentUnfilledOrderAcquisition;
 using HuobiMapper.USDTFutures.RestApi.Data.Account.GetHistoryOrders;
 using HuobiMapper.USDTFutures.RestApi.Requests.Account;
 
@@ -93,7 +94,7 @@ namespace ClassLibrary1.Test.Private
         [Test]
         public void PlaceOrder()
         {
-            var payload = new PlaceOrderRequest(ContractCode, 1, "buy", 200, "limit"){Price = 18000};
+            var payload = new PlaceOrderRequest(ContractCode, 1, DirectionEnum.Sell, 200, OrderPriceTypeEnum.Limit){Price = 18000};
             var resultRequest = SendRequest(payload);
             var resultResponse = AccountComposition.HandLerGetPlaceOrderResponses(resultRequest);
 
@@ -102,7 +103,7 @@ namespace ClassLibrary1.Test.Private
         [Test]
         public void CloseOrder()
         {
-            var payloadPlace = new PlaceOrderRequest(ContractCode, 1, "buy", 200, "limit"){Price = 18000};
+            var payloadPlace = new PlaceOrderRequest(ContractCode, 1, DirectionEnum.Buy, 200, OrderPriceTypeEnum.Limit){Price = 18000};
             var resultRequestPlace = SendRequest(payloadPlace);
             var resultResponsePlace = AccountComposition.HandLerGetPlaceOrderResponses(resultRequestPlace);
             

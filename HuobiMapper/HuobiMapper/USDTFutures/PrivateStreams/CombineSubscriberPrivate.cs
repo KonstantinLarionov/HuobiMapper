@@ -61,5 +61,10 @@ namespace Huobi.SDK.Core.WSBase.PrivateStreams
             var id = Guid.NewGuid().ToString();
             return "{ \"op\": \""+ subType.GetEnumMemberAttributeValue() +"\", \"cid\": \""+ id +"\", \"topic\": \"positions."+ symbol.ToUpper() +"\" }";
         }
+        public static string CreatePrivateTradeSub(string symbol, SubType subType)
+        {
+            var id = Guid.NewGuid().ToString();
+            return "{ \"op\": \""+ subType.GetEnumMemberAttributeValue() +"\", \"cid\": \""+ id +"\", \"topic\": \"matchOrders."+ symbol.ToLower() +"\" }";
+        }
     }
 }

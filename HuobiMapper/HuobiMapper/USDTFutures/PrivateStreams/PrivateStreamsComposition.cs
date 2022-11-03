@@ -1,7 +1,7 @@
 ﻿using Huobi.SDK.Core.WSBase.PrivateStreams.Event;
 using HuobiMapper.Extensions;
 
-namespace Huobi.SDK.Core.WSBase.PrivateStreams
+namespace HuobiMapper.USDTFutures.PrivateStreams
 {
     public class PrivateStreamsComposition
     {
@@ -11,5 +11,7 @@ namespace Huobi.SDK.Core.WSBase.PrivateStreams
             json.Deserialize<PositionsEvent>();
         public OrdersEvent HandlerGetOrders(string json) =>
             json.Deserialize<OrdersEvent>();
+        public TradeEvent HandlerGetTrades(string json) =>
+            json.Deserialize<TradeEvent>();
     }
 }

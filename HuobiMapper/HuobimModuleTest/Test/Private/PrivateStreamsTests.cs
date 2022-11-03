@@ -23,8 +23,8 @@ namespace ClassLibrary1.Test.Private
         public void AuthTest()
         {
             var auth = CombineSubscriberPrivate.CreateAuth(APIKEY, APISECRET);
-            var ord = CombineSubscriberPrivate.CreateOrdersSub("BTC-USDT", SubType.Subscribe);
-            var pos = CombineSubscriberPrivate.CreatePositionsSub("BTC-USDT", SubType.Subscribe);
+            var ord = CombineSubscriberPrivate.CreateOrdersSub("", SubType.Subscribe);
+            var pos = CombineSubscriberPrivate.CreatePositionsSub("", SubType.Subscribe);
             _websocketPrivate.OnMessage += (sender, args) =>
             {
                 var result = GZipDecompresser.Decompress(args.RawData);

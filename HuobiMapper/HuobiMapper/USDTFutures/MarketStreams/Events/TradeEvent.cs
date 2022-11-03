@@ -14,6 +14,14 @@ namespace HuobiMapper.USDTFutures.MarketStreams.Events
         }
         [JsonProperty("ch")]
         public string Ch { get; set; }
+        public string Symbol {
+            get
+            {
+                var str = Ch?.Split('.');
+                return str?[1];
+            }
+        }
+
         [JsonProperty("ts")]
         public long Ts { get; set; }
         [JsonProperty("tick")]

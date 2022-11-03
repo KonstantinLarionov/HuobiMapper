@@ -95,7 +95,6 @@
         <Compile Include="USDTFutures\MarketStreams\Events\BaseEvent.cs" />
         <Compile Include="USDTFutures\MarketStreams\Events\OrderDepthEvent.cs" />
         <Compile Include="USDTFutures\MarketStreams\Events\TradeEvent.cs" />
-        <Compile Include="USDTFutures\MarketStreams\Events\TradesEvent.cs" />
         <Compile Include="USDTFutures\PrivateStreams\CombineSubscriberPrivate.cs" />
         <Compile Include="USDTFutures\PrivateStreams\Data\EventType.cs" />
         <Compile Include="USDTFutures\PrivateStreams\Data\OrderSubs\DirectionType.cs" />
@@ -103,6 +102,7 @@
         <Compile Include="USDTFutures\PrivateStreams\Data\OrderSubs\OrderStatusEnum.cs" />
         <Compile Include="USDTFutures\PrivateStreams\Data\OrderSubs\TradesOrderSubs.cs" />
         <Compile Include="USDTFutures\PrivateStreams\Data\PositionsSubs\PositionData.cs" />
+        <Compile Include="USDTFutures\PrivateStreams\Data\TradeData.cs" />
         <Compile Include="USDTFutures\PrivateStreams\Enums\EventType.cs" />
         <Compile Include="USDTFutures\PrivateStreams\Enums\PositionDirection.cs" />
         <Compile Include="USDTFutures\PrivateStreams\Enums\PositionMarginMode.cs" />
@@ -111,6 +111,7 @@
         <Compile Include="USDTFutures\PrivateStreams\Event\BaseEvent.cs" />
         <Compile Include="USDTFutures\PrivateStreams\Event\OrdersEvent.cs" />
         <Compile Include="USDTFutures\PrivateStreams\Event\PositionsEvent.cs" />
+        <Compile Include="USDTFutures\PrivateStreams\Event\TradeEvent.cs" />
         <Compile Include="USDTFutures\PrivateStreams\PrivateStreamsComposition.cs" />
         <Compile Include="USDTFutures\RestApi\Data\Account\AccountInfo\AccountData.cs" />
         <Compile Include="USDTFutures\RestApi\Data\Account\CancealanOrder\CancelanOrderData.cs" />
@@ -131,6 +132,7 @@
         <Compile Include="USDTFutures\RestApi\Data\Account\PlaceOrderData\PlaceOrderRow.cs" />
         <Compile Include="USDTFutures\RestApi\Data\Account\PlaceOrderData\PlaceOrder.cs" />
         <Compile Include="USDTFutures\RestApi\Data\Account\QueryUser'sAccountInformation\QueryUser'sAccountInformation.cs" />
+        <Compile Include="USDTFutures\RestApi\Data\Account\TradeHistory\TradeData.cs" />
         <Compile Include="USDTFutures\RestApi\Data\CurrencysData.cs" />
         <Compile Include="USDTFutures\RestApi\Data\Dataklins\Tick.cs" />
         <Compile Include="USDTFutures\RestApi\Data\Enums\ContractStatusEnum.cs" />
@@ -148,6 +150,7 @@
         <Compile Include="USDTFutures\RestApi\Requests\Account\PlaceaBatchofOrderRequest.cs" />
         <Compile Include="USDTFutures\RestApi\Requests\Account\PlaceOrderRequest.cs" />
         <Compile Include="USDTFutures\RestApi\Requests\Account\QueryUserSAccountInformationRequests.cs" />
+        <Compile Include="USDTFutures\RestApi\Requests\Account\TradeRequest.cs" />
         <Compile Include="USDTFutures\RestApi\Requests\Market\CurrencyRequest.cs" />
         <Compile Include="USDTFutures\RestApi\Requests\Market\KlineRequest.cs" />
         <Compile Include="USDTFutures\RestApi\Requests\Market\TimestampRequest.cs" />
@@ -158,6 +161,7 @@
         <Compile Include="USDTFutures\RestApi\Responses\Account\PlaceaBatchofOrderResponses.cs" />
         <Compile Include="USDTFutures\RestApi\Responses\Account\PlaceOrderResponses.cs" />
         <Compile Include="USDTFutures\RestApi\Responses\Account\QueryUser_sAccountInformationResponses.cs" />
+        <Compile Include="USDTFutures\RestApi\Responses\Account\TradesResponse.cs" />
         <Compile Include="USDTFutures\RestApi\Responses\Market\CurrencyResponse.cs" />
         <Compile Include="USDTFutures\RestApi\Responses\Market\DataKlineResponse.cs" />
         <Compile Include="USDTFutures\RestApi\Responses\Market\TimestampResponse.cs" />

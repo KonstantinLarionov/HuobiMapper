@@ -15,6 +15,8 @@ namespace Huobi.SDK.Core.WSBase.PrivateStreams.Event
                     return EventType.Position;
                 if (Topic != null && Topic.Contains("orders"))
                     return EventType.Orders;
+                if (Topic != null && Topic.Contains("matchOrders"))
+                    return EventType.Trades;
                 return EventType.None;
             }
         }

@@ -2,6 +2,7 @@
 using HuobiMapper.Extensions;
 using HuobiMapper.Requests.Output;
 using HuobiMapper.Requests.Payload;
+using HuobiMapper.USDTFutures.RestApi.Data.Account.CurrentUnfilledOrderAcquisition;
 using JetBrains.Annotations;
 
 namespace HuobiMapper.USDTFutures.RestApi.Requests.Account
@@ -9,7 +10,7 @@ namespace HuobiMapper.USDTFutures.RestApi.Requests.Account
     public class PlaceOrderRequest : KeyedRequestPayload
     {
         public PlaceOrderRequest(string сontractCode, long volume,
-            string direction, int leverRate, string orderPriceType)
+            DirectionEnum direction, int leverRate, OrderPriceTypeEnum orderPriceType)
         {
             ContractCode = сontractCode;
             Direction = direction;
@@ -18,10 +19,10 @@ namespace HuobiMapper.USDTFutures.RestApi.Requests.Account
             OrderPriceType = orderPriceType;
         }
         public string ContractCode { get; set; }
-        public string Direction{ get; set; }
+        public DirectionEnum Direction{ get; set; }
         public int LeverRate { get; set; }
         public long Volume { get; set; }
-        public string OrderPriceType{ get; set; }
+        public OrderPriceTypeEnum OrderPriceType{ get; set; }
         public string Offset{ get; set; }
         public decimal? Price{ get; set; }
         public decimal? TpTriggerPrice{ get; set; }
@@ -43,8 +44,8 @@ namespace HuobiMapper.USDTFutures.RestApi.Requests.Account
             {
                 var def = new Dictionary<string, string>();
                 def.AddStringIfNotEmptyOrWhiteSpace("contract_code",ContractCode);
-                def.AddStringIfNotEmptyOrWhiteSpace("direction",Direction);
-                def.AddStringIfNotEmptyOrWhiteSpace("order_price_type",OrderPriceType);
+                def.AddEnum("direction",Direction);
+                def.AddEnum("order_price_type",OrderPriceType);
                 def.AddStringIfNotEmptyOrWhiteSpace("offset",Offset);
                 def.AddStringIfNotEmptyOrWhiteSpace("tp_order_price_type",TpOrderPriceType);
                 def.AddStringIfNotEmptyOrWhiteSpace("sl_order_price_type",sl_order_price_type);
