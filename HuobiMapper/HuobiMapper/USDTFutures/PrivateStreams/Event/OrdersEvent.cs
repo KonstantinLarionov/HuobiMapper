@@ -26,10 +26,10 @@ namespace Huobi.SDK.Core.WSBase.PrivateStreams.Event
         public string ContractCode { get; set; }
 
         [JsonProperty("volume")]
-        public int Volume { get; set; }
+        public decimal Volume { get; set; }
 
         [JsonProperty("price")]
-        public int Price { get; set; }
+        public decimal Price { get; set; }
 
         [JsonProperty("order_price_type")]
         public string OrderPriceType { get; set; }
@@ -75,7 +75,7 @@ namespace Huobi.SDK.Core.WSBase.PrivateStreams.Event
         public string OrderIdStr { get; set; }
 
         [JsonProperty("client_order_id")]
-        public int ClientOrderId { get; set; }
+        public string ClientOrderId { get; set; }
 
         [JsonProperty("order_source")]
         public string OrderSource { get; set; }
@@ -87,28 +87,28 @@ namespace Huobi.SDK.Core.WSBase.PrivateStreams.Event
         public long CreatedAt { get; set; }
 
         [JsonProperty("trade_volume")]
-        public int TradeVolume { get; set; }
+        public decimal TradeVolume { get; set; }
 
         [JsonProperty("trade_turnover")]
-        public int TradeTurnover { get; set; }
+        public decimal TradeTurnover { get; set; }
 
         [JsonProperty("fee")]
-        public int Fee { get; set; }
+        public decimal Fee { get; set; }
 
         [JsonProperty("liquidation_type")]
         public string LiquidationType { get; set; }
 
         [JsonProperty("trade_avg_price")]
-        public int TradeAvgPrice { get; set; }
+        public decimal TradeAvgPrice { get; set; }
 
         [JsonProperty("margin_asset")]
         public string MarginAsset { get; set; }
 
         [JsonProperty("margin_frozen")]
-        public int MarginFrozen { get; set; }
+        public decimal MarginFrozen { get; set; }
 
         [JsonProperty("profit")]
-        public int Profit { get; set; }
+        public decimal Profit { get; set; }
 
         [JsonProperty("canceled_at")]
         public long CanceledAt { get; set; }
@@ -123,13 +123,13 @@ namespace Huobi.SDK.Core.WSBase.PrivateStreams.Event
         public string MarginAccount { get; set; }
 
         [JsonProperty("is_tpsl")]
-        public int IsTpsl { get; set; }
+        public decimal IsTpsl { get; set; }
 
         [JsonProperty("real_profit")]
-        public int RealProfit { get; set; }
+        public decimal RealProfit { get; set; }
 
         [JsonProperty("reduce_only")]
-        public int ReduceOnly { get; set; }
+        public decimal ReduceOnly { get; set; }
 
         [JsonProperty("trade")]
         public List<TradesOrderSubs> Trade { get; set; }

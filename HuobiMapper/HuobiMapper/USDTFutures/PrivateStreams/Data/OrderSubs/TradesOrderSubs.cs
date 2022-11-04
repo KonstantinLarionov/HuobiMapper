@@ -11,7 +11,7 @@ namespace Huobi.SDK.Core.WSBase.PrivateStreams.Data.OrderSubs
         public string Id { get; set; }
 
         [JsonProperty("trade_volume")]
-        public int TradeVolume { get; set; }
+        public decimal TradeVolume { get; set; }
 
         [JsonProperty("trade_price")]
         public double TradePrice { get; set; }
@@ -29,10 +29,10 @@ namespace Huobi.SDK.Core.WSBase.PrivateStreams.Data.OrderSubs
         public long CreatedAt { get; set; }
 
         [JsonProperty("real_profit")]
-        public int RealProfit { get; set; }
+        public decimal RealProfit { get; set; }
 
         [JsonProperty("profit")]
-        public int Profit { get; set; }
+        public decimal Profit { get; set; }
 
         [JsonProperty("role")]
         public string Role { get; set; }

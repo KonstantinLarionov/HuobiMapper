@@ -1,4 +1,6 @@
-﻿using Newtonsoft.Json;
+﻿using System;
+using HuobiMapper.Extensions;
+using Newtonsoft.Json;
 
 namespace HuobiMapper.USDTFutures.RestApi.Data.Dataklins
 {
@@ -27,6 +29,14 @@ namespace HuobiMapper.USDTFutures.RestApi.Data.Dataklins
         public decimal High { get; set; }
         [JsonProperty("id")]
         public long Id { get; set; }
+
+        public DateTime DateStart {
+            get
+            {
+                return Id.ToDateTimeFromUnixTimeMilliseconds();
+            }
+        }
+
         [JsonProperty("low")]
         public decimal Low { get; set; }
         [JsonProperty("open")]

@@ -13,13 +13,13 @@ namespace Huobi.SDK.Core.WSBase.PrivateStreams.Data.PositionsSubs
         public string ContractCode { get; set; }
 
         [JsonProperty("volume")]
-        public int Volume { get; set; }
+        public decimal Volume { get; set; }
 
         [JsonProperty("available")]
-        public int Available { get; set; }
+        public decimal Available { get; set; }
 
         [JsonProperty("frozen")]
-        public int Frozen { get; set; }
+        public decimal Frozen { get; set; }
 
         [JsonProperty("cost_open")]
         public double CostOpen { get; set; }

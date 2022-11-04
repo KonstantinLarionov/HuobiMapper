@@ -10,3 +10,15 @@ C:\Projects\AFC\HuobiMapper\HuobiMapper\HoubiClient\obj\Debug\HoubiClient.csproj
 C:\Projects\AFC\HuobiMapper\HuobiMapper\HoubiClient\obj\Debug\HoubiClient.csproj.CopyComplete
 C:\Projects\AFC\HuobiMapper\HuobiMapper\HoubiClient\obj\Debug\HuobiClient.dll
 C:\Projects\AFC\HuobiMapper\HuobiMapper\HoubiClient\obj\Debug\HuobiClient.pdb
+C:\Users\kosty\Desktop\CS\HuobiMapper\HuobiMapper\HoubiClient\obj\Debug\HuobiClient.dll
+C:\Users\kosty\Desktop\CS\HuobiMapper\HuobiMapper\HoubiClient\obj\Debug\HuobiClient.pdb
+C:\Users\kosty\Desktop\CS\HuobiMapper\HuobiMapper\HoubiClient\bin\Debug\HuobiClient.dll
+C:\Users\kosty\Desktop\CS\HuobiMapper\HuobiMapper\HoubiClient\bin\Debug\HuobiClient.pdb
+C:\Users\kosty\Desktop\CS\HuobiMapper\HuobiMapper\HoubiClient\bin\Debug\Newtonsoft.Json.dll
+C:\Users\kosty\Desktop\CS\HuobiMapper\HuobiMapper\HoubiClient\bin\Debug\RestSharp.dll
+C:\Users\kosty\Desktop\CS\HuobiMapper\HuobiMapper\HoubiClient\bin\Debug\System.ValueTuple.dll
+C:\Users\kosty\Desktop\CS\HuobiMapper\HuobiMapper\HoubiClient\bin\Debug\Newtonsoft.Json.xml
+C:\Users\kosty\Desktop\CS\HuobiMapper\HuobiMapper\HoubiClient\bin\Debug\System.ValueTuple.xml
+C:\Users\kosty\Desktop\CS\HuobiMapper\HuobiMapper\HoubiClient\obj\Debug\HoubiClient.csproj.AssemblyReference.cache
+C:\Users\kosty\Desktop\CS\HuobiMapper\HuobiMapper\HoubiClient\obj\Debug\HoubiClient.csproj.CoreCompileInputs.cache
+C:\Users\kosty\Desktop\CS\HuobiMapper\HuobiMapper\HoubiClient\obj\Debug\HoubiClient.csproj.CopyComplete

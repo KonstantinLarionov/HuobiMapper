@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using HuobiMapper.USDTFutures.MarketStreams.Data;
 using Newtonsoft.Json;
 
 namespace Huobi.SDK.Core.WSBase.PrivateStreams.Event
@@ -40,7 +39,7 @@ namespace Huobi.SDK.Core.WSBase.PrivateStreams.Event
         public long CreatedAt { get; set; }
 
         [JsonProperty("trade")]
-        public List<TradeData> Trade { get; set; }
+        public List<Huobi.SDK.Core.WSBase.PrivateStreams.Data.TradeData> Trade { get; set; }
 
         [JsonProperty("uid")]
         public string Uid { get; set; }
