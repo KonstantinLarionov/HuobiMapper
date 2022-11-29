@@ -6,7 +6,9 @@ namespace HuobiMapper.USDTFutures.RestApi.Data.Account.AccountInfo
     public class AccountData
     {
         [JsonConstructor]
-        public AccountData(string symbol, decimal marginBalance, decimal marginPosition, decimal marginFrozen, decimal marginAvailable, decimal profitReal, decimal profitUnreal, decimal riskRate, decimal withdrawAvailable, decimal liquidationPrice, decimal leverRate, decimal adjustFactor, decimal marginStatic, string contractCode, string marginAsset, string marginMod, string marginAccount, string positionMode)
+        public AccountData(string symbol, decimal marginBalance, decimal marginPosition, decimal marginFrozen, 
+            decimal marginAvailable, decimal profitReal, decimal profitUnreal, decimal? riskRate, decimal? withdrawAvailable, 
+            decimal? liquidationPrice, int leverRate, decimal? adjustFactor, decimal? marginStatic, string contractCode, string marginAsset, string marginMod, string marginAccount, string positionMode)
         {
             Symbol = symbol;
             MarginBalance = marginBalance;
@@ -42,17 +44,17 @@ namespace HuobiMapper.USDTFutures.RestApi.Data.Account.AccountInfo
         [JsonProperty("profit_unreal")]
         public decimal ProfitUnreal { get; set; }
         [JsonProperty("risk_rate")]
-        public decimal RiskRate { get; set; }
+        public decimal? RiskRate { get; set; }
         [JsonProperty("withdraw_available")]
-        public decimal WithdrawAvailable { get; set; }
+        public decimal? WithdrawAvailable { get; set; }
         [JsonProperty("liquidation_price")]
-        public decimal LiquidationPrice { get; set; }
+        public decimal? LiquidationPrice { get; set; }
         [JsonProperty("lever_rate")]
-        public decimal LeverRate { get; set; }
+        public int LeverRate { get; set; }
         [JsonProperty("adjust_factor")]
-        public decimal AdjustFactor { get; set; }
+        public decimal? AdjustFactor { get; set; }
         [JsonProperty("AdjustFactor")]
-        public decimal MarginStatic { get; set; }
+        public decimal? MarginStatic { get; set; }
         [JsonProperty("contract_code")]
         public string ContractCode { get; set; }
         [JsonProperty("margin_asset")]

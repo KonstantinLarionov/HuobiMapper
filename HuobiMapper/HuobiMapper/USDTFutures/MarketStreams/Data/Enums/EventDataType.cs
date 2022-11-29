@@ -9,6 +9,8 @@ namespace HuobiMapper.USDTFutures.MarketStreams.Data.Enums
         [EnumMember(Value = "snapshot")]
         Snapshot,
         [EnumMember(Value = "incremental")]
-        Incremental
+        Incremental,
+        [EnumMember(Value = "update")]
+        Update
     }
 }

@@ -28,7 +28,7 @@ namespace ClassLibrary1.Test.Private
             #region [Arrange]
 
             var payload = new AccountRequest();
-            //payload.Contractcode = ContractCode;
+            payload.Contractcode = ContractCode;
             #endregion
 
             #region [Action]
@@ -94,7 +94,7 @@ namespace ClassLibrary1.Test.Private
         [Test]
         public void PlaceOrder()
         {
-            var payload = new PlaceOrderRequest(ContractCode, 1, DirectionEnum.Sell, 200, OrderPriceTypeEnum.Limit){Price = 18000};
+            var payload = new PlaceOrderRequest(ContractCode, 1, DirectionEnum.Sell, 200, OrderPriceTypeEnum.Limit){Price = 16600.1m, ChannelCode = "AA3439564b"};
             var resultRequest = SendRequest(payload);
             var resultResponse = AccountComposition.HandLerGetPlaceOrderResponses(resultRequest);
 

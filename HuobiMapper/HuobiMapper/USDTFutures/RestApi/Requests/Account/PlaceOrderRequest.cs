@@ -25,6 +25,7 @@ namespace HuobiMapper.USDTFutures.RestApi.Requests.Account
         public OrderPriceTypeEnum OrderPriceType{ get; set; }
         public string Offset{ get; set; }
         public decimal? Price{ get; set; }
+        public string ChannelCode { get; set; }
         public decimal? TpTriggerPrice{ get; set; }
         public decimal? TpOrderPrice{ get; set; }
         public string TpOrderPriceType{ get; set; }
@@ -51,11 +52,12 @@ namespace HuobiMapper.USDTFutures.RestApi.Requests.Account
                 def.AddStringIfNotEmptyOrWhiteSpace("sl_order_price_type",sl_order_price_type);
                 def.AddSimpleStruct("lever_rate",LeverRate);
                 def.AddSimpleStruct("volume",Volume);
-                def.AddSimpleStructIfNotNull("price",Price);
+                def.AddDecimalIfNotNull("price",Price);
                 def.AddSimpleStructIfNotNull("tp_trigger_price",TpTriggerPrice);
                 def.AddSimpleStructIfNotNull("tp_order_price",TpOrderPrice);
                 def.AddSimpleStructIfNotNull("sl_trigger_price",SlTriggerPrice);
                 def.AddSimpleStructIfNotNull("sl_order_price",SlOrderPrice);
+                def.AddStringIfNotEmptyOrWhiteSpace("channel_code", ChannelCode);
                 return def;
             }
         }

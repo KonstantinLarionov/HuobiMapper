@@ -5,7 +5,7 @@ namespace Huobi.SDK.Core.WSBase.PrivateStreams.Data.OrderSubs
     public class TradesOrderSubs
     {
         [JsonProperty("trade_id")]
-        public int TradeId { get; set; }
+        public long TradeId { get; set; }
 
         [JsonProperty("id")]
         public string Id { get; set; }

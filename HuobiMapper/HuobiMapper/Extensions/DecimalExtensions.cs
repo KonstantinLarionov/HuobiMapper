@@ -2,9 +2,9 @@
 
 namespace HuobiMapper.Extensions
 {
-    internal static class DecimalExtensions
+    public static class PublicDecimalExtensions
     {
         private static readonly NumberFormatInfo NumberFormat = new NumberFormatInfo {NumberDecimalSeparator = @"."};
-        public static string ToFormattedString(this decimal value) => value.ToString(NumberFormat);
+        public static string ToFormattedStringPublic(this decimal value) => value.ToString(NumberFormat);
     }
 }

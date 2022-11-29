@@ -1,4 +1,4 @@
-using RestSharp;
+//using RestSharp;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,9 +10,9 @@ using Newtonsoft.Json;
 
 namespace HoubiClient
 {
-    public class HoubiClient
+    public class HoubiHttpClient
     {
-        private readonly string HUOBI_HOST = string.Empty;
+               private readonly string HUOBI_HOST = string.Empty;
       
         private readonly string HUOBI_HOST_URL = string.Empty;
        
@@ -24,9 +24,10 @@ namespace HoubiClient
        
         private readonly string SECRET_KEY = string.Empty;
 
-        private RestClient client;
+        //private RestClient client;
+        private HttpClient _httpClient;
         
-        public HoubiClient(string accessKey, string secretKey, string huobi_host = "api.hbdm.com")
+        public HoubiHttpClient(string accessKey, string secretKey, string huobi_host = "api.hbdm.com")
         {
             ACCESS_KEY = accessKey;
             SECRET_KEY = secretKey;
@@ -35,63 +36,65 @@ namespace HoubiClient
            	Uri uri = new Uri(HUOBI_HOST_URL);
             HUOBI_HOST = uri.Host;
          
-            if (string.IsNullOrEmpty(ACCESS_KEY))
-                throw new ArgumentException("ACCESS_KEY Cannt Be Null Or Empty");
-            if (string.IsNullOrEmpty(SECRET_KEY))
-                throw new ArgumentException("SECRET_KEY  Cannt Be Null Or Empty");
-            if (string.IsNullOrEmpty(HUOBI_HOST))
-                throw new ArgumentException("HUOBI_HOST  Cannt Be Null Or Empty");
-            client = new RestClient(HUOBI_HOST_URL);
-            client.AddDefaultHeader("Content-Type", "application/json");
-            client.AddDefaultHeader("User-Agent", "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.71 Safari/537.36");
+            // if (string.IsNullOrEmpty(ACCESS_KEY))
+            //     throw new ArgumentException("ACCESS_KEY Cannt Be Null Or Empty");
+            // if (string.IsNullOrEmpty(SECRET_KEY))
+            //     throw new ArgumentException("SECRET_KEY  Cannt Be Null Or Empty");
+            // if (string.IsNullOrEmpty(HUOBI_HOST))
+            //     throw new ArgumentException("HUOBI_HOST  Cannt Be Null Or Empty");
+            //client = new RestClient(HUOBI_HOST_URL);
+            _httpClient = new HttpClient();
+            _httpClient.BaseAddress = new Uri(HUOBI_HOST_URL);
+            
+            _httpClient.DefaultRequestHeaders.Add("User-Agent", "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.71 Safari/537.36");
+            //client.AddDefaultHeader("Content-Type", "application/json");
+            //client.AddDefaultHeader("User-Agent", "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.71 Safari/537.36");
         }
         
-        public string SendRequest(string resourcePath, string postParameters = "")
+        // public string SendRequest(string resourcePath, string parameters = "")
+        // {
+        //     parameters = UriEncodeParameterValue(GetCommonParameters() + parameters);//请求参数
+        //     var sign = GetSignatureStr(Method.GET, HUOBI_HOST, resourcePath, parameters);//签名
+        //     parameters += $"&Signature={sign}";
+        //
+        //     var url = $"{HUOBI_HOST_URL}{resourcePath}?{parameters}";
+        //     Console.WriteLine(url);
+        //     var request = new RestRequest(url, Method.GET);
+        //     var result = client.Execute(request);
+        //     return result.Content;
+        // }
+        public string SendRequest(string resourcePath, object postParameters)
         {
-            var parameters = UriEncodeParameterValue(GetCommonParameters());//请求参数
-            var sign = GetSignatureStr(Method.POST, HUOBI_HOST, resourcePath, parameters);//签名
+            var parameters = UriEncodeParameterValue(GetCommonParameters());
+            var sign = GetSignatureStr(HttpMethod.Post, HUOBI_HOST, resourcePath, parameters);
             parameters += $"&Signature={sign}";
 
             var url = $"{HUOBI_HOST_URL}{resourcePath}?{parameters}";
-            var request = new RestRequest(url, Method.POST);
-            request.AddJsonBody(postParameters);
-            foreach (var item in request.Parameters)
-            {
-                item.Value = item.Value.ToString();
-            }
-            var result = client.Execute(request);
-            return result.Content;
+            // var request = new RestRequest(url, Method.POST);
+            // request.AddJsonBody(postParameters);
+            // foreach (var item in request.Parameters)
+            // {
+            //     item.Value = item.Value.ToString();
+            // }
+            // var result = client.Execute(request);
+            
+            var json = JsonConvert.SerializeObject(postParameters);
+            var data = new StringContent(json, Encoding.UTF8, "application/json");
+            var response = _httpClient.PostAsync(url, data).GetAwaiter().GetResult();
+            var result = response.Content.ReadAsStringAsync().GetAwaiter().GetResult();
+            
+            return result;
         }
         public string SendRequestPublic(string resourcePath, string parameters = "")
         {
             var url = $"{HUOBI_HOST_URL}{resourcePath}?{parameters}";
-            var request = new RestRequest(url, Method.GET);
-            var result = client.Execute(request);
-            return result.Content;
-        }
-        public string SendRequest(string resourcePath, object postParameters)
-        {
-            var parameters = UriEncodeParameterValue(GetCommonParameters());
-            var sign = GetSignatureStr(Method.POST, HUOBI_HOST, resourcePath, parameters);
-            parameters += $"&Signature={sign}";
-
-            var url = $"{HUOBI_HOST_URL}{resourcePath}?{parameters}";
-            var request = new RestRequest(url, Method.POST);
-            request.AddJsonBody(postParameters);
-            foreach (var item in request.Parameters)
-            {
-                item.Value = item.Value.ToString();
-            }
-            var result = client.Execute(request);
-            return result.Content;
+            // var request = new RestRequest(url, Method.GET);
+            var result = _httpClient.GetStringAsync(url).GetAwaiter().GetResult();
+            return result;
         }
         private string GetCommonParameters()
         {
             return $"AccessKeyId={ACCESS_KEY}&SignatureMethod={HUOBI_SIGNATURE_METHOD}&SignatureVersion={HUOBI_SIGNATURE_VERSION}&Timestamp={DateTime.UtcNow.ToString("yyyy-MM-ddTHH:mm:ss")}";
-        }
-        private string GetCommonParametersDate(DateTime dateTime)
-        {
-            return $"AccessKeyId={ACCESS_KEY}&SignatureMethod={HUOBI_SIGNATURE_METHOD}&SignatureVersion={HUOBI_SIGNATURE_VERSION}&Timestamp={UrlEncode(dateTime.ToString("yyyy-MM-ddTHH:mm:ss"))}";
         }
         private string UriEncodeParameterValue(string parameters)
         {
@@ -133,14 +136,13 @@ namespace HoubiClient
                 return Convert.ToBase64String(hashmessage);
             }
         }
-        private string GetSignatureStr(Method method, string host, string resourcePath, string parameters)
+        private string GetSignatureStr(HttpMethod method, string host, string resourcePath, string parameters)
         {
             var sign = string.Empty;
             StringBuilder sb = new StringBuilder();
             sb.Append(method.ToString().ToUpper()).Append("\n")
                 .Append(host).Append("\n")
-                .Append(resourcePath).Append("\n")
-                .Append(parameters);
+                .Append(resourcePath).Append("\n");
             var paraArray = parameters.Split('&');
             List<string> parametersList = new List<string>();
             foreach (var item in paraArray)
@@ -154,17 +156,7 @@ namespace HoubiClient
             }
             sign = sb.ToString().TrimEnd('&');
             sign = CalculateSignature256(sign, SECRET_KEY);
-            return /*UrlEncode(*/sign/*)*/;
-        }
-
-        public string GetAuthSubs()
-        {
-            var date = DateTime.UtcNow;
-            var auth = new WSChAuthData() { accessKeyId = ACCESS_KEY, timestamp = date.ToString("yyyy-MM-ddTHH:mm:ss") };
-            var defpar = GetCommonParametersDate(date);
-            var sign = GetSignatureStr(Method.GET, HUOBI_HOST, "/linear-swap-notification", defpar);
-            auth.signature = sign;
-            return JsonConvert.SerializeObject(auth);
+            return UrlEncode(sign);
         }
     }
     

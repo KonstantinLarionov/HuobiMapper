@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Xml.XPath;
+using HoubiClient;
 using HuobiMapper.Requests;
 using HuobiMapper.Requests.Output;
 using HuobiMapper.Requests.Payload;
@@ -16,9 +17,26 @@ namespace ClassLibrary1.Domain
         public const string ClearHost = "api.hbdm.com";
         public const string APIKEY = "66fa8a46-1426ecd9-vqgdf4gsga-70aa2";
         public const string APISECRET = "d8acadf9-b9e9ac56-2b852e0c-09e41";
+        // public const string APIKEY = "";
+        // public const string APISECRET = "";
         private static RestApiComposition AccountCompositionStatic = new RestApiComposition();
 
         private RequestArranger _arranger = new RequestArranger();
+        
+        public string SendRequest(RequestPayload payload)
+        {
+            var client = new HoubiHttpClient(APIKEY, APISECRET);
+            string response = string.Empty;
+            
+            var request = _arranger.Arrange(payload);
+            if (request.Method == RequestMethod.POST)
+                response = client.SendRequest(request.Query, payload.Properties);
+            else if (request.Method == RequestMethod.GET)
+                response = client.SendRequestPublic(request.Query, request.RawProperty);
+            
+            return response;
+        }
+
         // private RequestArranger _arranger =
         //     new RequestArranger("66fa8a46-1426ecd9-vqgdf4gsga-70aa2",
         //         "d8acadf9-b9e9ac56-2b852e0c-09e41",
@@ -49,20 +67,6 @@ namespace ClassLibrary1.Domain
         //         });
         // private RestClient client = new RestClient("https://api.hbdm.com");
         // private static RestClient clientStatic = new RestClient("https://api.hbdm.com");
-
-        public string SendRequest(RequestPayload payload)
-        {
-            HoubiClient.HoubiClient client = new HoubiClient.HoubiClient(APIKEY, APISECRET);
-            string response = string.Empty;
-            
-            var request = _arranger.Arrange(payload);
-            if (request.Method == RequestMethod.POST)
-                response = client.SendRequest(request.Query, payload.Properties);
-            else if (request.Method == RequestMethod.GET)
-                response = client.SendRequestPublic(request.Query, request.RawProperty);
-            
-            return response;
-        }
 
 
         // public string SendRequestOld(RequestPayload payload)

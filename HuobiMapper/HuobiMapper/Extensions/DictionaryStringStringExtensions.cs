@@ -54,14 +54,14 @@ namespace HuobiMapper.Extensions
 
         public static void AddDecimal( this IDictionary<string, string> dictionary,
              string key, decimal value) =>
-            dictionary.Add(key, value.ToFormattedString());
+            dictionary.Add(key, value.ToFormattedStringPublic());
 
         public static void AddDecimalIfNotNull( this IDictionary<string, string> dictionary,
              string key, decimal? value)
         {
             if (!value.HasValue) return;
 
-            dictionary.Add(key, value.Value.ToFormattedString());
+            dictionary.Add(key, value.Value.ToFormattedStringPublic());
         }
 
         public static void AddBoolean( this IDictionary<string, string> dictionary,

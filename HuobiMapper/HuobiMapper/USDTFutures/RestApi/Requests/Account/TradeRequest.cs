@@ -20,8 +20,18 @@ namespace HuobiMapper.USDTFutures.RestApi.Requests.Account
         public string Symbol { get; set; }
         public TradeType TradeType { get; set; }
         public string Pair { get; set; }
-        private long? _startTime { get; set; }
-        private long? _endTime { get; set; }
+        private long? _startTime {
+            get
+            {
+                return StartTime?.ToUnixTimeMilliseconds(); 
+            }
+        }
+        private long? _endTime {
+            get
+            {
+                return EndTime?.ToUnixTimeMilliseconds();
+            }
+        }
         public DateTime? StartTime { get; set; }
         public DateTime? EndTime { get; set; }
         public Direct? Direct { get; set; }

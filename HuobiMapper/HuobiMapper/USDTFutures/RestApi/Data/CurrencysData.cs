@@ -7,7 +7,7 @@ namespace HuobiMapper.USDTFutures.RestApi.Data
     public class CurrencysData
     {
         [JsonConstructor]
-        public CurrencysData(string symbol, string contractCode,  decimal contractSize, decimal pricetick, string deliverydate, string deliverytime,
+        public CurrencysData(string symbol, string contractCode,  decimal contractSize, decimal pricetick, string deliverydate, long? deliverytime,
             string createdate, int contractstatus, string settlementdate, string supportmarginmode, string businesstype, string pair, string contracttype)
         {
             Symbol = symbol;
@@ -38,7 +38,7 @@ namespace HuobiMapper.USDTFutures.RestApi.Data
         [JsonProperty("delivery_date")]
         public string DeliveryDate { get; set; }
         [JsonProperty("delivery_time")]
-        public string DeliveryTime { get; set; }
+        public long? DeliveryTime { get; set; }
         [JsonProperty("create_date")]
         public string CreateDate { get; set; }
         [JsonProperty("contract_status")]

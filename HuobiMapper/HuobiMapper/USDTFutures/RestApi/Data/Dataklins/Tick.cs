@@ -33,7 +33,7 @@ namespace HuobiMapper.USDTFutures.RestApi.Data.Dataklins
         public DateTime DateStart {
             get
             {
-                return Id.ToDateTimeFromUnixTimeMilliseconds();
+                return Id.ToDateTimeFromUnixTimeSeconds();
             }
         }
 

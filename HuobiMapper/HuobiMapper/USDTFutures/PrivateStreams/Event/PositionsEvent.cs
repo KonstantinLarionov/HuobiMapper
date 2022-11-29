@@ -14,6 +14,16 @@ namespace Huobi.SDK.Core.WSBase.PrivateStreams.Event
         [JsonProperty("topic")]
         public string Topic { get; set; }
 
+        public string Symbol {
+            get
+            {
+                try
+                { return Topic.Split('.')[1].ToUpper(); }
+                catch
+                { return string.Empty; }
+            }
+        }
+
         [JsonProperty("ts")]
         public long Ts { get; set; }
 

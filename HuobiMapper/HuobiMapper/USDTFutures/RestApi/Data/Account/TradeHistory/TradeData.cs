@@ -19,7 +19,7 @@ namespace HuobiMapper.USDTFutures.RestApi.Data.Account.TradeHistory
         public string BusinessType { get; set; }
 
         [JsonProperty("match_id")]
-        public int MatchId { get; set; }
+        public long MatchId { get; set; }
 
         [JsonProperty("order_id")]
         public long OrderId { get; set; }
@@ -43,7 +43,7 @@ namespace HuobiMapper.USDTFutures.RestApi.Data.Account.TradeHistory
         public string Offset { get; set; }
 
         [JsonProperty("trade_volume")]
-        public double TradeVolume { get; set; }
+        public decimal TradeVolume { get; set; }
 
         [JsonProperty("trade_price")]
         public double TradePrice { get; set; }

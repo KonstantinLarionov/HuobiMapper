@@ -1,5 +1,6 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
 	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=C_003A_005CProjects_005CAFC_005CHuobiMapper_005CHuobiMapper_005CHoubiClient_005Cbin_005CDebug_005CHuobiClient_002Edll/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=C_003A_005CProjects_005CAFC_005CHuobiMapper_005CHuobiMapper_005Cpackages_005CRestSharp_002E106_002E2_002E1_005Clib_005Cnet452_005CRestSharp16021_002Edll/@EntryIndexedValue">True</s:Boolean>
 	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=G_003A_005C_041A_043E_0441_0442_044F_005CCScalp_005CHuobiMapper_005CSDK_005CHuobi_002ESDK_002ECore_002Edll/@EntryIndexedValue">True</s:Boolean>
 	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=G_003A_005C_041A_043E_0441_0442_044F_005CCScalp_005CHuobiMapper_005CSDK_005CHuobi_002ESDK_002EModel_002Edll/@EntryIndexedValue">True</s:Boolean>
 	<s:String x:Key="/Default/Environment/AssemblyExplorer/XmlDocument/@EntryValue">&lt;AssemblyExplorer&gt;&#xD;
@@ -12,6 +13,10 @@
     &lt;TestId&gt;NUnit3x::5FC4882F-62FA-40D8-8161-70ED5B767600::.NETFramework,Version=v4.6::ClassLibrary1.Test.Private.PrivateStreamsTests&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;NUnit3x::5FC4882F-62FA-40D8-8161-70ED5B767600::.NETFramework,Version=v4.6::ClassLibrary1.Test.Public.MarketStreamsTests.SubIncrementalTest&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;NUnit3x::5FC4882F-62FA-40D8-8161-70ED5B767600::.NETFramework,Version=v4.6::ClassLibrary1.Test.Public.MarketStreamsTests.TradeTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::5FC4882F-62FA-40D8-8161-70ED5B767600::.NETFramework,Version=v4.6::ClassLibrary1.Test.Private.AccountTest.BalanceTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::5FC4882F-62FA-40D8-8161-70ED5B767600::.NETFramework,Version=v4.6::ClassLibrary1.Test.Private.AccountTest.OrderHistory&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::5FC4882F-62FA-40D8-8161-70ED5B767600::.NETFramework,Version=v4.6::ClassLibrary1.Test.Public.MarketTest.CurrencyTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::5FC4882F-62FA-40D8-8161-70ED5B767600::.NETFramework,Version=v4.6::ClassLibrary1.Test.Private.AccountTest.PlaceOrder&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	

@@ -9,11 +9,20 @@ namespace Huobi.SDK.Core.WSBase.PrivateStreams
 {
     public static class CombineSubscriberPrivate
     {
-        public static string CreateAuth(string api, string secret)
+        /// <summary>
+        /// CreateAuth
+        /// </summary>
+        /// <param name="api">Открытый ключ</param>
+        /// <param name="secret">Закрытый ключ</param>
+        /// <param name="uriSigner">Путь до signwshuobi.exe (нужно указывать строку для ProcessStartInfo.
+        /// Старая строка состояла из: Environment.CurrentDirectory +  @"\ws\signwshuobi.exe")</param>
+        /// <returns></returns>
+        public static string CreateAuth(string api, string secret, string uriSigner)
         {
             string result = string.Empty;
             
-            ProcessStartInfo cmdStartInfo = new ProcessStartInfo(Environment.CurrentDirectory +  @"\ws\signwshuobi.exe");
+            // ProcessStartInfo cmdStartInfo = new ProcessStartInfo(Environment.CurrentDirectory +  @"\ws\signwshuobi.exe");
+            ProcessStartInfo cmdStartInfo = new ProcessStartInfo(uriSigner);
             cmdStartInfo.RedirectStandardOutput = true;
             cmdStartInfo.RedirectStandardError = true;
             cmdStartInfo.RedirectStandardInput = true;
@@ -54,17 +63,32 @@ namespace Huobi.SDK.Core.WSBase.PrivateStreams
         public static string CreateOrdersSub(string symbol, SubType subType)
         {
             var id = Guid.NewGuid().ToString();
-            return "{ \"op\": \""+ subType.GetEnumMemberAttributeValue() +"\", \"cid\": \""+ id +"\", \"topic\": \"orders."+ symbol.ToUpper() +"\" }";
+            if (!string.IsNullOrWhiteSpace(symbol))
+            {
+                symbol = "." + symbol;
+            }
+
+            return "{ \"op\": \""+ subType.GetEnumMemberAttributeValue() +"\", \"cid\": \""+ id +"\", \"topic\": \"orders"+ symbol.ToUpper() +"\" }";
         }
         public static string CreatePositionsSub(string symbol, SubType subType)
         {
+            
+            if (!string.IsNullOrWhiteSpace(symbol))
+            {
+                symbol = "." + symbol;
+            }
             var id = Guid.NewGuid().ToString();
-            return "{ \"op\": \""+ subType.GetEnumMemberAttributeValue() +"\", \"cid\": \""+ id +"\", \"topic\": \"positions."+ symbol.ToUpper() +"\" }";
+            return "{ \"op\": \""+ subType.GetEnumMemberAttributeValue() +"\", \"cid\": \""+ id +"\", \"topic\": \"positions"+ symbol.ToUpper() +"\" }";
         }
         public static string CreatePrivateTradeSub(string symbol, SubType subType)
         {
+            
+            if (!string.IsNullOrWhiteSpace(symbol))
+            {
+                symbol = "." + symbol;
+            }
             var id = Guid.NewGuid().ToString();
-            return "{ \"op\": \""+ subType.GetEnumMemberAttributeValue() +"\", \"cid\": \""+ id +"\", \"topic\": \"matchOrders."+ symbol.ToLower() +"\" }";
+            return "{ \"op\": \""+ subType.GetEnumMemberAttributeValue() +"\", \"cid\": \""+ id +"\", \"topic\": \"matchOrders"+ symbol.ToLower() +"\" }";
         }
     }
 }
